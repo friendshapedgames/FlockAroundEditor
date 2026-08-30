@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://b3ulwix4udbyb"]
+
+[ext_resource type="Script" uid="uid://dgtg4prim77n8" path="res://Scripts/Birds/GroundHangoutPlaneArea.cs" id="1_08rku"]
+[ext_resource type="Material" uid="uid://dxmuxqnspty8k" path="res://Art/Materials/EditorHummingbirdHangoutMaterial.tres" id="2_08rku"]
+[ext_resource type="Script" uid="uid://hwphupxsulxi" path="res://Scripts/Core/FreeOnReady.cs" id="3_v4swk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_08rku"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_y8axd"]
+
+[node name="HummingbirdHangout" type="Area3D"]
+script = ExtResource("1_08rku")
+_perchPointType = 1374926051
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_08rku")
+debug_color = Color(0.8900529, 0.22576487, 0.5901861, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = ExtResource("2_08rku")
+mesh = SubResource("BoxMesh_y8axd")
+script = ExtResource("3_v4swk")

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://12wrerdwq5x"]
+
+[ext_resource type="Texture2D" uid="uid://dk1vr4sjhorks" path="res://Art/Textures/TreeB1.png" id="1_ofrcn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5a8ao"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_color = Color(0.84705883, 1, 0.42745098, 1)
+albedo_texture = ExtResource("1_ofrcn")
+
+[sub_resource type="QuadMesh" id="QuadMesh_4br2r"]
+material = SubResource("StandardMaterial3D_5a8ao")
+
+[node name="PondScum" type="MeshInstance3D"]
+transform = Transform3D(0.9840316, -0.17799515, -7.780417e-09, -7.6592065e-16, -4.3711385e-08, 1, -0.17799515, -0.9840316, -4.30134e-08, 0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("QuadMesh_4br2r")

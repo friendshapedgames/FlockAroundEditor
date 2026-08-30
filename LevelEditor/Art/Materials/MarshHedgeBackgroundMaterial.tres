@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dvjwb2cg46bq8"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_color = Color(0.8392157, 0.6862745, 0.4862745, 1)
+uv1_scale = Vector3(10.875, 10.875, 10.875)

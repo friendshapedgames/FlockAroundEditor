@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2tm2q427uqtm"]
+
+[ext_resource type="Texture2D" uid="uid://d3cd5c8usslsv" path="res://Art/Decorations/CattailsC.png" id="1_2ip7g"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_cfubl"]
+
+[node name="CattailC" type="Sprite3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+billboard = 2
+texture = ExtResource("1_2ip7g")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, -15.747, 0)
+mesh = SubResource("SphereMesh_cfubl")

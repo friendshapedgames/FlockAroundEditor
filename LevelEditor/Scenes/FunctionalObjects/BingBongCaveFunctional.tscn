@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://62w2tbcrlo25"]
+
+[ext_resource type="Script" uid="uid://t6bo6qw6crp4" path="res://Scripts/Objects/PointOfInterest.cs" id="1_p0nyi"]
+[ext_resource type="Texture2D" uid="uid://cp4c2olkkb8ay" path="res://Art/Decorations/CavePaintings/PaintingBingBongAmongus.png" id="2_xe1qw"]
+[ext_resource type="Texture2D" uid="uid://dw7ypqa6gutq0" path="res://Art/Decorations/CavePaintings/PaintingBingbongA.png" id="3_pigpd"]
+[ext_resource type="Texture2D" uid="uid://d2o4kbafknhtp" path="res://Art/Decorations/CavePaintings/PaintingBingbongC.png" id="4_5ktlq"]
+[ext_resource type="Texture2D" uid="uid://7fjca5naggt7" path="res://Art/Decorations/CavePaintings/PaintingOwl.png" id="5_ijydc"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_42xt4"]
+radius = 2.2383482
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dlbnh"]
+radius = 1.1388777
+
+[node name="BingBongCave" type="StaticBody3D"]
+transform = Transform3D(1, 0, 4.1392113e-08, 0, 1, 0, -4.1392113e-08, 0, 1, 0, 0, 0)
+collision_layer = 4
+script = ExtResource("1_p0nyi")
+_config = 3063152928
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_42xt4")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4358215, 0, 4.681687)
+shape = SubResource("SphereShape3D_dlbnh")
+
+[node name="CavePainting1" type="Sprite3D" parent="."]
+transform = Transform3D(0.15512832, 0, 0.09129734, 0, 0.18, 0, -0.09129734, 0, 0.15512832, 0, 1.3797798, 0)
+modulate = Color(0.55078125, 0.55078125, 0.55078125, 1)
+texture = ExtResource("2_xe1qw")
+
+[node name="CavePainting2" type="Sprite3D" parent="."]
+transform = Transform3D(0.430912, 0, 0.25360373, 0, 0.5, 0, -0.25360373, 0, 0.430912, 1.1813507, -0.30330086, -0.63474655)
+modulate = Color(0.55078125, 0.55078125, 0.55078125, 1)
+texture = ExtResource("3_pigpd")
+
+[node name="CavePainting4" type="Sprite3D" parent="."]
+transform = Transform3D(-0.23281214, -0.10616734, 0.429566, -0.06177369, 0.48843986, 0.08723847, -0.43815807, -0.012451435, -0.2405461, -1.1244507, -0.30330086, 4.5543914)
+modulate = Color(0.55078125, 0.55078125, 0.55078125, 1)
+texture = ExtResource("4_5ktlq")
+
+[node name="CavePainting3" type="Sprite3D" parent="."]
+transform = Transform3D(0.430912, 0, 0.25360373, 0, 0.5, 0, -0.25360373, 0, 0.430912, -0.54707336, -0.73272514, 0.33612534)
+modulate = Color(0.55078125, 0.55078125, 0.55078125, 1)
+texture = ExtResource("5_ijydc")

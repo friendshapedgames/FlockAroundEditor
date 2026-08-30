@@ -1,0 +1,9 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# annoying file that changes from macOS to windows
+.idea/.idea.*/.idea/libraries/GdSdk.xml
+
+# sample external directory used in the tutorial
+EXTERNAL/NotExplosive

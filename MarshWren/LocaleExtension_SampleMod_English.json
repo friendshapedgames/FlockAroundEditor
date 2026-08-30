@@ -1,0 +1,17 @@
+{
+  "source_language": 632594830,
+  "ids_to_translations": [
+    {
+      "id": 4245228117,
+      "translation": "Marsh Wren"
+    },
+    {
+      "id": 1731085550,
+      "translation": "Tiny engines of strife and avarice, capable of plunging even the the most mundane patch of shoreline reeds into a sordid avian opera. Male marsh wrens' favourite pastimes are serial-mating, serial-infanticide, and mass production of decoy nests to thwart other marsh wrens' attempts at serial-infanticide. Presumably some of them, at some point, find the time to actually procreate their species."
+    }
+  ],
+  "config_info": {
+    "config_instance_id": 1542311026,
+    "config_type_id": "LocaleExtension"
+  }
+}

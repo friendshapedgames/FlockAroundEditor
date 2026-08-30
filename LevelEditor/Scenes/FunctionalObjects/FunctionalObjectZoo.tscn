@@ -1,0 +1,569 @@
+[gd_scene format=3 uid="uid://iewu2bx30iox"]
+
+[ext_resource type="PackedScene" uid="uid://c1x5f064oukuy" path="res://Scenes/FunctionalObjects/BigTreeAFunctional.tscn" id="1_63a23"]
+[ext_resource type="PackedScene" uid="uid://d4e8a10ef1n7m" path="res://Scenes/FunctionalObjects/BirdsOfPrayHangout.tscn" id="2_dm8tq"]
+[ext_resource type="PackedScene" uid="uid://cgn1ssd8rht3e" path="res://Scenes/FunctionalObjects/CherryBlossomTreeAFunctional.tscn" id="3_qgbag"]
+[ext_resource type="PackedScene" uid="uid://cs064ikxdbvps" path="res://Scenes/FunctionalObjects/CherryBlossomTreeBFunctional.tscn" id="4_tb5ae"]
+[ext_resource type="PackedScene" uid="uid://mmbmiwoi6i6t" path="res://Scenes/FunctionalObjects/ConiferousTreeAFunctional.tscn" id="5_xa73w"]
+[ext_resource type="PackedScene" uid="uid://cphlbotur81m3" path="res://Scenes/FunctionalObjects/ConiferousTreeSmallAFunctional.tscn" id="6_55vei"]
+[ext_resource type="PackedScene" uid="uid://che2lww7eac3r" path="res://Scenes/FunctionalObjects/DEPRECATEDFallHedgeAFunctional.tscn" id="7_y2cx5"]
+[ext_resource type="PackedScene" uid="uid://urapbgiqxygh" path="res://Scenes/FunctionalObjects/DEPRECATEDFallHedgeCFunctional.tscn" id="8_p88im"]
+[ext_resource type="PackedScene" uid="uid://ck0qv2uvuh436" path="res://Scenes/FunctionalObjects/DEPRECATEDHedgeAFunctional.tscn" id="9_66icn"]
+[ext_resource type="PackedScene" uid="uid://byccibsgrp30l" path="res://Scenes/FunctionalObjects/DEPRECATEDHedgeBFunctional.tscn" id="10_131xy"]
+[ext_resource type="PackedScene" uid="uid://b64utwkse1icf" path="res://Scenes/FunctionalObjects/DEPRECATEDHedgeCFunctional.tscn" id="11_7vxyr"]
+[ext_resource type="PackedScene" uid="uid://cvi41t8ljaitr" path="res://Scenes/FunctionalObjects/DEPRECATEDShrubAFunctional.tscn" id="13_oniim"]
+[ext_resource type="PackedScene" uid="uid://bteb6lua7aevq" path="res://Scenes/FunctionalObjects/FallBigTreeAFunctional.tscn" id="14_y3ijq"]
+[ext_resource type="PackedScene" uid="uid://bpsxtb53bfc1h" path="res://Scenes/FunctionalObjects/FallTreeAFunctional.tscn" id="15_qyopp"]
+[ext_resource type="PackedScene" uid="uid://c1tllscj4nihm" path="res://Scenes/FunctionalObjects/FallTreeAFunctionalAltLeavesA.tscn" id="16_cxrfu"]
+[ext_resource type="PackedScene" uid="uid://hpnsm5iyutvj" path="res://Scenes/FunctionalObjects/FallTreeBFunctional.tscn" id="17_hbtrm"]
+[ext_resource type="PackedScene" uid="uid://beuhymt76na87" path="res://Scenes/FunctionalObjects/FallTreeCFunctional.tscn" id="18_3lyhp"]
+[ext_resource type="PackedScene" uid="uid://b0p8rqqgwrfsl" path="res://Scenes/FunctionalObjects/FallTreeDFunctional.tscn" id="19_exaxi"]
+[ext_resource type="PackedScene" uid="uid://d4cxeklgpc2xf" path="res://Scenes/FunctionalObjects/FallTreeDFunctionalAltLeaves1.tscn" id="20_nf7cw"]
+[ext_resource type="PackedScene" uid="uid://jao3e1yfbb7t" path="res://Scenes/FunctionalObjects/GaryOahTreeBFunctional.tscn" id="21_gsijs"]
+[ext_resource type="PackedScene" uid="uid://ce1ajhkbfeysk" path="res://Scenes/FunctionalObjects/GaryOakTreeAFunctional.tscn" id="22_qugid"]
+[ext_resource type="PackedScene" uid="uid://ck05od78tk70w" path="res://Scenes/FunctionalObjects/BushHangout.tscn" id="23_doswk"]
+[ext_resource type="PackedScene" uid="uid://bn06cjthrkhsl" path="res://Scenes/FunctionalObjects/HopGroundHangout.tscn" id="23_k2o6f"]
+[ext_resource type="PackedScene" uid="uid://b3ulwix4udbyb" path="res://Scenes/FunctionalObjects/HummingbirdHoverHangout.tscn" id="24_3cexk"]
+[ext_resource type="PackedScene" uid="uid://bgv4buep4ghym" path="res://Scenes/FunctionalObjects/MarshTreeAFunctional.tscn" id="25_doswk"]
+[ext_resource type="PackedScene" uid="uid://of4jdsngiuvk" path="res://Scenes/FunctionalObjects/MarshTreeBFunctional.tscn" id="26_kb1g0"]
+[ext_resource type="PackedScene" uid="uid://bfobmrtootgu5" path="res://Scenes/FunctionalObjects/MarshTreeCFunctional.tscn" id="27_fkx6t"]
+[ext_resource type="PackedScene" uid="uid://cc3786hbrljvv" path="res://Scenes/FunctionalObjects/PineTreeAFunctional.tscn" id="28_lfquy"]
+[ext_resource type="PackedScene" uid="uid://b14y5sdo15bb3" path="res://Scenes/FunctionalObjects/PineTreeSmallAFunctional.tscn" id="29_l725b"]
+[ext_resource type="PackedScene" uid="uid://wbus43r0f2fc" path="res://Scenes/FunctionalObjects/RockyTreeAFunctional.tscn" id="30_7f6fe"]
+[ext_resource type="PackedScene" uid="uid://clu1mj3am2upy" path="res://Scenes/FunctionalObjects/TreeADeadFunctional.tscn" id="32_6amki"]
+[ext_resource type="PackedScene" uid="uid://bjhlckqa38k78" path="res://Scenes/FunctionalObjects/TreeAFunctional.tscn" id="33_xvk80"]
+[ext_resource type="PackedScene" uid="uid://0cnr780dg12p" path="res://Scenes/FunctionalObjects/TreeAFunctionalAltLeavesA.tscn" id="34_b0o1n"]
+[ext_resource type="PackedScene" uid="uid://bjeey75uheouw" path="res://Scenes/FunctionalObjects/TreeBDeadFunctional.tscn" id="35_vduec"]
+[ext_resource type="PackedScene" uid="uid://c45qb0mmpu8pt" path="res://Scenes/FunctionalObjects/TreeBFunctional.tscn" id="36_04thc"]
+[ext_resource type="PackedScene" uid="uid://bfrcqvx5eun05" path="res://Scenes/FunctionalObjects/TreeBFunctionalAltLeavesA.tscn" id="37_g64x3"]
+[ext_resource type="PackedScene" uid="uid://s0bifmqqwtu5" path="res://Scenes/FunctionalObjects/TreeCFunctional.tscn" id="38_l537g"]
+[ext_resource type="PackedScene" uid="uid://bhyilsx7gufem" path="res://Scenes/FunctionalObjects/TreeCFunctionalAltLeavesA.tscn" id="39_6qq3w"]
+[ext_resource type="PackedScene" uid="uid://baarbthal8p35" path="res://Scenes/FunctionalObjects/TreeDDeadFunctional.tscn" id="40_vww11"]
+[ext_resource type="PackedScene" uid="uid://pf3et4m2j71a" path="res://Scenes/FunctionalObjects/TreeDFrozenFunctional.tscn" id="41_vv1ss"]
+[ext_resource type="PackedScene" uid="uid://d2lhk6vsripe" path="res://Scenes/FunctionalObjects/TreeDFunctional.tscn" id="42_jlbhn"]
+[ext_resource type="PackedScene" uid="uid://r4y5efu10e12" path="res://Scenes/FunctionalObjects/TreeDFunctionalAltLeavesA.tscn" id="43_2pebh"]
+[ext_resource type="PackedScene" uid="uid://benadlayq3jam" path="res://Scenes/FunctionalObjects/TreeFortFunctional.tscn" id="44_ytjsu"]
+[ext_resource type="PackedScene" uid="uid://b6wlat8w52dql" path="res://Scenes/FunctionalObjects/WalkOnGroundHangout.tscn" id="45_luwu4"]
+[ext_resource type="PackedScene" uid="uid://tdygyjwdm1pj" path="res://Scenes/FunctionalObjects/WaterHangout.tscn" id="46_2ol74"]
+[ext_resource type="PackedScene" uid="uid://bqvw1xacbp7yo" path="res://Scenes/FunctionalObjects/Hedges/BluffsRoundBush.tscn" id="46_cxrfu"]
+[ext_resource type="PackedScene" uid="uid://27tc08cqf6t7" path="res://Scenes/FunctionalObjects/SmallWaterHangout.tscn" id="46_gvjar"]
+[ext_resource type="PackedScene" uid="uid://c1v5yuq4tq3dg" path="res://Scenes/FunctionalObjects/WillowTreeAFunctional.tscn" id="47_68rk0"]
+[ext_resource type="PackedScene" uid="uid://b0k24vge258su" path="res://Scenes/FunctionalObjects/Hedges/BluffThicketLong.tscn" id="47_hbtrm"]
+[ext_resource type="PackedScene" uid="uid://dhdp274nesjr6" path="res://Scenes/FunctionalObjects/Hedges/FallLayerdHedgeOneColour.tscn" id="48_3lyhp"]
+[ext_resource type="PackedScene" uid="uid://clbp4b6qo3b70" path="res://Scenes/FunctionalObjects/Hedges/FallLayerdHedgeTwoColour.tscn" id="49_exaxi"]
+[ext_resource type="PackedScene" uid="uid://y1gqh2vix0vg" path="res://Scenes/FunctionalObjects/Hedges/FallThicketLong.tscn" id="50_nf7cw"]
+[ext_resource type="PackedScene" uid="uid://bsyqx3fokohny" path="res://Scenes/FunctionalObjects/Hedges/FallThicketShort.tscn" id="51_gsijs"]
+[ext_resource type="PackedScene" uid="uid://dh0efjmpfv5q4" path="res://Scenes/FunctionalObjects/Hedges/LargeLayerdHedge.tscn" id="52_qugid"]
+[ext_resource type="PackedScene" uid="uid://dgdrklfsshx86" path="res://Scenes/FunctionalObjects/Hedges/LayerdHedge.tscn" id="53_k2o6f"]
+[ext_resource type="PackedScene" uid="uid://dav5ah0dlxoml" path="res://Scenes/FunctionalObjects/Hedges/MarshLayerdHedge.tscn" id="54_3cexk"]
+[ext_resource type="PackedScene" uid="uid://dluv5ntp85270" path="res://Scenes/FunctionalObjects/Hedges/MarshThicketLong.tscn" id="55_doswk"]
+[ext_resource type="PackedScene" uid="uid://cqpgubybctri" path="res://Scenes/FunctionalObjects/Hedges/RedBerryHedge.tscn" id="56_kb1g0"]
+[ext_resource type="PackedScene" uid="uid://cly5iu18ey8ra" path="res://Scenes/FunctionalObjects/Hedges/SnowBerryHedge.tscn" id="57_fkx6t"]
+[ext_resource type="PackedScene" uid="uid://y8ccdhsfybxh" path="res://Scenes/FunctionalObjects/Hedges/SnowLayerdHedge.tscn" id="58_lfquy"]
+[ext_resource type="PackedScene" uid="uid://by246yb3y6fh5" path="res://Scenes/FunctionalObjects/Hedges/SnowLayerdHedgeBerries.tscn" id="59_l725b"]
+[ext_resource type="PackedScene" uid="uid://ejf8dk1vedwp" path="res://Scenes/FunctionalObjects/Hedges/SnowyHedge.tscn" id="60_7f6fe"]
+[ext_resource type="PackedScene" uid="uid://cbfaj30ki0juk" path="res://Scenes/FunctionalObjects/Hedges/WoodlandsThicketLong.tscn" id="61_anfkm"]
+[ext_resource type="PackedScene" uid="uid://u3af8qvdkoyo" path="res://Scenes/FunctionalObjects/Hedges/WoodlandsThicketShort.tscn" id="62_6amki"]
+[ext_resource type="PackedScene" uid="uid://rvci7wgqsbpg" path="res://Scenes/FunctionalObjects/BiomeZones/BlossomZone.tscn" id="63_qugid"]
+[ext_resource type="PackedScene" uid="uid://bfxvtqa10hgh0" path="res://Scenes/FunctionalObjects/BiomeZones/BluffZone.tscn" id="64_k2o6f"]
+[ext_resource type="PackedScene" uid="uid://dd0yt5rk6evvu" path="res://Scenes/FunctionalObjects/BiomeZones/FallZone.tscn" id="65_3cexk"]
+[ext_resource type="PackedScene" uid="uid://dsf2kdwt8wv2u" path="res://Scenes/FunctionalObjects/BiomeZones/MarshZone.tscn" id="66_doswk"]
+[ext_resource type="PackedScene" uid="uid://cgg7bfsbl0ksu" path="res://Scenes/FunctionalObjects/BiomeZones/SnowZone.tscn" id="67_kb1g0"]
+[ext_resource type="PackedScene" uid="uid://c7q0y88g03egt" path="res://Scenes/FunctionalObjects/BiomeZones/WoodlandsZone.tscn" id="68_fkx6t"]
+[ext_resource type="PackedScene" uid="uid://b16ljxse4ug3x" path="res://Scenes/FunctionalObjects/TreeRustleSound.tscn" id="69_k2o6f"]
+[ext_resource type="PackedScene" uid="uid://damuo1i0axsb" path="res://Scenes/FunctionalObjects/WaterFunctional.tscn" id="70_3cexk"]
+[ext_resource type="PackedScene" uid="uid://fsf7igpb8ddi" path="res://Scenes/FunctionalObjects/FiretowerFunctional.tscn" id="72_kb1g0"]
+[ext_resource type="PackedScene" uid="uid://c1iofaet4ihgw" path="res://Scenes/FunctionalObjects/MarshCaveWithPaintingsFunctional.tscn" id="73_fkx6t"]
+[ext_resource type="PackedScene" uid="uid://d7w8e0k53h2u" path="res://Scenes/FunctionalObjects/CrewmateMonumentFunctional.tscn" id="74_lfquy"]
+[ext_resource type="PackedScene" uid="uid://bmqugbsf1rqav" path="res://Scenes/FunctionalObjects/TreeRustleSoundFall.tscn" id="75_7f6fe"]
+[ext_resource type="PackedScene" uid="uid://bhvcbu7p12cpl" path="res://Scenes/FunctionalObjects/TreeRustleSoundHowl.tscn" id="76_anfkm"]
+[ext_resource type="PackedScene" uid="uid://bkcc8q5uixmrj" path="res://Scenes/Decorations/LongBridge.tscn" id="77_6amki"]
+[ext_resource type="PackedScene" uid="uid://dlcew7qfwgceq" path="res://Scenes/Decorations/Bridge.tscn" id="78_xvk80"]
+[ext_resource type="PackedScene" uid="uid://slhdgwfcdcix" path="res://Scenes/Decorations/WoodenFence.tscn" id="79_b0o1n"]
+[ext_resource type="PackedScene" uid="uid://di5j5fg4rwbnv" path="res://Scenes/Decorations/SmallRopeBridge.tscn" id="80_vduec"]
+[ext_resource type="PackedScene" uid="uid://cyix4t1douktd" path="res://Scenes/Decorations/StoneTallA2Functional.tscn" id="81_04thc"]
+[ext_resource type="PackedScene" uid="uid://cmbekesmtgxhn" path="res://Scenes/Decorations/StoneTallB2Functional.tscn" id="82_g64x3"]
+[ext_resource type="PackedScene" uid="uid://dr8mnf6dpy45y" path="res://Scenes/FunctionalObjects/BiomeZones/CaveZone.tscn" id="83_g64x3"]
+[ext_resource type="PackedScene" uid="uid://d27a2v3diajgm" path="res://Scenes/CoreGameplay/DevelopOTron.tscn" id="84_6qq3w"]
+[ext_resource type="PackedScene" uid="uid://wibcfsu6uoq3" path="res://Scenes/CoreGameplay/Shop.tscn" id="85_vww11"]
+[ext_resource type="Shader" uid="uid://cm4wuaqgdw67y" path="res://Shaders/Forcefield.gdshader" id="86_vww11"]
+[ext_resource type="PackedScene" uid="uid://osem3qwi4yj3" path="res://Scenes/CoreGameplay/QuestBoard.tscn" id="87_tjjnh"]
+[ext_resource type="Texture2D" uid="uid://6ecclp86a2js" path="res://Art/Skybox/sun.png" id="88_2pebh"]
+[ext_resource type="PackedScene" uid="uid://bab8ovw7pan7x" path="res://Scenes/FunctionalObjects/SoaringHangout.tscn" id="88_jlbhn"]
+[ext_resource type="PackedScene" uid="uid://cgqr5glme04b0" path="res://Scenes/Bird.tscn" id="89_ytjsu"]
+[ext_resource type="Material" uid="uid://dhsllieddtmvh" path="res://Art/Materials/ShinyMaterial.tres" id="90_luwu4"]
+[ext_resource type="PackedScene" uid="uid://822leqh7m4v3" path="res://Scenes/FunctionalObjects/Australia/TreeEucalyptusAFunctional.tscn" id="91_68rk0"]
+[ext_resource type="PackedScene" uid="uid://bth8l63qt6ng5" path="res://Scenes/FunctionalObjects/Australia/TreeEucalyptusBFunctional.tscn" id="92_u68xq"]
+[ext_resource type="PackedScene" uid="uid://b1gfib2jqd8m6" path="res://Scenes/FunctionalObjects/Australia/TreeEucalyptusCFunctional.tscn" id="93_2v5i5"]
+[ext_resource type="PackedScene" uid="uid://ck5s226k3xyh7" path="res://Scenes/FunctionalObjects/Australia/TreeFanPalmAFunctional.tscn" id="95_i25kf"]
+[ext_resource type="PackedScene" uid="uid://dhhfcugabrsv6" path="res://Scenes/FunctionalObjects/Australia/TreeFanPalmBFunctional.tscn" id="96_j0hb8"]
+[ext_resource type="PackedScene" uid="uid://ctc2fod0yyvkj" path="res://Scenes/FunctionalObjects/Australia/TreeFanPalmGroveAFunctional.tscn" id="97_pggd1"]
+[ext_resource type="PackedScene" uid="uid://0daysxgis02g" path="res://Scenes/FunctionalObjects/Australia/Hedges/DesertHedge.tscn" id="98_34f73"]
+[ext_resource type="PackedScene" uid="uid://btu4wa8nmta7n" path="res://Scenes/FunctionalObjects/Australia/Hedges/DesertRoundBush.tscn" id="99_w3du6"]
+[ext_resource type="PackedScene" uid="uid://chmn2wxdqb64a" path="res://Scenes/FunctionalObjects/Australia/Hedges/EucalyptusHedge.tscn" id="100_mu3iy"]
+[ext_resource type="PackedScene" uid="uid://dw304vqt1swd5" path="res://Scenes/FunctionalObjects/Australia/Hedges/RainforestRoundBush.tscn" id="101_031fj"]
+[ext_resource type="PackedScene" uid="uid://c1gp7egn3lmkr" path="res://Scenes/FunctionalObjects/Australia/Hedges/RainforestRoundPalmBush.tscn" id="102_nml2k"]
+[ext_resource type="PackedScene" uid="uid://bsisjqbuojiy7" path="res://Scenes/FunctionalObjects/Australia/DesertRockAFunctional.tscn" id="103_w3du6"]
+[ext_resource type="PackedScene" uid="uid://ckrautw467ppn" path="res://Scenes/FunctionalObjects/Australia/RockAFunctional.tscn" id="104_mu3iy"]
+[ext_resource type="PackedScene" uid="uid://cjs8b6boewdv5" path="res://Scenes/FunctionalObjects/Australia/DesertRockBFunctional.tscn" id="105_64bjp"]
+[ext_resource type="PackedScene" uid="uid://lvpvx7hag44l" path="res://Scenes/FunctionalObjects/Australia/RockGroupAFunctional.tscn" id="105_o5j20"]
+[ext_resource type="PackedScene" uid="uid://c20o8f7abplpt" path="res://Scenes/FunctionalObjects/Australia/DesertRockCFunctional.tscn" id="106_clir0"]
+[ext_resource type="PackedScene" uid="uid://d0y7hv5waehe6" path="res://Scenes/FunctionalObjects/Australia/SturtsPeaAFunctional.tscn" id="106_vwva0"]
+[ext_resource type="PackedScene" uid="uid://lgvjbqn7hbc0" path="res://Scenes/FunctionalObjects/Australia/DesertRockDFunctional.tscn" id="107_2n3v7"]
+[ext_resource type="PackedScene" uid="uid://ce65thj2q0p4r" path="res://Scenes/FunctionalObjects/Australia/TreeCoconutPalmAFunctional.tscn" id="107_koogk"]
+[ext_resource type="PackedScene" uid="uid://b8xdkqudhveob" path="res://Scenes/FunctionalObjects/Australia/RockBFunctional.tscn" id="108_rym5k"]
+[ext_resource type="PackedScene" uid="uid://ocqiuxd3k7ui" path="res://Scenes/FunctionalObjects/Australia/TreeCoconutPalmBFunctional.tscn" id="108_yvhrg"]
+[ext_resource type="PackedScene" uid="uid://pkbc1y2w88t" path="res://Scenes/FunctionalObjects/Australia/RockCFunctional.tscn" id="109_gvjar"]
+[ext_resource type="PackedScene" uid="uid://boli04i56vy0j" path="res://Scenes/FunctionalObjects/Australia/TreeCoconutPalmCFunctional.tscn" id="109_pi6pl"]
+[ext_resource type="PackedScene" uid="uid://dyu17pyyss1n8" path="res://Scenes/FunctionalObjects/Australia/TreeDesertOakAFunctional.tscn" id="110_0wuj7"]
+[ext_resource type="PackedScene" uid="uid://derx403e0tqro" path="res://Scenes/FunctionalObjects/Australia/RockDFunctional.tscn" id="110_tjjnh"]
+[ext_resource type="PackedScene" uid="uid://frmltiuyov4g" path="res://Scenes/FunctionalObjects/Australia/TreeFigAFunctional.tscn" id="111_wqivr"]
+[ext_resource type="PackedScene" uid="uid://c84hc7lqnauvk" path="res://Scenes/FunctionalObjects/Australia/TreeGroveAFunctional.tscn" id="112_ig1cr"]
+[ext_resource type="PackedScene" uid="uid://cb3fcbdngsivt" path="res://Scenes/FunctionalObjects/Australia/TreeMangroveAFunctional.tscn" id="113_ledrd"]
+[ext_resource type="PackedScene" uid="uid://b13o126uuuhhj" path="res://Scenes/FunctionalObjects/Australia/TreeMangroveBFunctional.tscn" id="114_uo5mg"]
+[ext_resource type="PackedScene" uid="uid://b1n4a8pvnyloh" path="res://Scenes/FunctionalObjects/Australia/TreeMangroveCFunctional.tscn" id="115_edin2"]
+[ext_resource type="PackedScene" uid="uid://dw15yv71jlkt7" path="res://Scenes/FunctionalObjects/Australia/TreeMulgaAFunctional.tscn" id="116_64bjp"]
+[ext_resource type="PackedScene" uid="uid://dpvlliqwl2v5d" path="res://Scenes/FunctionalObjects/Australia/TreeRedCedarAFunctional.tscn" id="117_clir0"]
+[ext_resource type="PackedScene" uid="uid://dsioop5r7u7br" path="res://Scenes/FunctionalObjects/BiomeZones/RainforestZone.tscn" id="118_pi6pl"]
+[ext_resource type="PackedScene" uid="uid://dq6qsl3qxp2u4" path="res://Scenes/FunctionalObjects/BiomeZones/GrasslandZone.tscn" id="119_0wuj7"]
+[ext_resource type="PackedScene" uid="uid://dcfiaaxp6rhky" path="res://Scenes/FunctionalObjects/BiomeZones/DesertZone.tscn" id="120_wqivr"]
+[ext_resource type="PackedScene" uid="uid://cot451s47tc0f" path="res://Scenes/FunctionalObjects/RockHangout.tscn" id="121_pi6pl"]
+[ext_resource type="PackedScene" uid="uid://dr4ulboyajau7" path="res://Scenes/FunctionalObjects/TreeHangout.tscn" id="122_0wuj7"]
+[ext_resource type="PackedScene" uid="uid://d2uasjcuipjvf" path="res://Scenes/FunctionalObjects/Australia/TeaTreeFunctionalA.tscn" id="129_2n3v7"]
+[ext_resource type="PackedScene" uid="uid://cxdi1jk82320f" path="res://Scenes/FunctionalObjects/Australia/TeaTreeFunctionalB.tscn" id="130_rym5k"]
+[ext_resource type="PackedScene" uid="uid://cvjnp37cosn5h" path="res://Scenes/FunctionalObjects/BiomeWarpPoint.tscn" id="131_gvjar"]
+[ext_resource type="PackedScene" uid="uid://ytkh45ad1pn3" path="res://Scenes/FunctionalObjects/FlightlessBirdWalkOnGroundHangout.tscn" id="131_rym5k"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_vv1ss"]
+size = Vector3(1, 20, 20)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jlbhn"]
+render_priority = 0
+shader = ExtResource("86_vww11")
+shader_parameter/fade_start = 1.0
+shader_parameter/fade_end = 2.0
+shader_parameter/speed = 1.0
+shader_parameter/scale = 1.0
+shader_parameter/opacity = 0.25
+shader_parameter/base_color = Vector3(1, 0.5, 1)
+shader_parameter/tex1 = ExtResource("88_2pebh")
+shader_parameter/tex2 = ExtResource("88_2pebh")
+shader_parameter/scroll1 = Vector2(0.2, 0)
+shader_parameter/scroll2 = Vector2(0.5, 0)
+shader_parameter/tex1_strength = 0.5
+shader_parameter/tex2_strength = 0.5
+
+[node name="FunctionalObjectZoo" type="Node3D" unique_id=1386759843]
+
+[node name="BigTreeAFunctional" parent="." unique_id=1695448328 instance=ExtResource("1_63a23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.206804, 0, 8.963826)
+
+[node name="BirdsOfPrayGroundHangout" parent="." unique_id=1663696338 instance=ExtResource("2_dm8tq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.110298, 0, -17.03863)
+
+[node name="TreeAFunctional" parent="." unique_id=867404108 instance=ExtResource("3_qgbag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.998829, 1.9073486e-06, -13.416777)
+
+[node name="CherryBlossomBFunctional" parent="." unique_id=2065133708 instance=ExtResource("4_tb5ae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.804975, 0, -26.311363)
+
+[node name="ConiferousTreeAFunctional" parent="." unique_id=1860660491 instance=ExtResource("5_xa73w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.575693, 0, -8.329323)
+
+[node name="ConiferousTreeAFunctional2" parent="." unique_id=277292458 instance=ExtResource("6_55vei")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.698626, 0, -20.730604)
+
+[node name="HedgeAFunctional" parent="." unique_id=1217063421 instance=ExtResource("7_y2cx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.404552, -9.536743e-07, -30.616076)
+
+[node name="FallHedgeCFunctional" parent="." unique_id=788741837 instance=ExtResource("8_p88im")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.66313, 0, -17.697485)
+
+[node name="HedgeAFunctional2" parent="." unique_id=814398923 instance=ExtResource("9_66icn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.86976, 0, -28.270998)
+
+[node name="HedgeBFunctional" parent="." unique_id=1998317384 instance=ExtResource("10_131xy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.248753, 0, -17.22123)
+
+[node name="HedgeCFunctional" parent="." unique_id=35656988 instance=ExtResource("11_7vxyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.656765, 0, -24.103043)
+
+[node name="ShrubAFunctional" parent="." unique_id=113466983 instance=ExtResource("13_oniim")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.06785, 0, -10.655526)
+
+[node name="FallBigTreeAFunctional" parent="." unique_id=31297587 instance=ExtResource("14_y3ijq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.921373, 1.9073486e-06, 3.1853797)
+
+[node name="FallTreeAFunctional" parent="." unique_id=610007894 instance=ExtResource("15_qyopp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.421345, 1.9073486e-06, -11.799133)
+
+[node name="FallTreeAFunctional2" parent="." unique_id=23949151 instance=ExtResource("16_cxrfu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.421345, 1.9073486e-06, -8.748232)
+
+[node name="FallTreeBFunctional" parent="." unique_id=1557238766 instance=ExtResource("17_hbtrm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.781507, 0, -8.844831)
+
+[node name="FallTreeCFunctional" parent="." unique_id=766117861 instance=ExtResource("18_3lyhp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.361034, 0, -8.797463)
+
+[node name="FallTreeDFunctional" parent="." unique_id=307831004 instance=ExtResource("19_exaxi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.503635, 0, -8.684664)
+
+[node name="FallTreeDFunctional2" parent="." unique_id=227747200 instance=ExtResource("20_nf7cw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.702232, 0, -12.98793)
+
+[node name="GaryOakBFunctional" parent="." unique_id=245893435 instance=ExtResource("21_gsijs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1997452, 0, -18.88463)
+
+[node name="TreeAFunctional2" parent="." unique_id=52610504 instance=ExtResource("22_qugid")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.443417, 3.8146973e-06, -18.701881)
+
+[node name="GroundHangout" parent="." unique_id=2000353726 instance=ExtResource("23_k2o6f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.005625, 4.7683716e-07, -16.79773)
+
+[node name="BushHangout" parent="." unique_id=1090749531 instance=ExtResource("23_doswk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.231989, 4.7683716e-07, -15.826846)
+
+[node name="HummingbirdHangout" parent="." unique_id=1742360154 instance=ExtResource("24_3cexk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.680435, 0, -15.347912)
+
+[node name="MarshTreeAFunctional" parent="." unique_id=1221661007 instance=ExtResource("25_doswk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.61009, 0, -29.57855)
+
+[node name="MarshTreeBFunctional" parent="." unique_id=1143815425 instance=ExtResource("26_kb1g0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.716034, 0, -30.016903)
+
+[node name="TreeCDeadFunctional" parent="." unique_id=745895840 instance=ExtResource("27_fkx6t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.243713, 0, -21.123463)
+
+[node name="PineTreeAFunctional" parent="." unique_id=1334965481 instance=ExtResource("28_lfquy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.933701, 0, -3.1642694)
+
+[node name="PineTreeSmallAFunctional" parent="." unique_id=1766767057 instance=ExtResource("29_l725b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.203569, 0, -17.036886)
+
+[node name="TreeAFunctional3" parent="." unique_id=360364697 instance=ExtResource("30_7f6fe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.421345, 1.9073486e-06, -20.734007)
+
+[node name="TreeAFunctional4" parent="." unique_id=994606722 instance=ExtResource("32_6amki")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.576723, 0, -25.788319)
+
+[node name="TreeAFunctional5" parent="." unique_id=1120864129 instance=ExtResource("33_xvk80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.421345, 1.9073486e-06, -14.777079)
+
+[node name="TreeAFunctional6" parent="." unique_id=1894573102 instance=ExtResource("34_b0o1n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.421345, 1.9073486e-06, -17.718807)
+
+[node name="TreeBDeadFunctional" parent="." unique_id=868989054 instance=ExtResource("35_vduec")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.026442, 3.8146973e-06, -16.289917)
+
+[node name="TreeBFunctional" parent="." unique_id=1195506800 instance=ExtResource("36_04thc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.07169, 4.7683716e-07, -20.375889)
+
+[node name="TreeBFunctional2" parent="." unique_id=1138055379 instance=ExtResource("37_g64x3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.965172, 0, -25.271759)
+
+[node name="TreeCFunctional" parent="." unique_id=1647886598 instance=ExtResource("38_l537g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.22825, 0, -16.641895)
+
+[node name="TreeCFunctional2" parent="." unique_id=526611116 instance=ExtResource("39_6qq3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.295906, 0, -12.452634)
+
+[node name="TreeDFunctional" parent="." unique_id=929276017 instance=ExtResource("40_vww11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.411692, 0, -16.895647)
+
+[node name="TreeDFunctional2" parent="." unique_id=487652773 instance=ExtResource("41_vv1ss")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.612919, 0, -20.097057)
+
+[node name="TreeDFunctional3" parent="." unique_id=613122020 instance=ExtResource("42_jlbhn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.688442, 0, -28.205938)
+
+[node name="TreeDFunctional4" parent="." unique_id=167539098 instance=ExtResource("43_2pebh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.655754, 0, -23.714445)
+
+[node name="WillowTreeAFunctional" parent="." unique_id=135481878 instance=ExtResource("44_ytjsu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.128849, 0, 46.543884)
+
+[node name="GroundHangout2" parent="." unique_id=856851727 instance=ExtResource("45_luwu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.551561, 0, -14.643343)
+
+[node name="WaterHangout" parent="." unique_id=1841022770 instance=ExtResource("46_2ol74")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.533659, 0, -16.791265)
+
+[node name="SmallWaterHangout" parent="." unique_id=973054163 instance=ExtResource("46_gvjar")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.399214, 4.7683716e-07, -18.264107)
+
+[node name="WillowTreeAFunctional2" parent="." unique_id=446531090 instance=ExtResource("47_68rk0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.84407, 1.9073486e-06, 20.532516)
+
+[node name="BluffsRoundBush" parent="." unique_id=2118025854 instance=ExtResource("46_cxrfu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.978025, 0, -29.41788)
+
+[node name="BluffThicketLong" parent="." unique_id=1325078600 instance=ExtResource("47_hbtrm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.71806, -0.45676517, 12.810234)
+
+[node name="FallLayeredHedgeOneColour" parent="." unique_id=622362648 instance=ExtResource("48_3lyhp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.747999, 0, -46.368637)
+
+[node name="FallLayeredHedgeTwoColour" parent="." unique_id=166340337 instance=ExtResource("49_exaxi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9184723, 0, -41.003727)
+
+[node name="WoodlandsThicketLong" parent="." unique_id=729940564 instance=ExtResource("50_nf7cw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9114933, 1.9073486e-06, 12.7564945)
+
+[node name="WoodlandsThicketShort" parent="." unique_id=244982969 instance=ExtResource("51_gsijs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.747719, 0, 25.527594)
+
+[node name="LayeredHedge" parent="." unique_id=917036894 instance=ExtResource("52_qugid")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.049622, 0, -29.165138)
+
+[node name="LayeredHedge2" parent="." unique_id=232311673 instance=ExtResource("53_k2o6f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4863625, 0, -36.060226)
+
+[node name="LayeredHedge3" parent="." unique_id=1254226620 instance=ExtResource("54_3cexk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3917446, 0, -31.712202)
+
+[node name="MarshThicketLong" parent="." unique_id=65273184 instance=ExtResource("55_doswk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08103371, 1.9073486e-06, 13.174629)
+
+[node name="RedBerryHedge" parent="." unique_id=1561991027 instance=ExtResource("56_kb1g0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.312212, 0, -28.309057)
+
+[node name="SnowBerryHedge" parent="." unique_id=416534415 instance=ExtResource("57_fkx6t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.189356, 0, -24.59819)
+
+[node name="SnowLayeredHedge" parent="." unique_id=1262632595 instance=ExtResource("58_lfquy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.295347, 0, -20.471743)
+
+[node name="SnowLayeredHedgeBerries" parent="." unique_id=160024382 instance=ExtResource("59_l725b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.118353, 0, -16.680416)
+
+[node name="SnowBerryHedge2" parent="." unique_id=1327022558 instance=ExtResource("60_7f6fe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7539845, 0, -12.728153)
+
+[node name="WoodlandsThicketLong2" parent="." unique_id=1607639159 instance=ExtResource("61_anfkm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.198719, 0, 14.436871)
+
+[node name="WoodlandsThicketShort2" parent="." unique_id=73305581 instance=ExtResource("62_6amki")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.809065, 0, 28.33233)
+
+[node name="BlossomBiomeZone" parent="." unique_id=827510250 instance=ExtResource("63_qugid")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.238626, 4.7683716e-07, -3.607958)
+
+[node name="BluffBiomeZone" parent="." unique_id=1748350501 instance=ExtResource("64_k2o6f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.860735, 0, -5.7223206)
+
+[node name="FallBiomeZone" parent="." unique_id=1078877416 instance=ExtResource("65_3cexk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.08147, 4.7683716e-07, -3.792479)
+
+[node name="MarshBiomeZone" parent="." unique_id=921214648 instance=ExtResource("66_doswk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.045862, -4.7683716e-07, -7.057309)
+
+[node name="SnowBiomeZone" parent="." unique_id=821957642 instance=ExtResource("67_kb1g0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.767574, 0, -4.6587043)
+
+[node name="WoolandBiomeZone" parent="." unique_id=1880482757 instance=ExtResource("68_fkx6t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.598934, 0, -6.1304526)
+
+[node name="TreeRustleSound" parent="." unique_id=126752398 instance=ExtResource("69_k2o6f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6859436, 0.65554, -2.8560708)
+script = null
+
+[node name="water" parent="." unique_id=2036278886 instance=ExtResource("70_3cexk")]
+transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 3, -9.139944, 0, -6.4973555)
+
+[node name="FiretowerFunctional" parent="." unique_id=438871446 instance=ExtResource("72_kb1g0")]
+transform = Transform3D(1.72, 0, 0, 0, 1.72, 0, 0, 0, 1.72, 28.39365, 0, 7.5988464)
+
+[node name="MarshCaveWithPaintingsFunctional" parent="." unique_id=1091036792 instance=ExtResource("73_fkx6t")]
+transform = Transform3D(0.6636984, 0, -0.68667996, 0, 0.955, 0, 0.68667996, 0, 0.6636984, 17.096165, 0, -41.83692)
+
+[node name="CrewmateStatueFunctional" parent="." unique_id=542101340 instance=ExtResource("74_lfquy")]
+transform = Transform3D(0.7196479, 0, -0.21120352, 0, 0.75, 0, 0.21120352, 0, 0.7196479, 8.430912, 2.3841858e-07, -41.286903)
+
+[node name="TreeRustleSound2" parent="." unique_id=128836914 instance=ExtResource("69_k2o6f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.691264, 0, 2.6082118)
+
+[node name="TreeRustleSound3" parent="." unique_id=1902656379 instance=ExtResource("75_7f6fe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.479711, 0, 4.2949786)
+
+[node name="TreeRustleSoundHowl" parent="." unique_id=517148287 instance=ExtResource("76_anfkm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.284423, 0, 7.7007017)
+
+[node name="LongBridge" parent="." unique_id=933230929 instance=ExtResource("77_6amki")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.699598, 0, 18.361061)
+
+[node name="Bridge" parent="." unique_id=22308070 instance=ExtResource("78_xvk80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.054565, 0, 30.455051)
+
+[node name="WoodenFence" parent="." unique_id=180039973 instance=ExtResource("79_b0o1n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.341125, 0, 25.402782)
+
+[node name="SmallRopeBridge" parent="." unique_id=179538524 instance=ExtResource("80_vduec")]
+transform = Transform3D(1.2079756, 0.015777692, 0.1701354, -0.015623494, 1.2198983, -0.0022004668, -0.17014961, -2.2717428e-10, 1.2080766, 42.130608, 0, 24.261492)
+
+[node name="StoneTallA2Functional" parent="." unique_id=1491861858 instance=ExtResource("81_04thc")]
+transform = Transform3D(1.0000004, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1.0000004, 43.259502, 2.3841858e-07, 5.7270565)
+
+[node name="StoneTallB2Functional" parent="." unique_id=1412560118 instance=ExtResource("82_g64x3")]
+transform = Transform3D(-0.092779696, 0, 2.0479019, 0, 2.0500002, 0, -2.0479019, 0, -0.092779696, 45.239624, 0, 7.761317)
+
+[node name="CaveZone" parent="." unique_id=667627937 instance=ExtResource("83_g64x3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.218159, 0, -1.5183998)
+
+[node name="DevelopOTron" parent="." unique_id=600814051 instance=ExtResource("84_6qq3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.823853, 0, -23.552204)
+
+[node name="Shop" parent="." unique_id=1650895005 instance=ExtResource("85_vww11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.130672, 0, -21.9869)
+
+[node name="QuestBoard" parent="." unique_id=1300157542 instance=ExtResource("87_tjjnh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67.25132, 0, -20.813143)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=379287978]
+mesh = SubResource("BoxMesh_vv1ss")
+surface_material_override/0 = SubResource("ShaderMaterial_jlbhn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D" unique_id=76974484]
+mesh = SubResource("BoxMesh_vv1ss")
+surface_material_override/0 = SubResource("ShaderMaterial_jlbhn")
+
+[node name="SoaringHangout" parent="." unique_id=191588927 instance=ExtResource("88_jlbhn")]
+transform = Transform3D(4.0347238, 0, 0, 0, 1, 0, 0, 0, 4.0347238, 18.096844, 9.536743e-07, -11.327342)
+
+[node name="Bird" parent="." unique_id=1220017257 instance=ExtResource("89_ytjsu")]
+transform = Transform3D(0.041788522, 0, -0.9991265, 0, 1, 0, 0.9991265, 0, 0.041788522, 7.6775584, 1.4516408, 10.5332)
+
+[node name="Body" parent="Bird/Billboard/BirdVisuals/ScaleRoot" index="0"]
+material_override = ExtResource("90_luwu4")
+
+[node name="TreeEucalyptusA" parent="." unique_id=1696470682 instance=ExtResource("91_68rk0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.6312065, 1.9073486e-06, -92.61046)
+
+[node name="TreeEucalyptusB" parent="." unique_id=798110609 instance=ExtResource("92_u68xq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.055826, -1.9073486e-06, -109.89721)
+
+[node name="TreeEucalyptusC" parent="." unique_id=210444189 instance=ExtResource("93_2v5i5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.689779, 7.6293945e-06, -126.32816)
+
+[node name="TreeRedCedarA" parent="." unique_id=457096863 instance=ExtResource("117_clir0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.378174, 0, -98.65012)
+
+[node name="TreeFanPalmA" parent="." unique_id=788394864 instance=ExtResource("95_i25kf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.821503, 0, -94.63435)
+
+[node name="TreeFanPalmB" parent="." unique_id=1460101125 instance=ExtResource("96_j0hb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.35656, 0, -111.18109)
+
+[node name="TreeFanPalmGroveA" parent="." unique_id=1266139579 instance=ExtResource("97_pggd1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.956512, 0, -156.24553)
+
+[node name="DesertHedge" parent="." unique_id=1141496912 instance=ExtResource("98_34f73")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.99517, 0, -118.21572)
+_spawnType = 0
+
+[node name="DesertRoundBush" parent="." unique_id=2027971467 instance=ExtResource("99_w3du6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.216244, 9.536743e-07, -122.987595)
+_spawnType = 0
+
+[node name="LayeredHedge4" parent="." unique_id=862412490 instance=ExtResource("100_mu3iy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.170485, 0, -113.92811)
+_spawnType = 0
+
+[node name="RainforestRoundBush" parent="." unique_id=1816158388 instance=ExtResource("101_031fj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.60205, 0, -123.5192)
+_spawnType = 0
+
+[node name="RainforestRoundBush2" parent="." unique_id=905055031 instance=ExtResource("102_nml2k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.85318, -1.9073486e-06, -118.14629)
+_spawnType = 0
+
+[node name="RockAFunctional" parent="." unique_id=812106194 instance=ExtResource("104_mu3iy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.0405, 1.9073486e-06, -92.72148)
+
+[node name="DesertRockAFunctional" parent="." unique_id=1980763158 instance=ExtResource("103_w3du6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.924725, 0, -98.735954)
+
+[node name="DesertRockBFunctional" parent="." unique_id=578033281 instance=ExtResource("105_64bjp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.169872, 0, -98.08351)
+
+[node name="DesertRockCFunctional" parent="." unique_id=1665706737 instance=ExtResource("106_clir0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.500996, 0, -98.02119)
+
+[node name="DesertRockDFunctional" parent="." unique_id=1610790547 instance=ExtResource("107_2n3v7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.841236, 0, -98.58052)
+
+[node name="DesertRockAFunctional2" parent="." unique_id=1792940038 instance=ExtResource("108_rym5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.225643, 0, -92.73791)
+
+[node name="DesertRockAFunctional3" parent="." unique_id=339868626 instance=ExtResource("109_gvjar")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.709156, 0, -92.710075)
+
+[node name="DesertRockAFunctional4" parent="." unique_id=1290860723 instance=ExtResource("110_tjjnh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.836994, 0, -93.11712)
+
+[node name="RockGroupAFunctional" parent="." unique_id=1399904591 instance=ExtResource("105_o5j20")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.127262, -9.536743e-07, -47.65897)
+
+[node name="SturtsDesertPea" parent="." unique_id=1051413616 instance=ExtResource("106_vwva0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.614452, -9.536743e-07, -48.427063)
+
+[node name="TreeCoconutPalmA" parent="." unique_id=1606989788 instance=ExtResource("107_koogk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.38513, 0, -99.40195)
+
+[node name="TreeCoconutPalmB" parent="." unique_id=1043190162 instance=ExtResource("108_yvhrg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.41311, 0, -112.91894)
+
+[node name="TreeCoconutPalmC" parent="." unique_id=1698657193 instance=ExtResource("109_pi6pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.172432, 1.9073486e-06, -128.6329)
+
+[node name="DesertOakA" parent="." unique_id=84387339 instance=ExtResource("110_0wuj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -71.53036, 0, -98.99189)
+
+[node name="TreeAFunctional7" parent="." unique_id=1509301383 instance=ExtResource("111_wqivr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.4485855, 3.8146973e-06, -112.524345)
+
+[node name="TreeFanPalmGroveA2" parent="." unique_id=1623578075 instance=ExtResource("112_ig1cr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.89403, -3.8146973e-06, -155.11304)
+
+[node name="MangroveA" parent="." unique_id=655391749 instance=ExtResource("113_ledrd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7961273, 9.536743e-07, -95.12643)
+
+[node name="MangroveB" parent="." unique_id=9383575 instance=ExtResource("114_uo5mg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1058083, 3.8146973e-06, -111.171875)
+
+[node name="MangroveC" parent="." unique_id=1513799838 instance=ExtResource("115_edin2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3306961, -3.8146973e-06, -129.02121)
+
+[node name="TreeMulgaA" parent="." unique_id=1771480258 instance=ExtResource("116_64bjp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.080433, 0, -96.09629)
+
+[node name="RainforestBiomeZone" parent="." unique_id=639457869 instance=ExtResource("118_pi6pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.810883, 0, -8.782742)
+
+[node name="GrasslandBiomeZone" parent="." unique_id=415467096 instance=ExtResource("119_0wuj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.599373, 0, -6.1071115)
+
+[node name="DesertBiomeZone" parent="." unique_id=357924278 instance=ExtResource("120_wqivr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.905983, 0, -3.9743948)
+
+[node name="RockHangout" parent="." unique_id=340036148 instance=ExtResource("121_pi6pl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.106731, 4.7683716e-07, -13.908348)
+
+[node name="TreeHangout" parent="." unique_id=2052119209 instance=ExtResource("122_0wuj7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.732178, 0, -14.545481)
+
+[node name="TeaTreeFunctionalA" parent="." unique_id=1197357039 instance=ExtResource("129_2n3v7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.688126, 0, -100.77907)
+
+[node name="TeaTreeFunctionalB" parent="." unique_id=919166192 instance=ExtResource("130_rym5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.24473, 0, -112.619225)
+
+[node name="GroundedBirdWalkOnGroundHangout" parent="." unique_id=562481063 instance=ExtResource("131_rym5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.846571, 0, -15.60502)
+
+[node name="WarpPoint" parent="." unique_id=743962998 instance=ExtResource("131_gvjar")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.10688, 0, -11.402112)
+
+[editable path="Bird"]
+[editable path="Bird/Billboard/BirdVisuals"]

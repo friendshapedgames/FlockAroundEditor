@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://d4e8a10ef1n7m"]
+
+[ext_resource type="Script" uid="uid://dgtg4prim77n8" path="res://Scripts/Birds/GroundHangoutPlaneArea.cs" id="1_djp66"]
+[ext_resource type="Material" uid="uid://dfdg7kw2le5nb" path="res://Art/Materials/EditorBirdsOfPrayHangoutMaterial.tres" id="2_djp66"]
+[ext_resource type="Script" uid="uid://hwphupxsulxi" path="res://Scripts/Core/FreeOnReady.cs" id="3_x5q8j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dqwb5"]
+size = Vector3(1, 0.05, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4dim5"]
+size = Vector3(1, 0.05, 1)
+
+[node name="BirdsOfPrayGroundHangout" type="Area3D" unique_id=384513518]
+script = ExtResource("1_djp66")
+_maxOccupants = 1
+_perchPointType = 3526737011
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1077934392]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.025, 0)
+shape = SubResource("BoxShape3D_dqwb5")
+debug_color = Color(0.8900529, 0.22576487, 0.5901861, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1084160512]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.025, 0)
+material_override = ExtResource("2_djp66")
+mesh = SubResource("BoxMesh_4dim5")
+script = ExtResource("3_x5q8j")

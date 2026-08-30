@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://d27a2v3diajgm"]
+
+[ext_resource type="Script" uid="uid://bs87kmjpnlfrb" path="res://Scripts/Core/DevelopOTron.cs" id="1_rbtcg"]
+[ext_resource type="PackedScene" uid="uid://d2ax5ngsmrjd3" path="res://Art/Developotron/table.glb" id="2_pnuim"]
+[ext_resource type="PackedScene" uid="uid://cn80b3f7phsxk" path="res://Art/Developotron/DevelopotronStation.glb" id="3_gj2hl"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_kn06e"]
+height = 0.9437256
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_7yo87"]
+height = 1.2098633
+radius = 1.0
+
+[node name="DevelopOTron" type="Node3D"]
+script = ExtResource("1_rbtcg")
+
+[node name="table" parent="." instance=ExtResource("2_pnuim")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Collider" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5942695, 0)
+
+[node name="Shape" type="CollisionShape3D" parent="Collider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.12416327, 0)
+shape = SubResource("CylinderShape3D_kn06e")
+
+[node name="InteractDistanceVolume" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9773791, 0)
+
+[node name="Shape" type="CollisionShape3D" parent="InteractDistanceVolume"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.37364358, 0)
+shape = SubResource("CylinderShape3D_7yo87")
+debug_color = Color(0.72799784, 0.4819945, 1.92523e-07, 0.41960785)
+
+[node name="DevelopotronStation" parent="." instance=ExtResource("3_gj2hl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3266434, 0)

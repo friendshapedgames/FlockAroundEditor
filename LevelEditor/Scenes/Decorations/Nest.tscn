@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://mqty6mht2c53"]
+
+[ext_resource type="Texture2D" uid="uid://d3w7mxkfovurn" path="res://Art/Decorations/Monuments/NestSticksA.png" id="1_6bfpq"]
+[ext_resource type="Texture2D" uid="uid://bjyqifqvywfux" path="res://Art/Decorations/Monuments/NestSticksB.png" id="2_vddqv"]
+[ext_resource type="Texture2D" uid="uid://dlpmwpm8n463q" path="res://Art/Decorations/Monuments/Egg.png" id="3_lneww"]
+
+[node name="Nest" type="Sprite3D"]
+billboard = 2
+
+[node name="NestSticksA" type="Sprite3D" parent="."]
+transform = Transform3D(0.0105241835, -0.841417, 0.54028374, 0, 0.5403137, 0.84146357, -0.99994457, -0.008855718, 0.005686361, 0, 0, 0)
+texture = ExtResource("1_6bfpq")
+
+[node name="NestSticksA2" type="Sprite3D" parent="."]
+transform = Transform3D(0.0105241835, 0.7442704, 0.66779554, 0, 0.66783255, -0.74431145, -0.99994457, 0.007833271, 0.007028392, 0, 0, 0)
+texture = ExtResource("1_6bfpq")
+
+[node name="NestSticksB" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.68931615, 0.72446066, 0, -0.72446066, 0.68931615, 0, 0, 0)
+texture = ExtResource("2_vddqv")
+
+[node name="egg" type="Sprite3D" parent="."]
+transform = Transform3D(0.53, 0, 0, 0, 0.53, 0, 0, 0, 0.53, 0, 0.5548148, 0)
+billboard = 2
+texture = ExtResource("3_lneww")

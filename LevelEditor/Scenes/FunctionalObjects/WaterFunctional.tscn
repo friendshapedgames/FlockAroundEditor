@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://damuo1i0axsb"]
+
+[ext_resource type="Shader" uid="uid://dgppw4wte5aqo" path="res://Shaders/water2.gdshader" id="1_vqrm0"]
+[ext_resource type="Script" uid="uid://bdv8dsqtdmnpl" path="res://Scripts/Core/WaterArea.cs" id="2_qm72k"]
+[ext_resource type="Script" uid="uid://brn2hdsmvy6un" path="res://Scripts/Core/WaterShaderSwitcher.cs" id="2_t7boo"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qhtqw"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_6w7gy"]
+noise_type = 2
+frequency = 0.005
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_fbd6v"]
+noise = SubResource("FastNoiseLite_6w7gy")
+seamless = true
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_dvd83"]
+frequency = 0.0007
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_4w0yd"]
+noise = SubResource("FastNoiseLite_dvd83")
+seamless = true
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_oyiwm"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ah37i"]
+noise = SubResource("FastNoiseLite_oyiwm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v76fc"]
+render_priority = 0
+shader = ExtResource("1_vqrm0")
+shader_parameter/skip_foam = false
+shader_parameter/color = Color(0, 0.72055626, 1, 1)
+shader_parameter/deep_water = Color(0, 0.55906105, 1, 1)
+shader_parameter/roughness = 0.22800001083
+shader_parameter/metallic = 0.0
+shader_parameter/speed = 0.00300004764250005
+shader_parameter/beer_law_factor = 0.635
+shader_parameter/_distance = 50.0
+shader_parameter/edge_color = Color(1, 1, 1, 1)
+shader_parameter/edge_scale = 0.1
+shader_parameter/near = 0.1
+shader_parameter/far = 100.0
+shader_parameter/wave_direction = Vector2(2, 0)
+shader_parameter/wave_direction2 = Vector2(0, 1)
+shader_parameter/time_scale = 0.025
+shader_parameter/height_scale = 0.0
+shader_parameter/noise_scale = 10.0
+shader_parameter/noise1 = SubResource("NoiseTexture2D_fbd6v")
+shader_parameter/noise2 = SubResource("NoiseTexture2D_4w0yd")
+shader_parameter/wave = SubResource("NoiseTexture2D_ah37i")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vqrm0"]
+size = Vector3(2, 10.187256, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t7boo"]
+size = Vector3(2, 10.187256, 2)
+
+[node name="water" type="MeshInstance3D" unique_id=1100354920]
+transform = Transform3D(5, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0)
+mesh = SubResource("PlaneMesh_qhtqw")
+surface_material_override/0 = SubResource("ShaderMaterial_v76fc")
+script = ExtResource("2_t7boo")
+
+[node name="WaterArea" type="Area3D" parent="." unique_id=342790328]
+script = ExtResource("2_qm72k")
+
+[node name="Shape" type="CollisionShape3D" parent="WaterArea" unique_id=30481862]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.093628, 0)
+shape = SubResource("BoxShape3D_vqrm0")
+
+[node name="BlockSeeds" type="StaticBody3D" parent="." unique_id=926360672]
+collision_layer = 8
+
+[node name="Shape" type="CollisionShape3D" parent="BlockSeeds" unique_id=1756695105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.093628, 0)
+shape = SubResource("BoxShape3D_t7boo")

@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://dluv5ntp85270"]
+
+[ext_resource type="Script" uid="uid://bdhm24ac3chjw" path="res://Scripts/Birds/PerchBranchOwner.cs" id="1_f2p8r"]
+[ext_resource type="Texture2D" uid="uid://bk4qgwe8k6wys" path="res://Art/Decorations/Foliage/MarshSticksC.png" id="3_f2p8r"]
+[ext_resource type="Texture2D" uid="uid://bcpb6gmlet6kg" path="res://Art/Decorations/Foliage/MarshSticksA.png" id="4_5vysb"]
+[ext_resource type="Texture2D" uid="uid://ckhhskk4uxrl4" path="res://Art/Decorations/Foliage/MarshSticksB.png" id="5_yomx7"]
+[ext_resource type="Texture2D" uid="uid://chsflsa38pxtu" path="res://Art/Decorations/Foliage/MarshSticksSideA.png" id="6_yomx7"]
+[ext_resource type="Texture2D" uid="uid://bdbmg0a3hmqe2" path="res://Art/Decorations/Foliage/MarshSticksSideB.png" id="7_a7o52"]
+
+[sub_resource type="Curve3D" id="Curve3D_ey2d3"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0.011799812, 0, 0, 0, 0, 0, 0, 0, 0.022274941, 0.026934385, 0.71512693),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5vysb"]
+size = Vector3(1.5870667, 3.0943146, 18.32454)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5vysb"]
+transparency = 2
+alpha_scissor_threshold = 0.205
+alpha_antialiasing_mode = 0
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("3_f2p8r")
+
+[sub_resource type="QuadMesh" id="QuadMesh_yomx7"]
+material = SubResource("StandardMaterial3D_5vysb")
+size = Vector2(18.5, 4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a7o52"]
+transparency = 2
+alpha_scissor_threshold = 0.205
+alpha_antialiasing_mode = 0
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("5_yomx7")
+
+[sub_resource type="QuadMesh" id="QuadMesh_8rnmq"]
+material = SubResource("StandardMaterial3D_a7o52")
+size = Vector2(18.5, 4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4c0gn"]
+transparency = 2
+alpha_scissor_threshold = 0.205
+alpha_antialiasing_mode = 0
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("4_5vysb")
+
+[sub_resource type="QuadMesh" id="QuadMesh_3ex8a"]
+material = SubResource("StandardMaterial3D_4c0gn")
+size = Vector2(18.5, 4)
+
+[node name="MarshThicketLong" type="Node3D" unique_id=1773355460]
+
+[node name="PerchPointPaths" type="Node3D" parent="." unique_id=1153444683]
+script = ExtResource("1_f2p8r")
+_perchPointType = 495710309
+
+[node name="Path3D" type="Path3D" parent="PerchPointPaths" unique_id=2045666931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26542082, 1.1731225, -0.20727623)
+curve = SubResource("Curve3D_ey2d3")
+
+[node name="1" type="Sprite3D" parent="." unique_id=1684846015]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, -0.08006871, 1.6668074, -0.029635832)
+visible = false
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("3_f2p8r")
+
+[node name="2" type="Sprite3D" parent="." unique_id=27409226]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, 0.3953697, 1.8086095, 0.032320004)
+visible = false
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("4_5vysb")
+
+[node name="3" type="Sprite3D" parent="." unique_id=1442250441]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, -0.8276126, 1.8086095, 0.032320004)
+visible = false
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("4_5vysb")
+
+[node name="4" type="Sprite3D" parent="." unique_id=2030627740]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, -0.27654138, 1.8138275, -0.19311057)
+visible = false
+flip_h = true
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("5_yomx7")
+
+[node name="sideA" type="Sprite3D" parent="." unique_id=268948000]
+transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, -0.22538877, 1.8987317, 8.917665)
+alpha_cut = 2
+texture = ExtResource("6_yomx7")
+
+[node name="SideA2" type="Sprite3D" parent="." unique_id=19767610]
+transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, 0, 1.8205056, 9.277601)
+alpha_cut = 2
+texture = ExtResource("7_a7o52")
+
+[node name="sideB" type="Sprite3D" parent="." unique_id=1416893834]
+transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, -0.128824, 1.8451583, -8.866159)
+alpha_cut = 2
+texture = ExtResource("6_yomx7")
+
+[node name="SideB2" type="Sprite3D" parent="." unique_id=167044489]
+transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, 0, 1.6965778, -9.240939)
+alpha_cut = 2
+texture = ExtResource("7_a7o52")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=741108929]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1615477430]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16387701, 1.5557852, 0.08446503)
+shape = SubResource("BoxShape3D_5vysb")
+
+[node name="Long1" type="MeshInstance3D" parent="." unique_id=1406626423]
+transform = Transform3D(0.011850513, 0, -0.9999298, 0, 1, 0, 0.9999298, 0, 0.011850513, -0.20424294, 1.5930767, 0.020938456)
+cast_shadow = 0
+mesh = SubResource("QuadMesh_yomx7")
+
+[node name="Long4" type="MeshInstance3D" parent="." unique_id=1283889439]
+transform = Transform3D(0.011850513, 0, -0.9999298, 0, 1, 0, 0.9999298, 0, 0.011850513, -0.26374626, 1.5930767, 0.020938456)
+cast_shadow = 0
+mesh = SubResource("QuadMesh_8rnmq")
+
+[node name="Long2" type="MeshInstance3D" parent="." unique_id=2004047675]
+transform = Transform3D(0.011850513, 0, -0.9999298, 0, 1, 0, 0.9999298, 0, 0.011850513, 0.38857853, 1.5930767, 0.020938456)
+cast_shadow = 0
+mesh = SubResource("QuadMesh_3ex8a")
+
+[node name="Long3" type="MeshInstance3D" parent="." unique_id=1711979955]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.82087386, 1.5930767, 0.020938456)
+cast_shadow = 0
+mesh = SubResource("QuadMesh_3ex8a")

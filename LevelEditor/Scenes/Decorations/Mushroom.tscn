@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0u1qyxa538wp"]
+
+[ext_resource type="Texture2D" uid="uid://kbg5686uet2o" path="res://Art/Decorations/MushroomA.png" id="1_axx1j"]
+
+[node name="Mushroom" type="Sprite3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+billboard = 2
+texture = ExtResource("1_axx1j")

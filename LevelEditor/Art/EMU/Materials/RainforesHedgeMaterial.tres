@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://1e1gamptcoys"]
+
+[ext_resource type="Texture2D" uid="uid://cdi324m5qspr0" path="res://Art/EMU/Foliage/RainforestHedgeTexture.png" id="1_en186"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_color = Color(0.28235295, 0.52156866, 0.3764706, 1)
+albedo_texture = ExtResource("1_en186")
+uv1_scale = Vector3(9.445, 9.445, 9.445)

@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://djrgtai0ivyrb"]
+
+[ext_resource type="Texture2D" uid="uid://bqqbv5xva1gmy" path="res://Art/EMU/Decorations/EmuCavePaintingA.png" id="1_p70lq"]
+[ext_resource type="Texture2D" uid="uid://cia1ic4akpvjv" path="res://Art/EMU/Decorations/EmuCavePaintingB.png" id="2_qdkye"]
+[ext_resource type="Script" uid="uid://t6bo6qw6crp4" path="res://Scripts/Objects/PointOfInterest.cs" id="3_qdkye"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p70lq"]
+size = Vector3(6.8129883, 6.2734985, 1.480957)
+
+[node name="CavePaintingsMonumentFunctional" type="Node3D" unique_id=1943354352]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=808547262]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 1.8203809, 0.16454864, 0)
+modulate = Color(0.5132044, 0.61611736, 0.6849171, 1)
+texture = ExtResource("1_p70lq")
+
+[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=1092862504]
+transform = Transform3D(0.747884, -0.05629931, 0, 0.05629931, 0.747884, 0, 0, 0, 0.75, -0.7799875, 1.8490546, 0)
+modulate = Color(0.5132044, 0.61611736, 0.6849171, 1)
+texture = ExtResource("2_qdkye")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=470636268]
+collision_layer = 4
+script = ExtResource("3_qdkye")
+_config = 738170820
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=947865627]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.066948295, 0.8100796, 0.77877605)
+shape = SubResource("BoxShape3D_p70lq")
+debug_color = Color(0, 0, 0, 1)

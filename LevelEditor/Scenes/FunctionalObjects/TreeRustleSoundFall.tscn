@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmqugbsf1rqav"]
+
+[ext_resource type="Script" uid="uid://c7dvc5a2hyvda" path="res://Scripts/Core/PlayPooled3DSoundAtRandomIntervals.cs" id="9_841yb"]
+
+[node name="TreeRustleSound" type="Node3D"]
+script = ExtResource("9_841yb")
+_sounds = 2509156447

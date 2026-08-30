@@ -1,0 +1,75 @@
+[gd_scene load_steps=9 format=3 uid="uid://cj77psewtkp2g"]
+
+[ext_resource type="PackedScene" uid="uid://cxbsrkhswkwfi" path="res://Art/Skybox/skyboxcylinder.glb" id="1_63n14"]
+[ext_resource type="Shader" uid="uid://ys1f1uvvsjg8" path="res://Shaders/Clouds.gdshader" id="2_uapc0"]
+[ext_resource type="Texture2D" uid="uid://6ecclp86a2js" path="res://Art/Skybox/sun.png" id="4_63n14"]
+[ext_resource type="Texture2D" uid="uid://5kyjo3sp754o" path="res://Art/Skybox/SkyboxTextures.png" id="4_bclrg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_63n14"]
+render_priority = 0
+shader = ExtResource("2_uapc0")
+shader_parameter/albedo = Color(0.3882353, 0.62352943, 0.7176471, 1)
+shader_parameter/texture_albedo = ExtResource("4_bclrg")
+shader_parameter/scroll_speed = Vector2(0, 0)
+shader_parameter/uv_offset = Vector2(0, 0)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_57afm"]
+render_priority = 0
+shader = ExtResource("2_uapc0")
+shader_parameter/albedo = Color(0.31997615, 0.51211256, 0.4793254, 1)
+shader_parameter/texture_albedo = ExtResource("4_bclrg")
+shader_parameter/scroll_speed = Vector2(0, 0)
+shader_parameter/uv_offset = Vector2(0.31, 0.33)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uapc0"]
+render_priority = 0
+shader = ExtResource("2_uapc0")
+shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/texture_albedo = ExtResource("4_bclrg")
+shader_parameter/scroll_speed = Vector2(0.17, 0)
+shader_parameter/uv_offset = Vector2(0, 0.11)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jcmnm"]
+render_priority = 0
+shader = ExtResource("2_uapc0")
+shader_parameter/albedo = Color(0.8194725, 0.9815187, 0.9884284, 1)
+shader_parameter/texture_albedo = ExtResource("4_bclrg")
+shader_parameter/scroll_speed = Vector2(0.1, 0)
+shader_parameter/uv_offset = Vector2(0, 1.215)
+
+[node name="Skybox" type="Node3D"]
+
+[node name="Mountains" parent="." instance=ExtResource("1_63n14")]
+transform = Transform3D(60, 0, 0, 0, 60, 0, 0, 0, 60, -8.159889, -25.438885, -4.061783)
+
+[node name="Cylinder" parent="Mountains" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_63n14")
+
+[node name="Mountains2" parent="." instance=ExtResource("1_63n14")]
+transform = Transform3D(49.2, 0, 0, 0, 49.2, 0, 0, 0, 49.2, -8.159889, -25.438885, -4.061783)
+
+[node name="Cylinder" parent="Mountains2" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_57afm")
+
+[node name="Clouds" parent="." instance=ExtResource("1_63n14")]
+transform = Transform3D(80, 0, 0, 0, 80, 0, 0, 0, 80, 0, -39.39968, 0)
+
+[node name="Cylinder" parent="Clouds" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_uapc0")
+
+[node name="OuterClouds" parent="." instance=ExtResource("1_63n14")]
+transform = Transform3D(120, 0, 0, 0, 120, 0, 0, 0, 120, 0, 217.20682, 0)
+
+[node name="Cylinder" parent="OuterClouds" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_jcmnm")
+
+[node name="Sun" type="Sprite3D" parent="."]
+transform = Transform3D(122.945, 0, 0, 0, 122.945, 0, 0, 0, 122.945, 993.6616, 2107.6074, 0)
+modulate = Color(0.9576085, 0.9688905, 0.77619505, 1)
+billboard = 1
+texture = ExtResource("4_63n14")
+
+[editable path="Mountains"]
+[editable path="Mountains2"]
+[editable path="Clouds"]
+[editable path="OuterClouds"]

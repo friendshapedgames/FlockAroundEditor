@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkcc8q5uixmrj"]
+
+[ext_resource type="PackedScene" uid="uid://b5afg7nmjyei8" path="res://Art/Decorations/bridgeB.glb" id="1_lwc2a"]
+[ext_resource type="PhysicsMaterial" uid="uid://s8h86nwx3unw" path="res://WoodPhysicsMaterial.tres" id="2_svtce"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_svtce"]
+size = Vector3(7.1347656, 0.5942383, 1.7993164)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s17u3"]
+size = Vector3(6.849121, 0.90914536, 0.19143677)
+
+[node name="LongBridge" type="Node3D"]
+
+[node name="bridgeB" parent="." instance=ExtResource("1_lwc2a")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+physics_material_override = ExtResource("2_svtce")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8076172, 0.17355204, -0.017822266)
+shape = SubResource("BoxShape3D_svtce")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(0.97693396, 0, 0.21354195, 0, 1, 0, -0.21354195, 0, 0.97693396, -5.776654, 0.17355299, 0.6737117)
+shape = SubResource("BoxShape3D_svtce")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(0.991529, 0, -0.12988593, 0, 1, 0, 0.12988593, 0, 0.991529, 7.4355426, 0.17355299, 0.468915)
+shape = SubResource("BoxShape3D_svtce")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(0.991529, 0, -0.12988593, 0, 1, 0, 0.12988593, 0, 0.991529, 7.197999, 0.7615845, 1.4331092)
+shape = SubResource("BoxShape3D_s17u3")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(0.9999999, 0, 0.0006457716, 0, 1, 0, -0.0006457716, 0, 0.9999999, 0.5589546, 0.73592603, 1.0162473)
+shape = SubResource("BoxShape3D_s17u3")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(0.9743112, 0, 0.22520614, 0, 1, 0, -0.22520614, 0, 0.9743112, -5.722118, 0.7048124, 1.7067324)
+shape = SubResource("BoxShape3D_s17u3")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(0.991529, 0, -0.12988593, 0, 1, 0, 0.12988593, 0, 0.991529, 7.5382223, 0.78418255, -0.5647731)
+shape = SubResource("BoxShape3D_s17u3")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(0.9999999, 0, 0.0006457716, 0, 1, 0, -0.0006457716, 0, 0.9999999, 0.74904406, 0.73286235, -0.99988025)
+shape = SubResource("BoxShape3D_s17u3")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(0.9743112, 0, 0.22520614, 0, 1, 0, -0.22520614, 0, 0.9743112, -6.0361013, 0.71605504, -0.28716618)
+shape = SubResource("BoxShape3D_s17u3")
+
+[editable path="bridgeB"]

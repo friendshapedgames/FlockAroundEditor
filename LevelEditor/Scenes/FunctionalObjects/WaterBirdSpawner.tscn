@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://n2wrnd7x4fv3"]
+
+[ext_resource type="Script" uid="uid://bg64c12bfcaxa" path="res://Scripts/Core/BirdSpawner.cs" id="1_wtrsc"]
+
+[node name="WaterBirdSpawner" type="Node3D" unique_id=155897619]
+script = ExtResource("1_wtrsc")
+_spawnType = 2

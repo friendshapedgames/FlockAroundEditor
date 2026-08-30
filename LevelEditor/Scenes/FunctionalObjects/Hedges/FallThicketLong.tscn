@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://y1gqh2vix0vg"]
+
+[ext_resource type="Script" uid="uid://bdhm24ac3chjw" path="res://Scripts/Birds/PerchBranchOwner.cs" id="1_4thk3"]
+[ext_resource type="Texture2D" uid="uid://bw3dkykx5if0p" path="res://Art/Decorations/Foliage/SticksA.png" id="2_inpgw"]
+[ext_resource type="Texture2D" uid="uid://bn16pkf36r6eb" path="res://Art/Decorations/Foliage/SticksB.png" id="3_due3c"]
+[ext_resource type="Texture2D" uid="uid://bh2wpmdfe0oqq" path="res://Art/Decorations/Foliage/WallofLeavesA.png" id="4_tb4nb"]
+[ext_resource type="Texture2D" uid="uid://d2gmassxgh3k1" path="res://Art/Decorations/Foliage/WoodlandsSticksSide.png" id="5_inpgw"]
+[ext_resource type="Texture2D" uid="uid://dg13juls4a58m" path="res://Art/Decorations/Foliage/WoodlandThicketleavesSide.png" id="6_due3c"]
+
+[sub_resource type="Curve3D" id="Curve3D_ey2d3"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0.011799812, 0, 0, 0, 0, 0, 0, 0, 0.022274941, 0.026934385, 0.71512693),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p57hm"]
+size = Vector3(1.6165161, 3.584137, 17.711243)
+
+[node name="WoodlandsThicketLong" type="Node3D" unique_id=1135371138]
+
+[node name="PerchPointPaths" type="Node3D" parent="." unique_id=1436704484]
+script = ExtResource("1_4thk3")
+_perchPointType = 495710309
+
+[node name="Path3D" type="Path3D" parent="PerchPointPaths" unique_id=112986014]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26542082, 1.1731225, -0.20727623)
+curve = SubResource("Curve3D_ey2d3")
+
+[node name="sticksA" type="Sprite3D" parent="." unique_id=960340063]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, 0.64319897, 1.7893119, -0.030840024)
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("2_inpgw")
+
+[node name="sticksB" type="Sprite3D" parent="." unique_id=983871715]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, 0.1485582, 1.8651481, 0.032552596)
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("3_due3c")
+
+[node name="LeafWall" type="Sprite3D" parent="." unique_id=1689140729]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, 1.0665195, 1.8651462, 0.052848723)
+modulate = Color(0.9529412, 0.6862745, 0.28235295, 1)
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("4_tb4nb")
+
+[node name="LeafWall3" type="Sprite3D" parent="." unique_id=792493982]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, 1.0665195, 1.8651462, 0.052848723)
+modulate = Color(0.9529412, 0.6862745, 0.28235295, 1)
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("4_tb4nb")
+
+[node name="LeafWall2" type="Sprite3D" parent="." unique_id=1075058306]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, -0.39654315, 2.1907287, -0.2054081)
+flip_h = true
+modulate = Color(0.9137255, 0.3764706, 0.28235295, 1)
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("4_tb4nb")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=611906814]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1289791930]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24996948, 1.8006964, 0.1144104)
+shape = SubResource("BoxShape3D_p57hm")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=922830525]
+transform = Transform3D(0.54, 0, 0, 0, 0.54, 0, 0, 0, 0.54, 0.2587357, 1.8027971, 8.918666)
+alpha_cut = 2
+texture = ExtResource("5_inpgw")
+
+[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=274700961]
+transform = Transform3D(-0.54, 0, -4.72083e-08, 0, 0.54, 0, 4.72083e-08, 0, -0.54, 0.2587357, 1.8027971, -8.938032)
+alpha_cut = 2
+texture = ExtResource("5_inpgw")
+
+[node name="Sprite3D3" type="Sprite3D" parent="." unique_id=1201155714]
+transform = Transform3D(-0.54, 0, -4.72083e-08, 0, 0.54, 0, 4.72083e-08, 0, -0.54, 0.25873566, 1.8027971, -9.318465)
+modulate = Color(0.9137255, 0.3764706, 0.28235295, 1)
+alpha_cut = 2
+texture = ExtResource("6_due3c")
+
+[node name="Sprite3D5" type="Sprite3D" parent="." unique_id=11071387]
+transform = Transform3D(-0.54, 4.72083e-08, 0, 0, -2.360415e-08, 0.54, 4.7208296e-08, 0.54, 2.360415e-08, 0.25873587, 3.4295297, -6.9644175)
+modulate = Color(0.9137255, 0.3764706, 0.28235295, 1)
+alpha_cut = 2
+texture = ExtResource("6_due3c")
+
+[node name="Sprite3D6" type="Sprite3D" parent="." unique_id=1918119012]
+transform = Transform3D(-0.54, 4.72083e-08, 0, 0, -2.360415e-08, 0.54, 4.7208296e-08, 0.54, 2.360415e-08, 0.25873625, 3.4295294, -2.5840526)
+modulate = Color(0.9529412, 0.6862745, 0.28235295, 1)
+alpha_cut = 2
+texture = ExtResource("6_due3c")
+
+[node name="Sprite3D7" type="Sprite3D" parent="." unique_id=2122083030]
+transform = Transform3D(-0.54, 4.72083e-08, 0, 0, -2.360415e-08, 0.54, 4.7208296e-08, 0.54, 2.360415e-08, 0.25873664, 3.4295292, 1.8866314)
+modulate = Color(0.9529412, 0.6862745, 0.28235295, 1)
+alpha_cut = 2
+texture = ExtResource("6_due3c")
+
+[node name="Sprite3D8" type="Sprite3D" parent="." unique_id=694254228]
+transform = Transform3D(-0.54, 4.72083e-08, 0, 0, -2.360415e-08, 0.54, 4.7208296e-08, 0.54, 2.360415e-08, 0.25873706, 3.429529, 6.7185783)
+modulate = Color(0.9137255, 0.3764706, 0.28235295, 1)
+alpha_cut = 2
+texture = ExtResource("6_due3c")
+
+[node name="Sprite3D4" type="Sprite3D" parent="." unique_id=1578067527]
+transform = Transform3D(-0.54, 0, -4.72083e-08, 0, 0.54, 0, 4.72083e-08, 0, -0.54, 0.2587373, 1.8027971, 9.177683)
+modulate = Color(0.9137255, 0.3764706, 0.28235295, 1)
+alpha_cut = 2
+texture = ExtResource("6_due3c")

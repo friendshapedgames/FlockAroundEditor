@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dnshkkvmabrod"]
+
+[ext_resource type="Texture2D" uid="uid://dq5v1iq5w40e0" path="res://Art/Textures/BushLeavesA.png" id="1_m82nv"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.3
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_color = Color(0.28235295, 0.52156866, 0.3764706, 1)
+albedo_texture = ExtResource("1_m82nv")
+albedo_texture_force_srgb = true
+uv1_scale = Vector3(6.33, 6.33, 6.33)

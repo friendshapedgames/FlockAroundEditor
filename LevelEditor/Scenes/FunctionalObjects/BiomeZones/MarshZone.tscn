@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=3 uid="uid://dsf2kdwt8wv2u"]
+
+[ext_resource type="Script" uid="uid://bl112wvru57kq" path="res://Scripts/Core/BiomeZone.cs" id="1_0kfdw"]
+[ext_resource type="Texture2D" uid="uid://cjgqleneimgxo" path="res://Art/BiomeIcons/IconMarsh.png" id="2_0kfdw"]
+[ext_resource type="Script" uid="uid://hwphupxsulxi" path="res://Scripts/Core/FreeOnReady.cs" id="3_wx3sj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5u5q0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k8fmg"]
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.9197468, 0.7913439, 0.06742271, 0.54901963)
+albedo_texture = ExtResource("2_0kfdw")
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hbltj"]
+
+[node name="MarshBiomeZone" type="Area3D"]
+script = ExtResource("1_0kfdw")
+_biomeResource = 3330238353
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_5u5q0")
+surface_material_override/0 = SubResource("StandardMaterial3D_k8fmg")
+script = ExtResource("3_wx3sj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_hbltj")

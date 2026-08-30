@@ -1,0 +1,58 @@
+[gd_resource type="AudioBusLayout" format=3 uid="uid://d0cesq5bqvx44"]
+
+[sub_resource type="AudioEffectDistortion" id="AudioEffectDistortion_j3pel"]
+resource_name = "Distortion"
+mode = 2
+drive = 0.5
+
+[sub_resource type="AudioEffectPitchShift" id="AudioEffectPitchShift_j3pel"]
+resource_name = "PitchShift"
+pitch_scale = 0.5
+
+[resource]
+bus/1/name = &"SoundEffects"
+bus/1/solo = false
+bus/1/mute = false
+bus/1/bypass_fx = false
+bus/1/volume_db = 0.0
+bus/1/send = &"Master"
+bus/2/name = &"Music"
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = 0.0
+bus/2/send = &"Master"
+bus/3/name = &"Voice"
+bus/3/solo = false
+bus/3/mute = false
+bus/3/bypass_fx = false
+bus/3/volume_db = 0.0
+bus/3/send = &"Master"
+bus/4/name = &"Null"
+bus/4/solo = false
+bus/4/mute = true
+bus/4/bypass_fx = false
+bus/4/volume_db = -80.0
+bus/4/send = &"Master"
+bus/5/name = &"SoundEffectShiny"
+bus/5/solo = false
+bus/5/mute = false
+bus/5/bypass_fx = false
+bus/5/volume_db = 0.0
+bus/5/send = &"Master"
+bus/6/name = &"SoundEffectBirds"
+bus/6/solo = false
+bus/6/mute = false
+bus/6/bypass_fx = false
+bus/6/volume_db = 0.0
+bus/6/send = &"Master"
+bus/7/name = &"SoundEffectsWhistles"
+bus/7/solo = false
+bus/7/mute = false
+bus/7/bypass_fx = false
+bus/7/volume_db = 0.0
+bus/7/send = &"SoundEffects"
+bus/7/effect/0/effect = SubResource("AudioEffectDistortion_j3pel")
+bus/7/effect/0/enabled = true
+bus/7/effect/1/effect = SubResource("AudioEffectPitchShift_j3pel")
+bus/7/effect/1/enabled = true

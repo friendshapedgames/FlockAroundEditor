@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dpfys24uis1kx"]
+
+[ext_resource type="PackedScene" uid="uid://ue2pbse8fwc" path="res://Art/EMU/Foliage/CanopyBranchA.glb" id="1_67k7o"]
+
+[node name="CanopyBranchA" type="Node3D" unique_id=964498581]
+
+[node name="CanopyBranchA" parent="." unique_id=323673652 instance=ExtResource("1_67k7o")]
+
+[editable path="CanopyBranchA"]

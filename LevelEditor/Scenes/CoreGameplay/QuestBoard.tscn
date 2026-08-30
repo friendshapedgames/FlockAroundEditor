@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://osem3qwi4yj3"]
+
+[ext_resource type="Script" uid="uid://cnbudisj4w5h4" path="res://Scripts/Core/QuestBoardFunctional.cs" id="1_rxn33"]
+[ext_resource type="PackedScene" uid="uid://ddc0rbdn1fpw6" path="res://Scenes/FunctionalObjects/SignFunctional.tscn" id="2_h4r4l"]
+[ext_resource type="Texture2D" uid="uid://dvt61ifqpubnh" path="res://Art/UI/QuestBoard.png" id="3_8oli4"]
+[ext_resource type="Texture2D" uid="uid://b1kouehojtum4" path="res://Art/UI/QuestBoardPictureB.png" id="4_qcosn"]
+[ext_resource type="PackedScene" uid="uid://ep8nnkqrpr7m" path="res://Art/Decorations/Signs/Pin.glb" id="5_47myv"]
+[ext_resource type="Texture2D" uid="uid://cm2ugpqdostfm" path="res://Art/UI/QuestBoardPictureA.png" id="6_msku8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_onb3i"]
+size = Vector3(2.2363892, 1.3500977, 0.566864)
+
+[node name="QuestBoard" type="Node3D" unique_id=1300157542]
+script = ExtResource("1_rxn33")
+
+[node name="InteractDistanceVolume" type="Area3D" parent="." unique_id=575284163]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9773791, 0)
+
+[node name="Shape" type="CollisionShape3D" parent="InteractDistanceVolume" unique_id=319872939]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02279663, -0.28746194, 0.3438568)
+shape = SubResource("BoxShape3D_onb3i")
+debug_color = Color(0.7294118, 0.48235294, 0, 1)
+
+[node name="SignFunctional" parent="." unique_id=1027962561 instance=ExtResource("2_h4r4l")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 0, 0)
+
+[node name="Papers" type="Sprite3D" parent="." unique_id=324298431]
+transform = Transform3D(0.355, 0, 0, 0, 0.35418254, 0.02407743, 0, -0.02407743, 0.35418254, 0.027938075, 1.6902399, 0.08419846)
+texture = ExtResource("3_8oli4")
+
+[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=413200100]
+transform = Transform3D(0.27762341, -0.082838014, -0.012771123, 0.08369865, 0.2763396, 0.027036432, 0.0044466304, -0.029568523, 0.28845438, 0.67738914, 1.5580776, 0.0929427)
+texture = ExtResource("4_qcosn")
+
+[node name="Sprite3D4" type="Sprite3D" parent="." unique_id=1231961649]
+transform = Transform3D(0.2657059, 0.11548707, -0.012771125, -0.11400174, 0.26527843, 0.02703643, 0.022449179, -0.019751066, 0.28845438, -0.7396104, 1.964479, 0.0669868)
+texture = ExtResource("4_qcosn")
+
+[node name="Sprite3D3" type="Sprite3D" parent="." unique_id=962318876]
+transform = Transform3D(0.25880733, -0.13080005, 0.00318187, 0.12996459, 0.25781605, 0.027204722, -0.015099023, -0.022852588, 0.2887036, -0.57344145, 1.9090614, 0.0751543)
+sorting_offset = 1.0
+texture = ExtResource("6_msku8")
+
+[node name="Pin" parent="." unique_id=170177249 instance=ExtResource("5_47myv")]
+transform = Transform3D(0.25, 0, 0, 0, 0.055438172, -0.24377574, 0, 0.24377574, 0.055438172, 0.0071003437, 2.0698674, 0.057803)
+
+[node name="Pin4" parent="." unique_id=1492700713 instance=ExtResource("5_47myv")]
+transform = Transform3D(0.25, 0, 0, 0, 0.055438172, -0.24377574, 0, 0.24377574, 0.055438172, -0.6062042, 2.0411081, 0.068737574)
+
+[node name="Pin3" parent="." unique_id=218496718 instance=ExtResource("5_47myv")]
+transform = Transform3D(0.25, 0, 0, 0, 0.09222178, -0.23236857, 0, 0.23236857, 0.09222178, 0.64024395, 1.6838642, 0.0778328)
+
+[node name="Pin2" parent="." unique_id=430550038 instance=ExtResource("5_47myv")]
+transform = Transform3D(-0.2490114, 0.018734662, 0.011929783, -0.0049252436, 0.084360145, -0.23528521, -0.021657545, -0.23458983, -0.08365747, -0.6086253, 1.7745662, -0.031667683)
+
+[node name="Sprite3D2" type="Sprite3D" parent="Pin2" unique_id=103656925]
+transform = Transform3D(0.87558025, -0.28241664, 0, 0.06262664, 0.19416225, 0.8970946, -0.27538526, -0.8537808, 0.20401245, -0.11524868, -0.05898106, 0.40825891)
+texture = ExtResource("6_msku8")

@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://bflyc4hp77tp"]
+
+[ext_resource type="PackedScene" uid="uid://cxbsrkhswkwfi" path="res://Art/Skybox/skyboxcylinder.glb" id="1_s245y"]
+[ext_resource type="Shader" uid="uid://ys1f1uvvsjg8" path="res://Shaders/Clouds.gdshader" id="2_csig6"]
+[ext_resource type="Texture2D" uid="uid://5kyjo3sp754o" path="res://Art/Skybox/SkyboxTextures.png" id="3_7fpq1"]
+[ext_resource type="Texture2D" uid="uid://6ecclp86a2js" path="res://Art/Skybox/sun.png" id="4_hpmvr"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_63n14"]
+render_priority = 4
+shader = ExtResource("2_csig6")
+shader_parameter/albedo = Color(0.3882353, 0.62352943, 0.7176471, 1)
+shader_parameter/texture_albedo = ExtResource("3_7fpq1")
+shader_parameter/scroll_speed = Vector2(0, 0)
+shader_parameter/uv_offset = Vector2(0.39, 0.33)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_57afm"]
+render_priority = 5
+shader = ExtResource("2_csig6")
+shader_parameter/albedo = Color(0.31997615, 0.51211256, 0.4793254, 1)
+shader_parameter/texture_albedo = ExtResource("3_7fpq1")
+shader_parameter/scroll_speed = Vector2(0, 0)
+shader_parameter/uv_offset = Vector2(0.31, 0.33)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uapc0"]
+render_priority = 3
+shader = ExtResource("2_csig6")
+shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/texture_albedo = ExtResource("3_7fpq1")
+shader_parameter/scroll_speed = Vector2(0.17, 0)
+shader_parameter/uv_offset = Vector2(0, 0.11)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jcmnm"]
+render_priority = 0
+shader = ExtResource("2_csig6")
+shader_parameter/albedo = Color(0.8194725, 0.9815187, 0.9884284, 1)
+shader_parameter/texture_albedo = ExtResource("3_7fpq1")
+shader_parameter/scroll_speed = Vector2(0.1, 0)
+shader_parameter/uv_offset = Vector2(0, 1.215)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sr4ch"]
+render_priority = -1
+shader = ExtResource("2_csig6")
+shader_parameter/albedo = Color(0.6823598, 0.9162764, 0.9886529, 1)
+shader_parameter/texture_albedo = ExtResource("3_7fpq1")
+shader_parameter/scroll_speed = Vector2(0.08, 0)
+shader_parameter/uv_offset = Vector2(0, 1.565)
+
+[node name="Skybox" type="Node3D" unique_id=1748432513]
+
+[node name="HillsFar" parent="." unique_id=1602654026 instance=ExtResource("1_s245y")]
+transform = Transform3D(60, 0, 0, 0, 60, 0, 0, 0, 60, -8.159889, -25.438885, -4.061783)
+
+[node name="Cylinder" parent="HillsFar" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_63n14")
+
+[node name="HillsClose" parent="." unique_id=1078482421 instance=ExtResource("1_s245y")]
+transform = Transform3D(49.2, 0, 0, 0, 49.2, 0, 0, 0, 49.2, -8.159889, -25.438885, -4.061783)
+
+[node name="Cylinder" parent="HillsClose" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_57afm")
+
+[node name="Clouds" parent="." unique_id=736529449 instance=ExtResource("1_s245y")]
+transform = Transform3D(80, 0, 0, 0, 80, 0, 0, 0, 80, 0, 319.62448, 0)
+
+[node name="Cylinder" parent="Clouds" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_uapc0")
+
+[node name="OuterClouds" parent="." unique_id=1979796351 instance=ExtResource("1_s245y")]
+transform = Transform3D(120, 0, 0, 0, 120, 0, 0, 0, 120, 0, -75.266846, 0)
+
+[node name="Cylinder" parent="OuterClouds" index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_jcmnm")
+
+[node name="FarthestClouds" parent="." unique_id=1275741813 instance=ExtResource("1_s245y")]
+transform = Transform3D(120, 0, 0, 0, 120, 0, 0, 0, 120, 0, -287.37735, 0)
+
+[node name="Cylinder" parent="FarthestClouds" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.40854517, 0)
+surface_material_override/0 = SubResource("ShaderMaterial_sr4ch")
+
+[node name="Sun" type="Sprite3D" parent="." unique_id=343613989]
+transform = Transform3D(122.945, 0, 0, 0, 122.945, 0, 0, 0, 122.945, 993.6616, 2107.6074, 0)
+modulate = Color(0.9576085, 0.9688905, 0.77619505, 1)
+billboard = 1
+texture = ExtResource("4_hpmvr")
+
+[editable path="HillsFar"]
+[editable path="HillsClose"]
+[editable path="Clouds"]
+[editable path="OuterClouds"]
+[editable path="FarthestClouds"]

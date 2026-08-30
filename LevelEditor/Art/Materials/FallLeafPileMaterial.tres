@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://x15f48mdrria"]
+
+[ext_resource type="Texture2D" uid="uid://v11gokj0erj0" path="res://Art/Decorations/FallLeavesGroundTile.png" id="1_1grpi"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_1grpi")
+uv1_scale = Vector3(100, 100, 100)

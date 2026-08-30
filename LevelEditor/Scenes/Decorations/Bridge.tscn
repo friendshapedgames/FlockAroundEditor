@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://dlcew7qfwgceq"]
+
+[ext_resource type="PackedScene" uid="uid://dmh8ymw5egans" path="res://Art/Decorations/bridgeA.glb" id="1_rf18v"]
+[ext_resource type="PhysicsMaterial" uid="uid://s8h86nwx3unw" path="res://WoodPhysicsMaterial.tres" id="2_hex47"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hex47"]
+size = Vector3(12.672852, 1.4373932, 0.4765625)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qbprw"]
+size = Vector3(12.672852, 0.27919006, 2.7939453)
+
+[node name="Bridge" type="Node3D"]
+
+[node name="bridgeA" parent="." instance=ExtResource("1_rf18v")]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Cube_014" parent="bridgeA" index="12"]
+transform = Transform3D(0.15, 0, 0, 0, -4.371139e-09, -1.1800001, 0, 0.1, -5.157944e-08, -4.988964, 2.0670266, 2.1118302)
+
+[node name="Cube_015" parent="bridgeA" index="14"]
+transform = Transform3D(0.15, 0, 0, 0, -4.371139e-09, -1.1800001, 0, 0.1, -5.157944e-08, -4.988964, 2.0670266, -2.0884242)
+
+[node name="Cube_016" parent="bridgeA" index="15"]
+transform = Transform3D(0.15, 0, 0, 0, -4.371139e-09, -1.1800001, 0, 0.1, -5.157944e-08, -2.0459242, 2.0670266, 2.1118302)
+
+[node name="Cube_017" parent="bridgeA" index="16"]
+transform = Transform3D(0.15, 0, 0, 0, -4.371139e-09, -1.1800001, 0, 0.1, -5.157944e-08, -2.0459242, 2.0670266, -2.0884242)
+
+[node name="Cube_018" parent="bridgeA" index="17"]
+transform = Transform3D(0.15, 0, 0, 0, -4.371139e-09, -1.1800001, 0, 0.1, -5.157944e-08, 0.9981633, 2.0670266, 2.1118302)
+
+[node name="Cube_019" parent="bridgeA" index="18"]
+transform = Transform3D(0.15, 0, 0, 0, -4.371139e-09, -1.1800001, 0, 0.1, -5.157944e-08, 0.9981633, 2.0670266, -2.0884242)
+
+[node name="Cube_020" parent="bridgeA" index="19"]
+transform = Transform3D(0.15, 0, 0, 0, -4.371139e-09, -1.1800001, 0, 0.1, -5.157944e-08, 4.006773, 2.0670266, 2.1118302)
+
+[node name="Cube_021" parent="bridgeA" index="20"]
+transform = Transform3D(0.15, 0, 0, 0, -4.371139e-09, -1.1800001, 0, 0.1, -5.157944e-08, 4.006773, 2.0670266, -2.0884242)
+
+[node name="Cube_023" parent="bridgeA" index="23"]
+transform = Transform3D(0.15, 0, 0, 0, -4.371139e-09, -1.1800001, 0, 0.1, -5.157944e-08, 7.003543, 2.0670266, 2.1118302)
+
+[node name="Cube_024" parent="bridgeA" index="24"]
+transform = Transform3D(0.15, 0, 0, 0, -4.371139e-09, -1.1800001, 0, 0.1, -5.157944e-08, 7.003543, 2.0670266, -2.0884242)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+physics_material_override = ExtResource("2_hex47")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9616699, 0.9209862, -1.1219653)
+shape = SubResource("BoxShape3D_hex47")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9616699, 0.9352484, 1.1837693)
+shape = SubResource("BoxShape3D_hex47")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9616699, 0.3418846, 0.025077939)
+shape = SubResource("BoxShape3D_qbprw")
+
+[editable path="bridgeA"]

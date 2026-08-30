@@ -1,0 +1,2135 @@
+[gd_scene load_steps=5 format=3 uid="uid://bshpun3c78ctq"]
+
+[ext_resource type="PackedScene" uid="uid://dtbbnmw136ahl" path="res://Art/Decorations/Foliage/arch2.glb" id="1_fteuh"]
+[ext_resource type="Texture2D" uid="uid://bgnok62vahfuq" path="res://Art/Textures/TreeB2.png" id="2_jjrtn"]
+[ext_resource type="Texture2D" uid="uid://dk1vr4sjhorks" path="res://Art/Textures/TreeB1.png" id="3_8arx2"]
+[ext_resource type="Texture2D" uid="uid://djek43x7ggwu8" path="res://Art/Textures/TreeB3.png" id="4_jjrtn"]
+
+[node name="ArchA" type="Node3D"]
+
+[node name="arch2" parent="." instance=ExtResource("1_fteuh")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.8151455, 0.014855266, 1.5746121)
+
+[node name="arch3" parent="." instance=ExtResource("1_fteuh")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.8151455, 0.014855266, -1.658622)
+
+[node name="Light" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3372998, 0.4334848, 1.0980799)
+
+[node name="Leaves46" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0014678342, -0.09908728, -0.013399787, -0.099765256, 0.0005548978, 0.006825149, -0.0066885003, 0.013468526, -0.098862834, 1.2641591, 3.4251904, -0.5781467)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves48" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0014678342, -0.09908728, -0.013399787, -0.099765256, 0.0005548978, 0.006825149, -0.0066885003, 0.013468526, -0.098862834, 0.3934667, 3.4138956, -0.21858865)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves49" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0040815677, 0.09792246, -0.01986289, 0.099882655, -0.0034800407, 0.0033682748, 0.0026070606, -0.01997706, -0.09794959, 1.921821, 3.315628, -0.15118092)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves50" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0048431354, 0.07177081, -0.06946579, 0.099882655, -0.003480041, 0.003368275, 0, -0.06954741, -0.07185513, 2.8236685, 3.2734113, -0.17658865)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves51" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0048431354, 0.07177081, -0.06946579, 0.099882655, -0.003480041, 0.003368275, 0, -0.06954741, -0.07185513, 2.7733417, 3.2758517, -1.0642707)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves52" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.004843135, 0.09967446, -0.006445659, 0.099882655, -0.004833041, 0.0003125388, 0, -0.006453233, -0.09979159, 1.2794285, 3.348289, -1.7987256)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves53" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0040815677, 0.08747474, 0.048285734, 0.09988267, -0.004833041, 0.0003125388, 0.0026070601, 0.0482163, -0.08756937, 1.2785788, 3.2611852, 0.2608307)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves69" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.004806911, -0.07972415, 0.060174353, 0.099882655, -0.0034800405, 0.0033682748, -0.00059123617, 0.060265645, 0.07979788, 0.3426463, 3.315628, -1.8700206)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves70" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0043693027, -0.034746774, 0.09366736, 0.099882655, -0.003480041, 0.0033682745, 0.0020892955, 0.09370461, 0.034858048, -0.46000737, 3.2734113, -1.458048)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves71" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0043693027, -0.034746774, 0.09366736, 0.099882655, -0.003480041, 0.0033682745, 0.0020892955, 0.09370461, 0.034858048, -0.03166437, 3.2758517, -0.67892367)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves72" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0043693013, -0.08713883, 0.048864443, 0.09988267, -0.0048330417, 0.0003125388, 0.0020892955, 0.04882074, 0.08724777, 1.6329291, 3.348289, -0.6607886)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves73" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0048069106, -0.09971675, -0.0057848394, 0.099882685, -0.0048330417, 0.0003125395, -0.0005912365, -0.005763013, 0.099832065, 0.74521744, 3.2611852, -2.519213)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves54" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.004843135, 0.09967446, -0.006445659, 0.099882655, -0.004833041, 0.0003125388, 0, -0.006453233, -0.09979159, 2.2030141, 3.303506, -1.6184521)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves47" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0014678342, -0.09908728, -0.013399787, -0.099765256, 0.0005548978, 0.006825149, -0.0066885003, 0.013468526, -0.098862834, 1.2641591, 3.4251904, -0.5781467)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves62" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0014678342, -0.09908728, -0.013399787, -0.099765256, 0.0005548978, 0.006825149, -0.0066885003, 0.013468526, -0.098862834, 0.3934667, 3.4138956, -0.21858865)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves74" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.005975632, -0.041618776, 0.09073129, -0.099765256, 0.0005548977, 0.006825149, -0.0033440094, -0.090926185, -0.041487917, 3.7141185, 3.4251904, -1.3836281)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves75" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.005975632, -0.041618776, 0.09073129, -0.099765256, 0.0005548977, 0.006825149, -0.0033440094, -0.090926185, -0.041487917, 3.1175613, 3.4138956, -2.1126733)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves76" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0013116931, 0.047510017, 0.08798339, 0.099882655, -0.0034800405, 0.0033682743, 0.004662126, 0.08792433, -0.047408618, 3.496171, 3.315628, -0.63042307)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves77" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0014041897, 0.08736891, 0.04862822, 0.099882655, -0.0034800407, 0.0033682748, 0.0046351063, 0.04852386, -0.08731525, 3.7819636, 3.2734113, 0.22532046)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves78" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0014041897, 0.08736891, 0.04862822, 0.099882655, -0.0034800407, 0.0033682748, 0.0046351063, 0.04852386, -0.08731525, 4.6169252, 3.2758517, -0.080213785)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves79" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0014041901, 0.035075054, 0.09363639, 0.09988267, -0.004833041, 0.0003125388, 0.0046351054, 0.093522094, -0.035101764, 4.886697, 3.348289, -1.7229019)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves80" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0013116933, -0.020783354, 0.09780764, 0.09988267, -0.004833041, 0.000312539, 0.0046621263, 0.09769695, 0.02082237, 2.915359, 3.2611852, -1.1265799)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves81" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.000827846, -0.08079177, -0.05892371, 0.099882655, -0.0034800407, 0.003368275, -0.0047718575, -0.058826678, 0.08072578, 4.6833243, 3.315628, -2.6401172)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves82" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0032663625, -0.09975395, -0.0062034354, 0.099882655, -0.0034800407, 0.0033682743, -0.0035758684, -0.006086137, 0.09975057, 4.0563307, 3.2734113, -3.2888494)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves83" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0032663625, -0.09975395, -0.0062034354, 0.099882655, -0.0034800407, 0.0033682743, -0.0035758684, -0.006086137, 0.09975057, 3.4348636, 3.2758517, -2.6530104)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves84" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0032663625, -0.07198823, -0.06933273, 0.09988267, -0.0048330417, 0.0003125386, -0.0035758675, -0.06924114, 0.07206164, 3.9001296, 3.348289, -1.054659)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves85" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0008278465, -0.0233958, -0.09722117, 0.0998827, -0.0048330417, 0.00031253957, -0.0047718575, -0.097104475, 0.023408342, 5.4213505, 3.2611852, -2.4430606)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves86" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0014041901, 0.035075054, 0.09363639, 0.09988267, -0.004833041, 0.0003125388, 0.0046351054, 0.093522094, -0.035101764, 4.9819455, 3.303506, -0.7867197)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves87" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.005975632, -0.041618776, 0.09073129, -0.099765256, 0.0005548977, 0.006825149, -0.0033440094, -0.090926185, -0.041487917, 3.7141185, 3.4251904, -1.3836281)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves88" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.005975632, -0.041618776, 0.09073129, -0.099765256, 0.0005548977, 0.006825149, -0.0033440094, -0.090926185, -0.041487917, 3.1175613, 3.4138956, -2.1126733)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves89" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0045082145, -0.08034547, -0.059365667, -0.048012517, 0.05385529, -0.06924166, 0.08760407, 0.025381386, -0.0410038, 3.4992566, 3.2256625, 0.40784478)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves90" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0045082145, -0.08034547, -0.059365667, -0.048012517, 0.05385529, -0.06924166, 0.08760407, 0.025381386, -0.0410038, 2.25985, 3.8381484, -1.0078899)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves91" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.004832651, 0.076189466, -0.06458956, 0.043708645, -0.059758082, -0.067219965, -0.089811996, -0.024982722, -0.036189303, 3.6316664, 3.185614, -3.7698119)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves92" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0042441967, 0.029393522, -0.09548827, 0.041320823, -0.0875338, -0.025108337, -0.090964705, -0.038390893, -0.015860744, 4.551071, 3.357692, -3.639867)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves93" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0042441967, 0.029393522, -0.09548827, 0.041320823, -0.0875338, -0.025108337, -0.090964705, -0.038390893, -0.015860744, 4.079365, 2.6800358, -3.969702)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves94" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.004244196, 0.08423933, -0.053718917, 0.04132083, -0.050433427, -0.07582256, -0.09096472, -0.018979035, -0.0369489, 2.4164076, 2.7799718, -4.001895)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves95" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0048326487, 0.09988308, 0.00013148625, 0.043708682, -0.001996398, -0.08991979, -0.08981204, 0.004402976, -0.04375404, 3.2664418, 3.766146, -1.5946267)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves96" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.004497255, -0.04083438, 0.091171965, 0.04504048, 0.08063319, 0.03833595, -0.089169115, 0.04278837, 0.0147657255, 1.561132, 3.1158905, -3.80347)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves97" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.002822528, 0.01468853, 0.09887507, 0.04696609, 0.087511346, -0.011659663, -0.088239536, 0.046108652, -0.00936866, 1.0561912, 2.0246549, -3.9873471)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves98" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.002822528, 0.01468853, 0.09887507, 0.04696609, 0.087511346, -0.011659663, -0.088239536, 0.046108652, -0.00936866, 0.27582645, 3.4787557, -2.4972937)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves99" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0028225286, -0.05284521, 0.0848494, 0.0469661, 0.0742293, 0.047793258, -0.088239565, 0.04119942, 0.022724194, 3.274345, 3.5246694, -3.6424077)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves100" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.004497248, -0.090161026, 0.043020427, 0.045040492, 0.036608703, 0.08143194, -0.089169145, 0.02303882, 0.038962603, 1.6011972, 2.4052486, -4.0860643)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves101" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.004244196, 0.08423933, -0.053718917, 0.04132083, -0.050433427, -0.07582256, -0.09096472, -0.018979035, -0.0369489, 3.3126144, 2.5021152, -4.086297)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves102" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0045082145, -0.08034547, -0.059365667, -0.048012517, 0.05385529, -0.06924166, 0.08760407, 0.025381386, -0.0410038, 2.9909897, 3.7832959, -1.7684615)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves103" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0045082145, -0.08034547, -0.059365667, -0.048012517, 0.05385529, -0.06924166, 0.08760407, 0.025381386, -0.0410038, 2.25985, 3.8381484, -1.7294409)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves104" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0045082103, -0.08034547, -0.059365664, 0.034079563, 0.05462428, -0.07651648, 0.09390558, -0.023681099, 0.024918808, 2.9909897, 2.9492095, 0.69993186)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves105" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0045082103, -0.08034547, -0.059365664, 0.034079563, 0.05462428, -0.07651648, 0.09390558, -0.023681099, 0.024918808, 2.25985, 3.0147345, 0.68450856)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves106" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0048326505, 0.07618946, -0.06458955, -0.038579725, -0.05822292, -0.07156601, -0.09213166, 0.02837701, 0.02657997, 3.6316664, 2.429218, 1.0385675)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves107" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.004244196, 0.029393524, -0.09548827, -0.041022196, -0.08663391, -0.028491255, -0.09109977, 0.040380616, 0.008380956, 4.551071, 2.6404338, 0.9951587)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves108" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.004244196, 0.029393524, -0.09548827, -0.041022196, -0.08663391, -0.028491255, -0.09109977, 0.040380616, 0.008380956, 4.079365, 1.9452441, 1.286226)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves109" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.004244197, 0.08423932, -0.05371891, -0.041022204, -0.047556803, -0.07781731, -0.09109978, 0.025339391, 0.032538407, 2.4164076, 1.9870634, 1.1899207)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves110" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0048326487, 0.09988308, 0.00013148613, -0.03857974, 0.0019880184, -0.09223694, -0.092131734, 0.0044067665, 0.0386307, 3.2664418, 3.068424, 0.8276055)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves111" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0044972533, -0.04083437, 0.09117196, -0.03721746, 0.0853792, 0.036404055, -0.092707254, -0.03229471, -0.019037228, 1.561132, 2.3578994, 1.0686991)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves112" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.002822528, 0.01468853, 0.09887506, -0.035247795, 0.09241465, -0.014734993, -0.09353942, -0.03526719, 0.0025689555, 1.0561912, 3.0630524, 0.8166032)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves119" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0045082103, -0.08034547, -0.059365664, 0.034079563, 0.05462428, -0.07651648, 0.09390558, -0.023681099, 0.024918808, 0.67903256, 2.3167293, 0.69993186)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves120" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.002822528, 0.01468853, 0.09887506, -0.035247795, 0.09241465, -0.014734993, -0.09353942, -0.03526719, 0.0025689555, -0.6871662, 2.4305723, 0.28524637)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves113" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.002822528, 0.01468853, 0.09887506, -0.035247795, 0.09241465, -0.014734993, -0.09353942, -0.03526719, 0.0025689555, 1.6655474, 2.8855007, 0.8889692)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves114" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0028225258, -0.052845206, 0.0848494, -0.035247803, 0.07995705, 0.048625708, -0.09353945, -0.028535053, -0.020883594, 3.274345, 2.7487926, 0.8680906)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves115" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0044972477, -0.09016102, 0.043020424, -0.037217475, 0.04147605, 0.08303373, -0.09270729, -0.0122768795, -0.03542094, 1.6011972, 1.6764019, 1.4157331)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves116" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.004244197, 0.08423932, -0.05371891, -0.041022204, -0.047556803, -0.07781731, -0.09109978, 0.025339391, 0.032538407, 3.3126144, 1.7401946, 1.342838)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves117" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0045082103, -0.08034547, -0.059365664, 0.034079563, 0.05462428, -0.07651648, 0.09390558, -0.023681099, 0.024918808, 2.9909897, 2.9492095, 0.69993186)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves118" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0045082103, -0.08034547, -0.059365664, 0.034079563, 0.05462428, -0.07651648, 0.09390558, -0.023681099, 0.024918808, 2.25985, 3.0147345, 0.68450856)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves63" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0040815677, 0.09792246, -0.01986289, 0.099882655, -0.0034800407, 0.0033682748, 0.0026070606, -0.01997706, -0.09794959, 1.921821, 3.315628, -0.15118092)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves64" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0048431354, 0.07177081, -0.06946579, 0.099882655, -0.003480041, 0.003368275, 0, -0.06954741, -0.07185513, 2.8236685, 3.2734113, -0.17658865)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves65" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0048431354, 0.07177081, -0.06946579, 0.099882655, -0.003480041, 0.003368275, 0, -0.06954741, -0.07185513, 2.7733417, 3.2758517, -1.0642707)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves66" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.004843135, 0.09967446, -0.006445659, 0.099882655, -0.004833041, 0.0003125388, 0, -0.006453233, -0.09979159, 1.2794285, 3.348289, -1.7987256)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves67" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.0040815677, 0.08747474, 0.048285734, 0.09988267, -0.004833041, 0.0003125388, 0.0026070601, 0.0482163, -0.08756937, 1.2785788, 3.2611852, 0.2608307)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves68" type="Sprite3D" parent="Light"]
+transform = Transform3D(0.004843135, 0.09967446, -0.006445659, 0.099882655, -0.004833041, 0.0003125388, 0, -0.006453233, -0.09979159, 2.2030141, 3.303506, -1.6184521)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves55" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0014706998, 0.071770795, 0.06961888, -0.099928506, -0.0034800381, 0.0014766131, 0.0034825439, -0.06954739, 0.071770675, 1.9638417, 3.3221898, -1.6124954)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves56" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0014706998, 0.071770795, 0.06961888, -0.099928506, -0.0034800381, 0.0014766131, 0.0034825439, -0.06954739, 0.071770675, 1.5654111, 3.297234, -2.4968467)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves57" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0014706998, 0.071770795, 0.06961888, -0.099928506, -0.0034800381, 0.0014766131, 0.0034825439, -0.06954739, 0.071770675, 2.4509676, 3.2869453, -2.4180892)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves58" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0014706992, 0.009595632, 0.09952769, -0.09992851, -0.0036078978, -0.0011287815, 0.0034825446, -0.09947315, 0.009641835, 3.137821, 3.3297224, -0.90057456)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves59" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0014706992, 0.009595632, 0.09952769, -0.09992851, -0.0036078978, -0.0011287815, 0.0034825446, -0.09947315, 0.009641835, 0.8495363, 3.2981734, -2.7722046)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves61" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0031140908, 0.061633166, 0.07868707, -0.09992851, -0.0036078976, -0.0011287815, 0.002143248, -0.07866598, 0.06170146, 0.9643531, 3.2981734, -1.4647071)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves60" type="Sprite3D" parent="Light"]
+transform = Transform3D(-0.0014706992, 0.009595632, 0.09952769, -0.09992851, -0.0036078978, -0.0011287815, 0.0034825446, -0.09947315, 0.009641835, 2.98681, 3.2995548, -1.8299835)
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="dark" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9210435, 0.5910275, -0.18383884)
+
+[node name="Leaves46" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 1.2641592, 2.1898897, -0.5781467)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves48" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 0.39346683, 1.9294379, -0.21858865)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves103" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.26913297, 2.2947078, -0.21858865)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves104" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -1.1164283, 2.2947078, -0.21858865)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves105" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -1.3573192, 2.3275535, -0.21858865)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves106" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.02880776, 1.3714197, -1.897816)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves131" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.8079506, 1.2219195, -1.897816)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves132" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 0.75855076, 1.1812272, -2.2750628)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves133" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.34776366, 2.0628426, -1.4157401)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves134" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 3.5841699, 2.0628426, -1.4157401)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves135" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 4.684322, 1.7978823, -1.1232119)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves137" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 4.684322, 1.7978823, -0.5512503)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves138" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 3.9680529, 2.2729466, -0.5512503)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves139" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 3.9680529, 2.2729466, 0.81742114)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves140" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 3.395379, 2.0363398, 1.2309444)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves141" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 3.771213, 1.343833, 1.4617791)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves233" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 4.272334, 1.343833, 1.4617791)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves142" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 3.2871718, 0.93606377, 2.3592572)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves136" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 3.9221597, 1.3912673, -1.8135816)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves108" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -1.3286544, 2.1491857, 0.58985764)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves109" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.97113407, 2.2858562, 1.4339609)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves110" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -1.1997274, 1.665498, -1.1473293)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves111" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -1.1997274, 1.491503, -1.1473293)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves112" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 0.120124936, 1.491503, -1.1473293)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves113" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 1.6408902, 1.491503, -1.1473293)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves114" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 1.6408902, 1.3856893, 0.8400614)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves115" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 0.23525584, 1.6407776, 1.0945759)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves116" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.87852275, 1.6407776, 0.8400614)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves117" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -1.1029738, 1.029732, 1.3659832)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves118" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 0.8911158, 1.4345906, 0.8400614)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves119" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 2.7215834, -0.30637288, 1.2817938)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves162" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 3.251266, 0.52576566, 1.0629938)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves120" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 2.9386704, -0.16315055, 1.0629938)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves122" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 4.25964, 0.69331217, 1.0629938)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves123" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 4.25964, 1.5197995, 0.6320431)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves124" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 4.25964, 1.3694253, -0.04588896)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves144" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 2.7373362, 1.2480531, 0.61548084)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves125" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 4.821907, 1.3694253, -0.04588896)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves126" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 4.4479275, 1.9598882, 0.12914366)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves127" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 4.4479275, 1.9598882, 0.73621446)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves128" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 4.8579116, 1.2511501, 0.73621446)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves129" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 3.3467903, 1.1971028, 0.73621446)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves130" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 3.9293675, -0.06383133, 1.2782347)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves49" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0040815677, 0.09792247, -0.019862892, 0.099882655, -0.003480041, 0.003368275, 0.0026070606, -0.01997706, -0.097949594, 2.0968077, 1.6837692, -0.15118095)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves101" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0040815677, 0.09792247, -0.019862892, 0.099882655, -0.003480041, 0.003368275, 0.0026070606, -0.01997706, -0.097949594, 2.0968077, 1.7385914, 0.5602981)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves102" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0040815677, 0.09792247, -0.019862892, 0.099882655, -0.003480041, 0.003368275, 0.0026070606, -0.01997706, -0.097949594, 2.0968077, 1.1962352, -0.7930769)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves100" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0040815677, 0.09792247, -0.019862892, 0.099882655, -0.003480041, 0.003368275, 0.0026070606, -0.01997706, -0.097949594, 3.6108835, 1.3969641, -0.15118095)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves50" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.099882655, -0.0034800412, 0.0033682752, 0, -0.069547415, -0.071855135, 2.823669, 1.5041187, -0.17658871)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves51" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.099882655, -0.0034800412, 0.0033682752, 0, -0.069547415, -0.071855135, 2.773342, 1.5065591, -1.064271)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves52" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0048431354, 0.09967448, -0.006445658, 0.099882655, -0.0048330417, 0.00031253882, -1.1641534e-10, -0.006453231, -0.0997916, 1.2794287, 1.5789964, -1.798726)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves53" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0040815677, 0.08747475, 0.048285738, 0.09988268, -0.0048330417, 0.00031253882, 0.0026070604, 0.048216302, -0.08756937, 1.2785788, 1.7707961, 0.2608307)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves54" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0048431354, 0.09967448, -0.006445658, 0.099882655, -0.0048330417, 0.00031253882, -1.1641534e-10, -0.006453231, -0.0997916, 2.2030146, 1.5342133, -1.6184525)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves55" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014707, 0.0717708, 0.069618896, -0.09992851, -0.0034800381, 0.0014766131, 0.0034825443, -0.0695474, 0.07177068, 1.9638422, 1.5528972, -1.6124957)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves56" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014707, 0.0717708, 0.069618896, -0.09992851, -0.0034800381, 0.0014766131, 0.0034825443, -0.0695474, 0.07177068, 1.5654113, 1.5279415, -1.9412127)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves57" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014706998, 0.0717708, 0.06961889, -0.09992851, -0.0034800381, 0.0014766131, 0.0034825439, -0.0695474, 0.07177068, 2.3441508, 1.2055274, -2.2658675)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves58" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014706992, 0.009595632, 0.099527694, -0.09992852, -0.0036078983, -0.0011287815, 0.0034825448, -0.099473156, 0.009641836, 3.1378212, 1.5604298, -0.90057445)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves59" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.02359876, 0.009329898, 0.09672671, -0.09711531, 0.001241596, -0.023813333, -0.0034227124, -0.09955608, 0.008767758, 2.3954573, 1.5288808, 1.1660736)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves61" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.003114091, 0.061633173, 0.07868708, -0.09992852, -0.0036078978, -0.0011287815, 0.002143248, -0.07866598, 0.06170147, 0.96435314, 1.2574481, -1.4647073)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves60" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014706992, 0.009595632, 0.099527694, -0.09992852, -0.0036078983, -0.0011287815, 0.0034825448, -0.099473156, 0.009641836, 2.9868102, 1.5302622, -1.8299842)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves63" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0040815677, 0.09792247, -0.019862892, 0.099882655, -0.003480041, 0.003368275, 0.0026070606, -0.01997706, -0.097949594, 1.9799631, 2.4572735, 0.9002609)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves64" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.099882655, -0.0034800412, 0.0033682752, 0, -0.069547415, -0.071855135, 2.8818107, 2.4150567, 0.8748532)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves65" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.099882655, -0.0034800412, 0.0033682752, 0, -0.069547415, -0.071855135, 2.8314836, 2.4174972, -0.012829065)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves92" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.099882655, -0.0034800412, 0.0033682752, 0, -0.069547415, -0.071855135, 0.7066895, 2.035001, -1.6402473)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves93" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.099882655, -0.0034800412, 0.0033682752, 0, -0.069547415, -0.071855135, -0.14095628, 2.5148149, -0.8213084)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves94" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.099882655, -0.0034800412, 0.0033682752, 0, -0.069547415, -0.071855135, -0.14095628, 2.5585086, 0.7654463)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves95" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.099882655, -0.0034800412, 0.0033682752, 0, -0.069547415, -0.071855135, -0.14095628, 1.9964349, 1.4557759)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves96" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.099882655, -0.0034800412, 0.0033682752, 0, -0.069547415, -0.071855135, -0.14095628, 1.1197941, 1.8652073)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves97" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.099882655, -0.0034800412, 0.0033682752, 0, -0.069547415, -0.071855135, -0.14095628, 2.2904887, 0.65671027)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves98" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.099882655, -0.0034800412, 0.0033682752, 0, -0.069547415, -0.071855135, -0.8603147, 2.2904887, 0.65671027)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves99" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.099882655, -0.0034800412, 0.0033682752, 0, -0.069547415, -0.071855135, -0.8603147, 2.2904887, 0.65671027)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves66" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0048431354, 0.09967448, -0.006445658, 0.099882655, -0.0048330417, 0.00031253882, -1.1641534e-10, -0.006453231, -0.0997916, 1.3375704, 0.81669664, -2.4782233)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves147" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.02880776, 0.35250258, -2.5696528)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves121" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.5329212, 1.0658042, -1.897816)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves163" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -1.312064, 0.9163041, -1.897816)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves164" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.8518771, 1.7572272, -1.4157401)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves165" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.5329212, 0.04688716, -2.5696528)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves166" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -1.346049, 0.04688716, -1.536715)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves167" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -1.2844206, 0.61568236, -1.3731824)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves168" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 1.1533221, 0.61568236, 1.2476487)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves169" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.26627028, 0.61568236, 1.2476487)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves170" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -1.2242151, 0.47999167, 1.2476487)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves171" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.88454354, -0.13822722, 1.2476487)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves172" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 0.46934497, -0.13822722, 1.0645227)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves173" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 1.2272795, -0.13822722, 0.98413277)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves148" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 0.75855076, 0.16231012, -2.2378926)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves62" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014706998, 0.0717708, 0.06961889, -0.09992851, -0.0034800381, 0.0014766131, 0.0034825439, -0.0695474, 0.07177068, 2.3441508, 0.18661034, -2.2286973)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves74" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0048431354, 0.09967448, -0.006445658, 0.099882655, -0.0048330417, 0.00031253882, -1.1641534e-10, -0.006453231, -0.0997916, 1.3375704, -0.05987847, -1.9734657)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves67" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0040815677, 0.08747475, 0.048285738, 0.09988268, -0.0048330417, 0.00031253882, 0.0026070604, 0.048216302, -0.08756937, 1.3367205, 2.1313975, 1.3122725)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves68" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0048431354, 0.09967448, -0.006445658, 0.099882655, -0.0048330417, 0.00031253882, -1.1641534e-10, -0.006453231, -0.0997916, 2.2611563, 2.4451516, -0.56701064)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves69" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014707, 0.0717708, 0.069618896, -0.09992851, -0.0034800381, 0.0014766131, 0.0034825443, -0.0695474, 0.07177068, 2.0219839, 2.4638355, -0.56105375)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves70" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014707, 0.0717708, 0.069618896, -0.09992851, -0.0034800381, 0.0014766131, 0.0034825443, -0.0695474, 0.07177068, 1.623553, 2.1795235, -1.4454048)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves174" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.02880776, 1.3714197, -1.897816)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves175" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.8079506, 1.2219195, -1.897816)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves176" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 0.75855076, 1.1812272, -2.2750628)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves177" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.34776366, 2.0628426, -1.4157401)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves178" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 0.120124936, 1.491503, -1.1473293)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves179" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 1.6408902, 1.491503, -1.1473293)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves180" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0048431354, 0.09967448, -0.006445658, 0.099882655, -0.0048330417, 0.00031253882, -1.1641534e-10, -0.006453231, -0.0997916, 1.2794287, 1.5789964, -1.798726)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves181" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0048431354, 0.09967448, -0.006445658, 0.099882655, -0.0048330417, 0.00031253882, -1.1641534e-10, -0.006453231, -0.0997916, 2.2030146, 1.5342133, -1.6184525)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves182" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014707, 0.0717708, 0.069618896, -0.09992851, -0.0034800381, 0.0014766131, 0.0034825443, -0.0695474, 0.07177068, 1.9638422, 1.5528972, -1.6124957)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves183" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014707, 0.0717708, 0.069618896, -0.09992851, -0.0034800381, 0.0014766131, 0.0034825443, -0.0695474, 0.07177068, 1.5654113, 1.5279415, -1.9412127)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves184" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014706998, 0.0717708, 0.06961889, -0.09992851, -0.0034800381, 0.0014766131, 0.0034825439, -0.0695474, 0.07177068, 2.3441508, 1.2055274, -2.2658675)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves185" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.003114091, 0.061633173, 0.07868708, -0.09992852, -0.0036078978, -0.0011287815, 0.002143248, -0.07866598, 0.06170147, 0.96435314, 1.2574481, -1.4647073)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves186" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.099882655, -0.0034800412, 0.0033682752, 0, -0.069547415, -0.071855135, 0.7066895, 2.035001, -1.6402473)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves187" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0048431354, 0.09967448, -0.006445658, 0.099882655, -0.0048330417, 0.00031253882, -1.1641534e-10, -0.006453231, -0.0997916, 1.3375704, 0.81669664, -2.4782233)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves188" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.02880776, 0.35250258, -2.5696528)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves189" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.5329212, 1.0658042, -1.897816)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves190" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.5329212, 0.04688716, -2.5696528)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves191" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 0.75855076, 0.16231012, -2.2378926)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves192" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014706998, 0.0717708, 0.06961889, -0.09992851, -0.0034800381, 0.0014766131, 0.0034825439, -0.0695474, 0.07177068, 2.3441508, 0.18661034, -2.2286973)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves193" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0048431354, 0.09967448, -0.006445658, 0.099882655, -0.0048330417, 0.00031253882, -1.1641534e-10, -0.006453231, -0.0997916, 1.3375704, -0.05987847, -1.9734657)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves194" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014707, 0.0717708, 0.069618896, -0.09992851, -0.0034800381, 0.0014766131, 0.0034825443, -0.0695474, 0.07177068, 1.623553, 2.1795235, -1.4454048)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves195" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0020264285, -0.09281442, 0.03716691, -0.09976526, 0.000554898, 0.0068251486, -0.0065409606, -0.037217963, -0.092585295, 2.2813413, 1.3714197, -2.3621845)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves196" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0020264285, -0.09281442, 0.03716691, -0.09976526, 0.000554898, 0.0068251486, -0.0065409606, -0.037217963, -0.092585295, 1.6038201, 1.2219195, -2.7469294)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves197" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0020264285, -0.09281442, 0.03716691, -0.09976526, 0.000554898, 0.0068251486, -0.0065409606, -0.037217963, -0.092585295, 3.152293, 1.1812272, -2.3014262)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves198" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0020264285, -0.09281442, 0.03716691, -0.09976526, 0.000554898, 0.0068251486, -0.0065409606, -0.037217963, -0.092585295, 1.7659345, 2.0628426, -2.1004868)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves199" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0020264285, -0.09281442, 0.03716691, -0.09976526, 0.000554898, 0.0068251486, -0.0065409606, -0.037217963, -0.092585295, 2.0402548, 1.491503, -1.6360383)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves200" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0020264285, -0.09281442, 0.03716691, -0.09976526, 0.000554898, 0.0068251486, -0.0065409606, -0.037217963, -0.092585295, 3.3626707, 1.491503, -0.8850764)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves201" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0042114584, 0.08986084, 0.043672655, 0.09988267, -0.004833042, 0.00031253882, 0.0023915658, 0.04360823, -0.089958936, 3.3700168, 1.5789964, -1.6300044)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves202" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0042114584, 0.08986084, 0.043672655, 0.09988267, -0.004833042, 0.00031253882, 0.0023915658, 0.04360823, -0.089958936, 4.084122, 1.5342133, -1.0171721)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves203" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0029985788, 0.09675279, 0.02509794, -0.099928506, -0.003480038, 0.0014766128, 0.002302085, -0.025035705, 0.096787974, 3.8732028, 1.5528972, -1.1300967)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves204" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0029985788, 0.09675279, 0.02509794, -0.099928506, -0.003480038, 0.0014766128, 0.002302085, -0.025035705, 0.096787974, 3.6890602, 1.5279415, -1.6126872)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves205" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0029985788, 0.09675279, 0.025097933, -0.09992853, -0.0034800386, 0.0014766132, 0.002302085, -0.02503571, 0.09678799, 4.526547, 1.2055274, -1.5104525)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves206" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.003766275, 0.09244019, 0.037955612, -0.09992852, -0.0036078978, -0.0011287816, 0.00032595487, -0.03797099, 0.09251, 2.9310954, 1.2574481, -1.495137)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves207" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004211458, 0.09675281, -0.024923112, 0.099882655, -0.0034800412, 0.0033682752, 0.002391566, -0.025035713, -0.09678583, 2.793721, 2.035001, -1.7750175)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves208" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0042114584, 0.08986084, 0.043672655, 0.09988267, -0.004833042, 0.00031253882, 0.0023915658, 0.04360823, -0.089958936, 3.756115, 0.81669664, -1.6904507)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves209" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0020264285, -0.09281442, 0.03716691, -0.09976526, 0.000554898, 0.0068251486, -0.0065409606, -0.037217963, -0.092585295, 2.613098, 0.35250258, -2.2373884)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves210" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0020264285, -0.09281442, 0.03716691, -0.09976526, 0.000554898, 0.0068251486, -0.0065409606, -0.037217963, -0.092585295, 1.8429782, 1.0658042, -2.6111183)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves211" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0020264285, -0.09281442, 0.03716691, -0.09976526, 0.000554898, 0.0068251486, -0.0065409606, -0.037217963, -0.092585295, 2.1747348, 0.04688716, -2.4863222)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves212" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0020264285, -0.09281442, 0.03716691, -0.09976526, 0.000554898, 0.0068251486, -0.0065409606, -0.037217963, -0.092585295, 3.4840496, 0.16231012, -2.3839216)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves213" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0029985788, 0.09675279, 0.025097933, -0.09992853, -0.0034800386, 0.0014766132, 0.002302085, -0.02503571, 0.09678799, 4.8583035, 0.18661034, -1.623811)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves214" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0042114584, 0.08986084, 0.043672655, 0.09988267, -0.004833042, 0.00031253882, 0.0023915658, 0.04360823, -0.089958936, 3.8569741, -0.05987847, -2.306044)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves216" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0042114584, 0.08986084, 0.043672655, 0.09988267, -0.004833042, 0.00031253882, 0.0023915658, 0.04360823, -0.089958936, 4.2792315, 0.60876, -1.3972929)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves215" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0029985788, 0.09675279, 0.02509794, -0.099928506, -0.003480038, 0.0014766128, 0.002302085, -0.025035705, 0.096787974, 3.494786, 2.1795235, -1.1528356)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves71" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014706998, 0.0717708, 0.06961889, -0.09992851, -0.0034800381, 0.0014766131, 0.0034825439, -0.0695474, 0.07177068, 2.5091095, 2.1571577, -1.3666472)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves72" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014706992, 0.009595632, 0.099527694, -0.09992852, -0.0036078983, -0.0011287815, 0.0034825448, -0.099473156, 0.009641836, 3.195963, 2.4713678, 0.15086746)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves73" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.02359876, 0.009329898, 0.09672671, -0.09711531, 0.001241596, -0.023813333, -0.0034227124, -0.09955608, 0.008767758, 0.7084681, 1.972981, 1.4559386)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves75" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014706992, 0.009595632, 0.099527694, -0.09992852, -0.0036078983, -0.0011287815, 0.0034825448, -0.099473156, 0.009641836, 3.044952, 2.4412, -0.7785423)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves76" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, 0.7533282, 0.15633225, 2.4037163)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves77" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, -1.4614176, -0.1696192, 1.4305141)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves149" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, -1.4614176, 0.50639105, 1.4305141)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves150" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, -1.1210812, 0.50639105, 2.1388354)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves151" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, -1.1210812, -0.241498, 2.1388354)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves152" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, -0.45062077, -0.241498, 2.1719904)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves153" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, 0.297428, -0.241498, 2.1719904)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves154" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, 3.083849, -0.241498, 2.1719904)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves155" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, 3.8111243, -0.241498, 2.1719904)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves156" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, 3.4909887, 0.40737367, 2.1719904)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves157" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, 4.212271, 0.65146947, 2.1719904)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves158" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, 4.9426546, 0.65146947, 1.6749029)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves159" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, 4.5489225, -0.21558356, 1.6749029)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves160" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, 4.5489225, -0.20192182, 1.169035)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves161" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, 4.738479, 0.51424515, 1.169035)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves78" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0040815673, 0.09792246, -0.019862888, 0.025769109, 0.018175278, 0.0948979, 0.09653648, -0.008991813, -0.02449191, 1.4109904, -0.2073617, 2.6798112)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves79" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.028269574, 0.06571879, 0.06987042, 0.09579862, -0.023021603, -0.017106453, 2.312838, -0.19494128, 2.6321294)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves143" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 1.6475539, 0.5954702, 1.0629938)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves217" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -1.1029738, 1.029732, -0.7782414)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves218" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 2.7215834, -0.30637288, -1.0812309)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves219" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 3.251266, 0.52576566, -1.0812309)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves220" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 2.9386704, -0.16315055, -1.0812309)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves221" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 1.1533221, 0.61568236, -0.8965759)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves222" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.26627028, 0.61568236, -0.8965759)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves223" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 3.9659061, -0.27278578, -1.0439694)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves230" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 3.9659061, 0.4411248, -0.98982096)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves231" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 4.732259, 0.9991492, -0.98982096)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves232" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 4.732259, 0.082529426, -0.98982096)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves224" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, -0.88454354, -0.13822722, -0.91563094)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves225" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 0.46934497, -0.13822722, -0.8724103)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves226" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 1.2272795, 0.2189908, -1.0807729)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves227" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, -1.4614176, -0.1696192, -1.0275433)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves228" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, -1.4614176, 0.50639105, -0.98214734)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves229" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678342, -0.09908729, -0.013399788, -0.09976526, 0.0005548979, 0.0068251495, -0.0066885008, 0.013468527, -0.09886284, 1.6475539, 0.5954702, -1.0812309)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves91" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, 0.15980995, 1.0581753, 2.4037163)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves107" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014678343, -0.099087305, -0.01339979, -0.02182133, -0.0127607705, 0.09675221, -0.09757906, 0.0043441774, -0.021434858, -0.71088254, 0.7101221, 2.4946477)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves145" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0040815673, 0.09792246, -0.019862888, 0.025769109, 0.018175278, 0.0948979, 0.09653648, -0.008991813, -0.02449191, 0.8174721, 0.6944814, 2.6798112)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves146" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.028269574, 0.06571879, 0.06987042, 0.09579862, -0.023021603, -0.017106453, 1.7193198, 0.7069018, 2.6321294)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves80" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.004843136, 0.07177082, -0.0694658, 0.028269574, 0.06571879, 0.06987042, 0.09579862, -0.023021603, -0.017106453, 2.2625108, 0.69103646, 2.3832314)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves81" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0048431363, 0.09967449, -0.006445658, 0.028269576, 0.004821484, 0.09579977, 0.09579862, -0.006461872, -0.027944043, 0.7685977, 1.4159625, 2.2448356)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves82" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0040815687, 0.087474756, 0.04828574, 0.025769122, -0.047612708, 0.08407728, 0.096536525, 0.0090111345, -0.024484813, 0.49110115, 0.77861977, 2.4838703)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves83" type="Sprite3D" parent="dark"]
+transform = Transform3D(0.0048431363, 0.09967449, -0.006445658, 0.028269576, 0.004821484, 0.09579977, 0.09579862, -0.006461872, -0.027944043, 1.6921836, 1.2303853, 2.252906)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves84" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014707001, 0.0717708, 0.069618896, -0.031622697, 0.06571878, -0.068418175, -0.09485693, -0.023021594, 0.021729337, 1.4530112, 1.2299601, 2.2725122)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves234" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014707001, 0.0717708, 0.069618896, -0.031622697, 0.06571878, -0.068418175, -0.09485693, -0.023021594, 0.021729337, -0.85894597, 0.59747994, 2.2725122)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves85" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014707001, 0.0717708, 0.069618896, -0.031622697, 0.06571878, -0.068418175, -0.09485693, -0.023021594, 0.021729337, 1.0545803, 1.9976833, 1.7495291)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves86" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014706999, 0.0717708, 0.06961889, -0.031622704, 0.065718785, -0.06841818, -0.09485695, -0.023021596, 0.021729339, 1.9401368, 1.9158158, 1.7503684)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves87" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014706992, 0.009595632, 0.09952768, -0.031622704, 0.09438473, -0.009567075, -0.09485696, -0.031614054, 0.0016462795, 2.6269903, 0.5492799, 2.48123)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves88" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.023598759, 0.009329897, 0.0967267, -0.024203574, 0.09583681, -0.015149094, -0.09411315, -0.026986314, -0.020358125, 1.4674032, 0.6561457, 2.3725932)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves89" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0031140908, 0.061633173, 0.07868708, -0.030338168, 0.07442832, -0.05949808, -0.09523602, -0.025725039, 0.01638061, 0.4535221, 1.004594, 2.0309715)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves90" type="Sprite3D" parent="dark"]
+transform = Transform3D(-0.0014706992, 0.009595632, 0.09952768, -0.031622704, 0.09438473, -0.009567075, -0.09485696, -0.031614054, 0.0016462795, 2.4759793, 1.4321492, 2.189247)
+modulate = Color(0.11372549, 0.33333334, 0.27450982, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Mid" type="Node3D" parent="."]
+transform = Transform3D(0.9018476, 0, -0.43205428, 0, 1, 0, 0.43205428, 0, 0.9018476, -3.6986563, -0.014855266, 0.3764223)
+
+[node name="Leaves46" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014678342, -0.09908728, -0.013399787, -0.099765256, 0.0005548978, 0.006825149, -0.0066885003, 0.013468526, -0.098862834, 1.2641591, 3.4251904, -0.5781467)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves48" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014678342, -0.09908728, -0.013399787, -0.099765256, 0.0005548978, 0.006825149, -0.0066885003, 0.013468526, -0.098862834, 0.3934667, 3.4138956, -0.21858865)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves49" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0040815677, 0.09792246, -0.01986289, 0.099882655, -0.0034800407, 0.0033682748, 0.0026070606, -0.01997706, -0.09794959, 1.921821, 3.315628, -0.15118092)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves50" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0048431354, 0.07177081, -0.06946579, 0.099882655, -0.003480041, 0.003368275, 0, -0.06954741, -0.07185513, 2.8236685, 3.2734113, -0.17658865)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves51" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0048431354, 0.07177081, -0.06946579, 0.099882655, -0.003480041, 0.003368275, 0, -0.06954741, -0.07185513, 2.7733417, 3.2758517, -1.0642707)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves52" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.004843135, 0.09967446, -0.006445659, 0.099882655, -0.004833041, 0.0003125388, 0, -0.006453233, -0.09979159, 1.2794285, 3.348289, -1.7987256)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves53" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0040815677, 0.08747474, 0.048285734, 0.09988267, -0.004833041, 0.0003125388, 0.0026070601, 0.0482163, -0.08756937, 1.2785788, 3.2611852, 0.2608307)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves54" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.004843135, 0.09967446, -0.006445659, 0.099882655, -0.004833041, 0.0003125388, 0, -0.006453233, -0.09979159, 2.2030141, 3.303506, -1.6184521)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves55" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014706998, 0.071770795, 0.06961888, -0.099928506, -0.0034800381, 0.0014766131, 0.0034825439, -0.06954739, 0.071770675, 1.9638417, 3.3221898, -1.6124954)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves107" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014678341, -0.09908728, -0.013399793, -0.099765256, 0.0005548978, 0.006825149, -0.0066885003, 0.013468526, -0.098862834, 4.729651, 3.0741282, -3.20128)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves108" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014678341, -0.09908728, -0.013399793, -0.099765256, 0.0005548978, 0.006825149, -0.0066885003, 0.013468526, -0.098862834, 3.8589582, 3.0628333, -2.841723)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves109" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0040815677, 0.09792245, -0.019862894, 0.099882655, -0.0034800407, 0.0033682748, 0.0026070606, -0.019977061, -0.097949594, 5.3873134, 2.9645658, -2.7743149)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves110" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0048431354, 0.07177081, -0.06946579, 0.099882655, -0.003480041, 0.003368275, 0, -0.06954741, -0.07185513, 6.2891617, 2.922349, -2.7997231)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves111" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0048431354, 0.07177081, -0.06946579, 0.099882655, -0.003480041, 0.003368275, 0, -0.06954741, -0.07185513, 6.23415, 2.4139814, -1.667409)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves112" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0048431354, 0.09967446, -0.006445661, 0.099882655, -0.004833041, 0.0003125388, 0, -0.006453231, -0.09979159, 4.7449207, 2.9972267, -4.421861)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves113" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0040815677, 0.08747475, 0.048285734, 0.09988267, -0.004833041, 0.0003125388, 0.0026070601, 0.04821632, -0.08756937, 4.744071, 2.9101229, -2.3623042)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves114" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0048431354, 0.09967446, -0.006445661, 0.099882655, -0.004833041, 0.0003125388, 0, -0.006453231, -0.09979159, 5.6685076, 2.9524436, -4.2415876)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves115" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014707, 0.071770795, 0.06961888, -0.099928506, -0.0034800381, 0.0014766131, 0.003482544, -0.06954739, 0.071770675, 5.4293337, 2.9711275, -4.2356296)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves116" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.04281031, -0.089004196, 0.015669357, -0.02857828, -0.029781478, -0.091084264, 0.085735396, 0.034515437, -0.038185436, 0.12250972, 2.0482168, -3.3389359)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves117" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.04281031, -0.089004196, 0.015669357, -0.02857828, -0.029781478, -0.091084264, 0.085735396, 0.034515437, -0.038185436, -0.7259536, 1.9950837, -2.932983)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves134" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.04281031, -0.089004196, 0.015669357, -0.02857828, -0.029781478, -0.091084264, 0.085735396, 0.034515437, -0.038185436, -0.5587363, 0.6797966, -2.5839427)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves118" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.03938758, 0.09121602, 0.011325169, 0.026115954, 0.022919185, -0.09376924, -0.08812817, -0.033975754, -0.03284925, 0.6011872, 2.6765828, -3.2855744)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves119" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.037945677, 0.08390647, -0.03898496, 0.024143958, -0.03169615, -0.09171927, -0.089315176, -0.044216022, -0.008231027, 1.3974371, 3.0248814, -3.5314016)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves120" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.037945677, 0.08390647, -0.03898496, 0.024143958, -0.03169615, -0.09171927, -0.089315176, -0.044216022, -0.008231027, 1.6227393, 2.2235103, -3.843752)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves121" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.037945677, 0.08918001, 0.024638455, 0.024143972, 0.035252023, -0.09041221, -0.089315146, -0.028358828, -0.03490822, 0.53831244, 0.9641472, -3.7234664)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves122" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0393876, 0.062165786, 0.06770552, 0.026115969, 0.078193, -0.056602255, -0.0881282, -0.004612306, -0.04703352, -0.0506258, 2.7558694, -2.8914547)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves123" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.037945677, 0.08918001, 0.024638455, 0.024143972, 0.035252023, -0.09041221, -0.089315146, -0.028358828, -0.03490822, 1.2918141, 1.5019318, -3.8982167)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves124" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.03979052, 0.08390647, 0.03710006, -0.019670302, -0.03169614, 0.09278164, 0.08960909, -0.04421602, 0.0038925987, 1.0777283, 1.4105314, -3.8398952)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves125" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.024252873, -0.08302837, -0.050180495, -0.021395067, 0.045873743, -0.08624297, 0.09462583, 0.031652562, -0.0066383015, 3.0697732, 2.4320898, -4.750901)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves126" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.024252873, -0.08302837, -0.050180495, -0.021395067, 0.045873743, -0.08624297, 0.09462583, 0.031652562, -0.0066382997, 2.1100974, 2.2512407, -4.291669)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves127" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.023471236, 0.08042188, -0.054602437, 0.01674519, -0.05198678, -0.0837674, -0.095753305, -0.028804522, -0.0012648478, 3.8406286, 2.5905304, -4.8375154)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves128" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.02375572, 0.038997006, -0.08896573, 0.014068183, -0.089240685, -0.042874053, -0.096113235, -0.02270093, 0.015713599, 4.642518, 2.2574177, -5.086044)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves129" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.02375572, 0.038997006, -0.08896573, 0.014068183, -0.089240685, -0.042874053, -0.096113235, -0.02270093, 0.015713599, 4.2705116, 1.4502966, -5.112238)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves130" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.023755718, 0.08733221, -0.042529434, 0.014068216, -0.040227965, -0.09046436, -0.09611323, -0.027473595, -0.0027296413, 2.6556697, 1.2813033, -4.737843)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves131" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.023471255, 0.09663969, 0.010482153, 0.01674521, 0.014641869, -0.097494714, -0.09575336, -0.021127952, -0.019619128, 3.437397, 3.1806479, -4.5624857)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves132" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.023755718, 0.08733221, -0.042529434, 0.014068216, -0.040227965, -0.09046436, -0.09611323, -0.027473595, -0.0027296413, 3.5532498, 1.1315073, -4.981618)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves133" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.028039621, 0.038997013, 0.08770982, -0.01197372, -0.08924067, 0.043505494, 0.09523866, -0.022700934, -0.020353362, 3.3381953, 1.2203006, -4.9228325)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves89" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.03773638, -0.09201824, 0.010421462, -0.042276002, 0.027130127, 0.08646788, -0.08239358, 0.028224073, -0.04913959, 2.2854066, 2.1766624, 0.9085096)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves90" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.03773638, -0.09201824, 0.010421462, -0.042276002, 0.027130127, 0.08646788, -0.08239358, 0.028224073, -0.04913959, 1.422052, 2.2166972, 1.2833863)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves91" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.040965278, 0.09117179, 0.0030903798, 0.04456783, -0.022958087, 0.086525366, 0.07959621, -0.034068037, -0.050038137, 2.7519135, 1.5375909, 0.9364697)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves92" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.042179145, 0.07754703, -0.04698272, 0.046339232, 0.026101954, 0.0846839, 0.07793325, -0.05749041, -0.024925131, 3.5557523, 1.1959676, 0.7064825)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves93" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.042179145, 0.07754703, -0.04698272, 0.046339232, 0.026101954, 0.0846839, 0.07793325, -0.05749041, -0.024925131, 3.69028, 1.917488, 0.20465672)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves94" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.042179156, 0.089514315, 0.014425971, 0.046339247, -0.034957957, 0.08142864, 0.07793326, -0.027661014, -0.056225225, 2.516315, 3.0980883, 0.13804471)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves95" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0409653, 0.0674654, 0.061402503, 0.04456784, -0.073531106, 0.051057708, 0.079596244, 0.0064498372, -0.06019009, 2.0671167, 1.4292897, 1.261742)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves96" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.042179156, 0.089514315, 0.014425971, 0.046339247, -0.034957957, 0.08142864, 0.07793326, -0.027661014, -0.056225225, 3.2973285, 2.584505, 0.020720482)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves97" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.039852507, 0.077547036, 0.04897176, -0.05038908, 0.026101949, -0.0823385, -0.07663365, -0.05749037, 0.02867296, 3.0871398, 2.6793332, 0.08717668)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves98" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.03773638, -0.09201824, 0.0104214605, -0.042276002, 0.027130127, 0.08646788, -0.08239358, 0.028224073, -0.049139593, 4.6425953, 2.1766624, -0.22076476)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves99" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.03773638, -0.09201824, 0.0104214605, -0.042276002, 0.027130127, 0.08646788, -0.08239358, 0.028224073, -0.049139593, 3.7792406, 2.2166972, 0.15411198)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves100" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.040965278, 0.09117179, 0.0030903798, 0.04456783, -0.022958087, 0.086525366, 0.07959621, -0.034068037, -0.050038137, 5.1091022, 1.5375909, -0.19280481)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves101" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.042179145, 0.07754703, -0.04698272, 0.046339232, 0.026101954, 0.0846839, 0.07793325, -0.05749041, -0.024925131, 5.912941, 1.1959676, -0.42279184)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves102" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.042179145, 0.07754703, -0.04698272, 0.046339232, 0.026101954, 0.0846839, 0.07793325, -0.05749041, -0.024925131, 6.0474687, 1.917488, -0.92461777)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves103" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.042179156, 0.089514315, 0.014425971, 0.046339247, -0.034957957, 0.08142864, 0.07793326, -0.027661014, -0.056225225, 4.8735037, 3.0980883, -0.9912298)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves104" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0409653, 0.0674654, 0.061402503, 0.04456784, -0.073531106, 0.051057708, 0.07959625, 0.0064498372, -0.06019009, 4.424305, 1.4292897, 0.13246763)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves105" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.042179156, 0.089514315, 0.014425971, 0.046339247, -0.034957957, 0.08142864, 0.07793326, -0.027661014, -0.056225225, 5.654517, 2.584505, -1.1085539)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves106" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.039852507, 0.077547036, 0.04897176, -0.05038908, 0.026101949, -0.0823385, -0.07663365, -0.05749037, 0.02867296, 5.4443283, 2.6793332, -1.0420978)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves56" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014706998, 0.071770795, 0.06961888, -0.099928506, -0.0034800381, 0.0014766131, 0.0034825439, -0.06954739, 0.071770675, 1.5654111, 3.297234, -2.4968467)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves57" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014706998, 0.071770795, 0.06961888, -0.099928506, -0.0034800381, 0.0014766131, 0.0034825439, -0.06954739, 0.071770675, 2.4509676, 3.2869453, -2.4180892)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves58" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014706992, 0.009595632, 0.09952769, -0.09992851, -0.0036078978, -0.0011287815, 0.0034825446, -0.09947315, 0.009641835, 3.137821, 3.3297224, -0.90057456)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves59" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014706992, 0.009595632, 0.09952769, -0.09992851, -0.0036078978, -0.0011287815, 0.0034825446, -0.09947315, 0.009641835, 0.8495363, 3.2981734, -2.7722046)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves61" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0031140908, 0.061633166, 0.07868707, -0.09992851, -0.0036078976, -0.0011287815, 0.002143248, -0.07866598, 0.06170146, 0.9643531, 3.2981734, -1.4647071)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves60" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014706992, 0.009595632, 0.09952769, -0.09992851, -0.0036078978, -0.0011287815, 0.0034825446, -0.09947315, 0.009641835, 2.98681, 3.2995548, -1.8299835)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves47" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014678341, -0.09908728, -0.013399789, -0.099765256, 0.0005548978, 0.006825149, -0.0066885003, 0.013468526, -0.098862834, 3.7706082, 3.4251904, -1.7789284)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves62" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014678341, -0.09908728, -0.013399789, -0.099765256, 0.0005548978, 0.006825149, -0.0066885003, 0.013468526, -0.098862834, 2.899916, 3.4138956, -1.4193704)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves63" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0040815677, 0.09792245, -0.019862892, 0.099882655, -0.0034800407, 0.0033682748, 0.0026070606, -0.019977057, -0.097949594, 4.4282703, 3.315628, -1.3519628)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves64" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0048431354, 0.07177081, -0.06946579, 0.099882655, -0.003480041, 0.003368275, 0, -0.06954741, -0.07185513, 5.3301177, 2.829194, -1.3773706)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves65" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0048431354, 0.07177081, -0.06946579, 0.099882655, -0.003480041, 0.003368275, 0, -0.06954741, -0.07185513, 5.279791, 3.2758517, -2.2650526)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves66" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0048431354, 0.09967446, -0.006445661, 0.099882655, -0.004833041, 0.0003125388, 0, -0.006453231, -0.09979159, 3.7858777, 3.348289, -2.9995074)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves67" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0040815677, 0.08747475, 0.048285734, 0.09988267, -0.004833041, 0.0003125388, 0.0026070601, 0.048216306, -0.08756937, 3.785028, 3.2611852, -0.9399511)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves68" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0048431354, 0.09967446, -0.006445661, 0.099882655, -0.004833041, 0.0003125388, 0, -0.006453231, -0.09979159, 4.7094636, 3.303506, -2.819234)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves69" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014707, 0.071770795, 0.06961888, -0.099928506, -0.0034800381, 0.0014766131, 0.003482544, -0.06954739, 0.071770675, 4.470291, 3.3221898, -2.8132772)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves70" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014707, 0.071770795, 0.06961888, -0.099928506, -0.0034800381, 0.0014766131, 0.003482544, -0.06954739, 0.071770675, 4.0718603, 3.297234, -3.6976285)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves71" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014707, 0.071770795, 0.06961888, -0.099928506, -0.0034800381, 0.0014766131, 0.003482544, -0.06954739, 0.071770675, 4.957417, 3.2869453, -3.6188712)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves72" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014706991, 0.009595629, 0.09952769, -0.09992851, -0.0036078978, -0.0011287815, 0.0034825446, -0.09947315, 0.009641834, 5.6442704, 3.3297224, -2.1013565)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves73" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014706991, 0.009595625, 0.09952769, -0.09992851, -0.0036078978, -0.0011287815, 0.0034825446, -0.09947314, 0.009641834, 3.3559854, 3.003469, -3.9729857)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves77" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014678341, -0.09908728, -0.013399793, -0.099765256, 0.0005548978, 0.006825149, -0.0066885003, 0.013468526, -0.098862834, 0.8074789, 1.2057909, 1.3187689)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves78" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0040815677, 0.09792245, -0.019862894, 0.099882655, -0.0034800407, 0.0033682748, 0.0026070606, -0.019977061, -0.097949594, 0.34962487, 0.6688498, 0.6020216)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("3_8arx2")
+
+[node name="Leaves79" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0048431354, 0.07177081, -0.06946579, 0.099882655, -0.003480041, 0.003368275, 0, -0.06954741, -0.07185513, 1.2514722, 2.829194, 0.5766138)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves80" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0048431354, 0.07177081, -0.06946579, 0.099882655, -0.003480041, 0.003368275, 0, -0.06954741, -0.07185513, 1.2011454, 3.2758517, -0.31106806)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves81" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0048431354, 0.09967446, -0.006445661, 0.099882655, -0.004833041, 0.0003125388, 0, -0.006453231, -0.09979159, -0.292768, 3.348289, -1.0455229)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves82" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0040815677, 0.08747475, 0.048285734, 0.09988267, -0.004833041, 0.0003125388, 0.0026070601, 0.04821632, -0.08756937, 1.6925911, 1.0530804, 1.7981888)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves83" type="Sprite3D" parent="Mid"]
+transform = Transform3D(0.0048431354, 0.09967446, -0.006445661, 0.099882655, -0.004833041, 0.0003125388, 0, -0.006453231, -0.09979159, 0.6308181, 3.303506, -0.8652494)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves84" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014707, 0.071770795, 0.06961888, -0.099928506, -0.0034800381, 0.0014766131, 0.003482544, -0.06954739, 0.071770675, 0.39164567, 3.3221898, -0.8592926)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves85" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014707, 0.071770795, 0.06961888, -0.099928506, -0.0034800381, 0.0014766131, 0.003482544, -0.06954739, 0.071770675, -0.0067853928, 3.297234, -1.743644)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves86" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014707, 0.071770795, 0.06961888, -0.099928506, -0.0034800381, 0.0014766131, 0.003482544, -0.06954739, 0.071770675, 0.878772, 3.2869453, -1.6648867)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves87" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014706991, 0.009595625, 0.09952769, -0.09992851, -0.0036078978, -0.0011287815, 0.0034825446, -0.09947314, 0.009641834, 1.5656251, 3.3297224, -0.14737189)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("4_jjrtn")
+
+[node name="Leaves88" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014706991, 0.009595618, 0.09952769, -0.09992851, -0.0036078978, -0.0011287815, 0.0034825446, -0.09947313, 0.009641834, -0.07273173, 2.6990309, -2.6044228)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves76" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014706991, 0.009595618, 0.09952769, -0.09992851, -0.0036078978, -0.0011287815, 0.0034825446, -0.09947313, 0.009641834, 2.6780124, 3.003469, -3.360118)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves74" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.003114091, 0.06163317, 0.07868708, -0.09992851, -0.0036078976, -0.0011287815, 0.002143248, -0.07866598, 0.06170147, 3.4708023, 3.2981734, -2.6654887)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")
+
+[node name="Leaves75" type="Sprite3D" parent="Mid"]
+transform = Transform3D(-0.0014706991, 0.009595629, 0.09952769, -0.09992851, -0.0036078978, -0.0011287815, 0.0034825446, -0.09947315, 0.009641834, 5.4932594, 3.2995548, -3.030765)
+modulate = Color(0.19215687, 0.41960785, 0.30980393, 1)
+billboard = 1
+texture = ExtResource("2_jjrtn")

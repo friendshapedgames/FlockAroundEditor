@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://ck05od78tk70w"]
+
+[ext_resource type="Script" uid="uid://dgtg4prim77n8" path="res://Scripts/Birds/GroundHangoutPlaneArea.cs" id="1_m1e2g"]
+[ext_resource type="Texture2D" uid="uid://ldunbelg34oj" path="res://Art/Textures/EditorStripes.png" id="2_n1n1n"]
+[ext_resource type="Script" uid="uid://hwphupxsulxi" path="res://Scripts/Core/FreeOnReady.cs" id="3_m642a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fkx6t"]
+size = Vector3(1, 0.01, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lfquy"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_color = Color(0.2871, 0.87, 0.41339502, 1)
+albedo_texture = ExtResource("2_n1n1n")
+uv1_scale = Vector3(10, 10, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fkx6t"]
+size = Vector3(1, 0.01, 1)
+
+[node name="BushHangout" type="Area3D"]
+script = ExtResource("1_m1e2g")
+_perchPointType = 495710309
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_fkx6t")
+debug_color = Color(0.8900529, 0.22576487, 0.5901861, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03268768, 0)
+material_override = SubResource("StandardMaterial3D_lfquy")
+mesh = SubResource("BoxMesh_fkx6t")
+script = ExtResource("3_m642a")

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://27tc08cqf6t7"]
+
+[ext_resource type="Script" uid="uid://dgtg4prim77n8" path="res://Scripts/Birds/GroundHangoutPlaneArea.cs" id="1_d7g6o"]
+[ext_resource type="Texture2D" uid="uid://ldunbelg34oj" path="res://Art/Textures/EditorStripes.png" id="2_1s50a"]
+[ext_resource type="Script" uid="uid://hwphupxsulxi" path="res://Scripts/Core/FreeOnReady.cs" id="3_7sves"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_uncxc"]
+height = 0.050390624
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_veuis"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_color = Color(0, 0.42977262, 0.8878049, 1)
+albedo_texture = ExtResource("2_1s50a")
+uv1_scale = Vector3(10, 10, 10)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_35eia"]
+height = 0.05
+radial_segments = 16
+
+[node name="SmallWaterHangout" type="Area3D" unique_id=973054163]
+script = ExtResource("1_d7g6o")
+_perchPointType = 4253952829
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2128162311]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.024804689, 0)
+shape = SubResource("CylinderShape3D_uncxc")
+debug_color = Color(0.8900529, 0.22576487, 0.5901861, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=890970102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.025, 0)
+material_override = SubResource("StandardMaterial3D_veuis")
+mesh = SubResource("CylinderMesh_35eia")
+script = ExtResource("3_7sves")

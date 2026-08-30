@@ -1,0 +1,186 @@
+{
+  "do_not_spawn": false,
+  "display_name": {
+    "id": 4245228117
+  },
+  "description": {
+    "id": 1731085550
+  },
+  "special_pose_name": {
+    "id": 4000828578
+  },
+  "scientific_name": "Cistothorus palustris",
+  "mockup_texture": {
+    "path": "mods://MarshWren/MarshWrenMockup.png"
+  },
+  "head_texture": {
+    "path": "mods://MarshWren/MarshWrenHead.png"
+  },
+  "body_texture": {
+    "path": "mods://MarshWren/MarshWrenBody.png"
+  },
+  "visuals_scene": {
+    "path": "res://Art/Birds/MarshWren/MarshWrenVisual.tscn"
+  },
+  "has_soaring_pose": false,
+  "visuals_config": {
+    "head_position_in_side_pose": {
+      "x": -0.31000024,
+      "y": 1.1000007
+    },
+    "body_position_y": 0.8100011
+  },
+  "dimensions": {
+    "perched_front_back": {
+      "foot_offset": 0.029141925,
+      "head_offset": 0.33370197,
+      "center_offset": -0.08352591,
+      "size_offset": 0.0
+    },
+    "perched_side": {
+      "foot_offset": {
+        "X": -1.0992545,
+        "Y": 0.36112276
+      },
+      "head_offset": {
+        "X": -0.208056,
+        "Y": 0.24386695
+      },
+      "center_offset": {
+        "X": -0.2530692,
+        "Y": -0.14462076
+      },
+      "size_offset": 0.0
+    },
+    "flying_side": {
+      "foot_offset": {
+        "X": -1.407398,
+        "Y": 0.8820279
+      },
+      "head_offset": {
+        "X": -0.5576704,
+        "Y": 0.02661657
+      },
+      "center_offset": {
+        "X": -0.03984039,
+        "Y": -0.17816108
+      },
+      "size_offset": 0.0
+    },
+    "sideways": {
+      "foot_offset": {
+        "X": -1.0908246,
+        "Y": 0.30312037
+      },
+      "head_offset": {
+        "X": -0.30988175,
+        "Y": 0.124812655
+      },
+      "center_offset": {
+        "X": -0.21043065,
+        "Y": -0.08559665
+      },
+      "size_offset": 0.0
+    },
+    "soaring": {
+      "foot_offset": -0.86724466,
+      "head_offset": 0.32918468,
+      "center_offset": 0.0,
+      "size_offset": -0.059478473
+    }
+  },
+  "flap_animation_speed": 10.0,
+  "tweet_sounds": [
+    {
+      "path": "mods://MarshWren/MarshWrenCallA.ogg"
+    },
+    {
+      "path": "mods://MarshWren/MarshWrenCallB.ogg"
+    }
+  ],
+  "flap_sound": {
+    "path": "res://Art/Sounds/bird-fly-continuous.ogg"
+  },
+  "peck_sound": {
+    "path": "res://Art/Sounds/Peck/peck_5.ogg"
+  },
+  "rarity": 1803097666,
+  "preferred_biomes": [
+    3330238353
+  ],
+  "preferred_seeds": [
+    2546266075
+  ],
+  "supported_perch_points_weights": [
+    {
+      "perch_point": 495710309,
+      "weight": 0.7
+    },
+    {
+      "perch_point": 4191031092,
+      "weight": 0.1
+    },
+    {
+      "perch_point": 1069283163,
+      "weight": 0.1
+    },
+    {
+      "perch_point": 1116200663,
+      "weight": 0.1
+    }
+  ],
+  "view_distance": 7.5,
+  "stat_fly_speed": 7.0,
+  "stat_ground_move_speed": 6.0,
+  "stat_linger_time": {
+    "base": 35.0,
+    "variance": 15.0
+  },
+  "stat_migration_time": {
+    "base": 90.0,
+    "variance": 40.0
+  },
+  "stat_preferred_group_size": 3,
+  "stat_tweet_wait_time": {
+    "base": 2.5,
+    "variance": 1.0
+  },
+  "stat_wander_time": {
+    "base": 0.9,
+    "variance": 0.25
+  },
+  "sex": 0,
+  "spawn_type": 0,
+  "idle_animation": 0,
+  "bird_animation_override": [],
+  "movement_type": 0,
+  "should_sink_when_flying": false,
+  "move_head_when_tweeting": false,
+  "visuals_scale_factor": 1.0,
+  "whistle_colors": [
+    {
+      "red": 0.9764706,
+      "green": 0.9254902,
+      "blue": 0.88235295
+    },
+    {
+      "red": 0.627451,
+      "green": 0.38039216,
+      "blue": 0.24705882
+    },
+    {
+      "red": 0.15686275,
+      "green": 0.14117648,
+      "blue": 0.13725491
+    },
+    {
+      "red": 0.7764706,
+      "green": 0.5921569,
+      "blue": 0.46666667
+    }
+  ],
+  "config_info": {
+    "config_instance_id": 3767029809,
+    "config_type_id": "BirdSpecies"
+  }
+}

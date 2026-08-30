@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://tjijgvytdi3q"]
+
+[ext_resource type="Texture2D" uid="uid://dpdikaj6l41xf" path="res://Art/Decorations/CattailsB.png" id="1_e1cyk"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_p0nbg"]
+size = Vector2(1, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k0u2i"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_e1cyk")
+billboard_mode = 2
+
+[node name="Cattail3DB" type="MeshInstance3D"]
+mesh = SubResource("QuadMesh_p0nbg")
+surface_material_override/0 = SubResource("StandardMaterial3D_k0u2i")

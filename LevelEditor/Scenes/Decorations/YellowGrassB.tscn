@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpu1r5gogv1yg"]
+
+[ext_resource type="Material" uid="uid://bkn6r8x2lw2ep" path="res://Art/Materials/YellowGrassB.tres" id="1_sbbt1"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_p0hmb"]
+material = ExtResource("1_sbbt1")
+size = Vector2(0.75, 1.5)
+
+[node name="YellowGrassB" type="MeshInstance3D"]
+mesh = SubResource("QuadMesh_p0hmb")

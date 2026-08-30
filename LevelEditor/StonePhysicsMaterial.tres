@@ -1,0 +1,8 @@
+[gd_resource type="PhysicsMaterial" script_class="FootstepPhysicsMaterial" load_steps=2 format=3 uid="uid://q7f4d8skdspy"]
+
+[ext_resource type="Script" uid="uid://bsu1573gk8vlg" path="res://Scripts/Core/FootstepPhysicsMaterial.cs" id="1_pdwuq"]
+
+[resource]
+script = ExtResource("1_pdwuq")
+_footstepSounds = 1575378493
+metadata/_custom_type_script = "uid://bsu1573gk8vlg"

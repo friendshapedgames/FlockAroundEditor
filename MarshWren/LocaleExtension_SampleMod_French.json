@@ -1,0 +1,17 @@
+{
+  "source_language": 3773531450,
+  "ids_to_translations": [
+    {
+      "id": 4245228117,
+      "translation": "Troglodyte des marais"
+    },
+    {
+      "id": 1731085550,
+      "translation": "De minuscules fauteurs de troubles, animés d'une cupidité sans bornes, capables de transformer la plus insignifiante roselière en un véritable opéra ornithologique. Les mâles excellent dans l'accouplement en série, l'infanticide et la construction compulsive de nids leurres pour déjouer les tentatives d'infanticide de leurs congénères. On suppose que certains finissent, à un moment ou à un autre, par trouver le temps de se reproduire."
+    }
+  ],
+  "config_info": {
+    "config_instance_id": 614581437,
+    "config_type_id": "LocaleExtension"
+  }
+}

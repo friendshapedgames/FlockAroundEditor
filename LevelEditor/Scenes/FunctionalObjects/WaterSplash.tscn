@@ -1,0 +1,78 @@
+[gd_scene load_steps=18 format=3 uid="uid://dlx4e74o7l7re"]
+
+[ext_resource type="Script" uid="uid://dh42xslhttkw5" path="res://Scripts/Core/WaterSplash.cs" id="1_f0dip"]
+[ext_resource type="Texture2D" uid="uid://dorcvrvd40d73" path="res://Art/Player/EyeAWhite.png" id="1_svgrw"]
+[ext_resource type="Script" uid="uid://d2m5r3wlrlgp0" path="res://Scripts/Core/RandomizedSound3D.cs" id="2_f0dip"]
+[ext_resource type="AudioStream" uid="uid://xmgg0g6cqnhp" path="res://Art/Sounds/Vitor/sfx_player_enterwater_01.ogg" id="3_q5sw2"]
+[ext_resource type="AudioStream" uid="uid://vjqrm2gluf5" path="res://Art/Sounds/Vitor/sfx_player_enterwater_02.ogg" id="4_5f6do"]
+[ext_resource type="AudioStream" uid="uid://7g0sl0gwrw26" path="res://Art/Sounds/Vitor/sfx_player_enterwater_03.ogg" id="5_e3atx"]
+[ext_resource type="AudioStream" uid="uid://cjvgul2jvkitg" path="res://Art/Sounds/Vitor/sfx_player_enterwater_04.ogg" id="6_yttsa"]
+[ext_resource type="AudioStream" uid="uid://dah4btap735s0" path="res://Art/Sounds/Vitor/sfx_player_enterwater_05.ogg" id="7_faqbd"]
+[ext_resource type="AudioStream" uid="uid://bj24dj6jnwjjt" path="res://Art/Sounds/Vitor/sfx_player_exitwater_01.ogg" id="8_faqbd"]
+[ext_resource type="AudioStream" uid="uid://bck2pxmlm8hru" path="res://Art/Sounds/Vitor/sfx_player_exitwater_02.ogg" id="9_02tic"]
+[ext_resource type="AudioStream" uid="uid://do1i03lkdvwnk" path="res://Art/Sounds/Vitor/sfx_player_exitwater_03.ogg" id="10_qe05d"]
+[ext_resource type="AudioStream" uid="uid://bx2ag6ckjfl0x" path="res://Art/Sounds/Vitor/sfx_player_exitwater_04.ogg" id="11_357wy"]
+
+[sub_resource type="Curve" id="Curve_kh01g"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.7963876, 0.77761114), 0.0, 0.0, 0, 0, Vector2(0.9901478, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_xjyp4"]
+curve = SubResource("Curve_kh01g")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vp8ev"]
+emission_shape = 1
+emission_sphere_radius = 1.0
+direction = Vector3(0, 1, 0)
+spread = 10.229
+initial_velocity_min = 5.45
+initial_velocity_max = 12.2699995
+gravity = Vector3(0, -40, 0)
+linear_accel_min = 0.99999774
+linear_accel_max = 0.99999774
+scale_min = 0.59999996
+alpha_curve = SubResource("CurveTexture_xjyp4")
+turbulence_noise_strength = 0.0
+turbulence_noise_scale = 0.0
+turbulence_influence_min = 0.041
+turbulence_influence_max = 0.24100001
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6du3m"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+shading_mode = 0
+albedo_texture = ExtResource("1_svgrw")
+disable_receive_shadows = true
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_2v2ud"]
+material = SubResource("StandardMaterial3D_6du3m")
+size = Vector2(0.2, 0.2)
+
+[node name="WaterSplash" type="Node3D"]
+script = ExtResource("1_f0dip")
+
+[node name="InSound" type="AudioStreamPlayer3D" parent="."]
+bus = &"SoundEffects"
+script = ExtResource("2_f0dip")
+_audioStreams = [ExtResource("3_q5sw2"), ExtResource("4_5f6do"), ExtResource("5_e3atx"), ExtResource("6_yttsa"), ExtResource("7_faqbd")]
+
+[node name="OutSound" type="AudioStreamPlayer3D" parent="."]
+bus = &"SoundEffects"
+script = ExtResource("2_f0dip")
+_audioStreams = [ExtResource("8_faqbd"), ExtResource("9_02tic"), ExtResource("10_qe05d"), ExtResource("11_357wy")]
+
+[node name="SplashParticles" type="GPUParticles3D" parent="."]
+emitting = false
+amount = 20
+lifetime = 2.0
+one_shot = true
+explosiveness = 0.94
+randomness = 0.3
+process_material = SubResource("ParticleProcessMaterial_vp8ev")
+draw_pass_1 = SubResource("QuadMesh_2v2ud")

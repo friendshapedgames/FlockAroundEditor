@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dtp54o1wouas6"]
+
+[ext_resource type="PackedScene" uid="uid://q1pit6f5vrxm" path="res://Art/Decorations/dock.glb" id="1_a8m0e"]
+[ext_resource type="Material" uid="uid://bjl4cs67i1kb1" path="res://Art/Materials/WoodObjectMaterial.tres" id="2_4cx44"]
+[ext_resource type="PhysicsMaterial" uid="uid://s8h86nwx3unw" path="res://WoodPhysicsMaterial.tres" id="2_hr46o"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4cx44"]
+data = PackedVector3Array(-1.5455999, -0.22399999, 12.3159, -1.5455999, 0.369, -12.410299, -1.5455999, 0.369, 12.3159, -1.5455999, -0.22399999, 12.3159, -1.5455999, -0.22399999, -12.410299, -1.5455999, 0.369, -12.410299, -1.5455999, -0.22399999, -12.410299, 1.5455999, 0.369, -12.410299, -1.5455999, 0.369, -12.410299, -1.5455999, -0.22399999, -12.410299, 1.5455999, -0.22399999, -12.410299, 1.5455999, 0.369, -12.410299, 1.5455999, -0.22399999, -12.410299, 1.5455999, 0.369, 12.3159, 1.5455999, 0.369, -12.410299, 1.5455999, -0.22399999, -12.410299, 1.5455999, -0.22399999, 12.3159, 1.5455999, 0.369, 12.3159, 1.5455999, -0.22399999, 12.3159, -1.5455999, 0.369, 12.3159, 1.5455999, 0.369, 12.3159, 1.5455999, -0.22399999, 12.3159, -1.5455999, -0.22399999, 12.3159, -1.5455999, 0.369, 12.3159, -1.5455999, -0.22399999, -12.410299, 1.5455999, -0.22399999, 12.3159, 1.5455999, -0.22399999, -12.410299, -1.5455999, -0.22399999, -12.410299, -1.5455999, -0.22399999, 12.3159, 1.5455999, -0.22399999, 12.3159, 1.5455999, 0.369, -12.410299, -1.5455999, 0.369, 12.3159, -1.5455999, 0.369, -12.410299, 1.5455999, 0.369, -12.410299, 1.5455999, 0.369, 12.3159, -1.5455999, 0.369, 12.3159)
+
+[node name="Dock" type="Node3D" unique_id=237329149]
+
+[node name="dock2" parent="." unique_id=2028609649 instance=ExtResource("1_a8m0e")]
+
+[node name="dock" parent="dock2" index="0" unique_id=2132808067]
+surface_material_override/0 = ExtResource("2_4cx44")
+
+[node name="collider mesh" parent="dock2" index="1" unique_id=430588106]
+visible = false
+
+[node name="StaticBody3D" type="StaticBody3D" parent="dock2/collider mesh" index="0" unique_id=1659914791]
+physics_material_override = ExtResource("2_hr46o")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="dock2/collider mesh/StaticBody3D" unique_id=1998188774]
+shape = SubResource("ConcavePolygonShape3D_4cx44")
+
+[editable path="dock2"]

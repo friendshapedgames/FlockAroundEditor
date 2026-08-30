@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://6sv4ddyn0vot"]
+
+[ext_resource type="Script" uid="uid://bdhm24ac3chjw" path="res://Scripts/Birds/PerchBranchOwner.cs" id="1_51pj2"]
+[ext_resource type="Texture2D" uid="uid://bhyxesbqwfra5" path="res://Art/Decorations/Foliage/MarshSticksSmallC.png" id="2_51pj2"]
+[ext_resource type="Texture2D" uid="uid://bcpdw5euuj8y0" path="res://Art/Decorations/Foliage/MarshSticksSmallA.png" id="3_tjfup"]
+[ext_resource type="Texture2D" uid="uid://da4cny1lfrqyu" path="res://Art/Decorations/Foliage/MarshSticksSmallB.png" id="4_y2tkq"]
+[ext_resource type="Texture2D" uid="uid://chsflsa38pxtu" path="res://Art/Decorations/Foliage/MarshSticksSideA.png" id="5_r1cdo"]
+[ext_resource type="Texture2D" uid="uid://bdbmg0a3hmqe2" path="res://Art/Decorations/Foliage/MarshSticksSideB.png" id="6_kyuuv"]
+
+[sub_resource type="Curve3D" id="Curve3D_ey2d3"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0.011799812, 0, 0, 0, 0, 0, 0, 0, 0.022274941, 0.026934385, 0.71512693),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5vysb"]
+size = Vector3(1.5870667, 3.584137, 8.621744)
+
+[node name="MarshThicketShort" type="Node3D" unique_id=167956985]
+
+[node name="PerchPointPaths" type="Node3D" parent="." unique_id=1173308226]
+script = ExtResource("1_51pj2")
+_perchPointType = 495710309
+
+[node name="Path3D" type="Path3D" parent="PerchPointPaths" unique_id=1335476291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26542082, 1.1731225, -0.20727623)
+curve = SubResource("Curve3D_ey2d3")
+
+[node name="1" type="Sprite3D" parent="." unique_id=725620097]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, -0.08006871, 1.6668074, -0.029635832)
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("2_51pj2")
+
+[node name="2" type="Sprite3D" parent="." unique_id=51076293]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, 0.3953697, 1.8086095, 0.032320004)
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("3_tjfup")
+
+[node name="3" type="Sprite3D" parent="." unique_id=1262057558]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, -0.8276126, 1.8086095, 0.032320004)
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("3_tjfup")
+
+[node name="4" type="Sprite3D" parent="." unique_id=1715933460]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, -0.27654138, 1.8138275, -0.19311057)
+flip_h = true
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("4_y2tkq")
+
+[node name="sideA" type="Sprite3D" parent="." unique_id=478928846]
+transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, -0.22538877, 1.8987317, 4.0484457)
+texture = ExtResource("5_r1cdo")
+
+[node name="SideA2" type="Sprite3D" parent="." unique_id=611447848]
+transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, 0, 1.8205056, 4.4083824)
+texture = ExtResource("6_kyuuv")
+
+[node name="sideB" type="Sprite3D" parent="." unique_id=1208444043]
+transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, -0.128824, 1.8451583, -3.896554)
+texture = ExtResource("5_r1cdo")
+
+[node name="SideB2" type="Sprite3D" parent="." unique_id=655804096]
+transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, 0, 1.6965778, -4.2713337)
+texture = ExtResource("6_kyuuv")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=308853907]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1464562660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16387701, 1.8006964, 0.10131168)
+shape = SubResource("BoxShape3D_5vysb")

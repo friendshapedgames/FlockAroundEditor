@@ -1,0 +1,67 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="Flock Around Editor Tools"
+run/main_scene="uid://cuigsps7ivkgt"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="FlockAroundEditor"
+config/features=PackedStringArray("4.6", "C#", "Forward Plus")
+
+[audio]
+
+buses/default_bus_layout="uid://d0cesq5bqvx44"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+
+[dotnet]
+
+project/assembly_name="FlockAroundLevelEditor"
+
+[layer_names]
+
+3d_render/layer_2="DoNotMakeOccluder"
+3d_render/layer_3="DoNotCullDetail"
+3d_physics/layer_1="BlocksPlayer"
+3d_physics/layer_2="BlocksLineOfSight"
+3d_physics/layer_3="IsPointOfInterest"
+3d_physics/layer_4="BlocksSeeds"
+
+[rendering]
+
+occlusion_culling/bvh_build_quality=1
+rendering_device/d3d12/max_sampler_descriptors=2048
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.11612656, 0.116126575, 0.11612665, 1)
+occlusion_culling/use_occlusion_culling=true
+environment/defaults/default_environment="uid://bq02a7x756ony"
+
+[shader_globals]
+
+wind_intensity={
+"type": "float",
+"value": 0.1
+}
+wind_direction={
+"type": "vec3",
+"value": Vector3(0.5, 0, 0)
+}
+player_position={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}

@@ -1,0 +1,147 @@
+[gd_scene format=3 uid="uid://ctc2fod0yyvkj"]
+
+[ext_resource type="Texture2D" uid="uid://b5cnoeok3wh5u" path="res://Art/EMU/Foliage/FanPalmLeafA.png" id="1_nemk2"]
+[ext_resource type="Texture2D" uid="uid://bxtbeo52pqpkj" path="res://Art/EMU/Foliage/FanPalmLeafB.png" id="2_twdmh"]
+[ext_resource type="Texture2D" uid="uid://4mywd6fneu87" path="res://Art/EMU/Foliage/FanPalmLeafC.png" id="3_bhec2"]
+[ext_resource type="Material" uid="uid://g1s83xveumac" path="res://Art/Materials/AustraliaTreeBarkMaterial.tres" id="3_nemk2"]
+[ext_resource type="Texture2D" uid="uid://dmmcic2j258qo" path="res://Art/EMU/Foliage/FanPalmLeafD.png" id="3_wb0pp"]
+[ext_resource type="PackedScene" uid="uid://dldrij4ctwt4s" path="res://Art/EMU/Foliage/TreeEucalyptusTrunkB.glb" id="4_1mksi"]
+[ext_resource type="Texture2D" uid="uid://r55mhan5m435" path="res://Art/EMU/Foliage/FanPalmLeafF.png" id="5_mvof7"]
+[ext_resource type="PackedScene" uid="uid://2xuik27bc2ty" path="res://Art/EMU/Foliage/TreeEucalyptusTrunkC.glb" id="7_mvof7"]
+
+[node name="TreeFanPalmGroveA" type="Node3D" unique_id=1696470682]
+
+[node name="FanLeavesC" type="Sprite3D" parent="." unique_id=974968690]
+transform = Transform3D(0.26, 0, 0, 0, 0.26, 0, 0, 0, 0.26, 2.1219232, 9.690584, 0.10714483)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("1_nemk2")
+
+[node name="FanLeavesC2" type="Sprite3D" parent="." unique_id=1577748159]
+transform = Transform3D(0.26, 0, 0, 0, 0.26, 0, 0, 0, 0.26, 0.4856875, 16.643127, 2.380865)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("2_twdmh")
+
+[node name="FanLeavesC26" type="Sprite3D" parent="." unique_id=487591653]
+transform = Transform3D(0.26, 0, 0, 0, 0.26, 0, 0, 0, 0.26, -2.3541064, 12.3953, 5.3925667)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("2_twdmh")
+
+[node name="FanLeavesC28" type="Sprite3D" parent="." unique_id=604663158]
+transform = Transform3D(0.25999746, 0.00052197, -0.001023364, -0.00052463973, 0.2599986, -0.0006773227, 0.0010219978, 0.00067938224, 0.2599971, -2.0782206, 12.832545, 3.3792858)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("3_wb0pp")
+
+[node name="FanLeavesC30" type="Sprite3D" parent="." unique_id=126724612]
+transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 0.41402912, 12.321971, 6.3286858)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("3_bhec2")
+
+[node name="FanLeavesC32" type="Sprite3D" parent="." unique_id=822852083]
+transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 7.3226657, 12.321971, 8.237976)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("3_bhec2")
+
+[node name="FanLeavesC31" type="Sprite3D" parent="." unique_id=738956963]
+transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 3.3110769, 12.321971, 7.7816467)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("3_bhec2")
+
+[node name="FanLeavesC36" type="Sprite3D" parent="." unique_id=1774093873]
+transform = Transform3D(0.25999746, 0.00052197, -0.001023364, -0.00052463973, 0.2599986, -0.0006773227, 0.0010219978, 0.00067938224, 0.2599971, 7.50068, 12.8209915, -0.55421555)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("3_wb0pp")
+
+[node name="FanLeavesC40" type="Sprite3D" parent="." unique_id=934322178]
+transform = Transform3D(0.25999746, 0.00052197, -0.001023364, -0.00052463973, 0.2599986, -0.0006773227, 0.0010219978, 0.00067938224, 0.2599971, 8.448908, 13.010206, 3.152452)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("3_wb0pp")
+
+[node name="FanLeavesC39" type="Sprite3D" parent="." unique_id=385907401]
+transform = Transform3D(0.25999746, 0.00052197, -0.001023364, -0.00052463973, 0.2599986, -0.0006773227, 0.0010219978, 0.00067938224, 0.2599971, 9.430062, 12.804817, 5.148647)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("3_wb0pp")
+
+[node name="FanLeavesC37" type="Sprite3D" parent="." unique_id=426787926]
+transform = Transform3D(0.905, 0, 0, 0, 0.905, 0, 0, 0, 0.905, -1.7457685, 14.761209, -1.4677072)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("5_mvof7")
+
+[node name="FanLeavesC38" type="Sprite3D" parent="." unique_id=704275684]
+transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 3.3306336, 15.032841, -1.6305368)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("3_bhec2")
+
+[node name="FanLeavesC21" type="Sprite3D" parent="." unique_id=1124242948]
+transform = Transform3D(0.22260208, 0.00052197, 0.134343, -9.5850824e-05, 0.2599986, -0.0008513658, -0.13434397, 0.0006793823, 0.22260107, 6.814467, 15.5793705, 6.3537183)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("3_wb0pp")
+
+[node name="FanLeavesC23" type="Sprite3D" parent="." unique_id=419484110]
+transform = Transform3D(0.31602558, 0, 0.19242619, 0, 0.37, 0, -0.19242619, 0, 0.31602558, 4.593632, 18.126719, 1.341702)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("3_bhec2")
+
+[node name="FanLeavesC24" type="Sprite3D" parent="." unique_id=520015979]
+transform = Transform3D(0.8156876, 0, 0.4966676, 0, 0.955, 0, -0.4966676, 0, 0.8156876, 3.7794945, 12.209463, 2.2930357)
+cast_shadow = 0
+modulate = Color(0.47058824, 0.76862746, 0.28627452, 1)
+billboard = 1
+alpha_cut = 2
+texture = ExtResource("5_mvof7")
+
+[node name="TreeEucalyptusTrunkB" parent="." unique_id=1637720479 instance=ExtResource("4_1mksi")]
+
+[node name="Cube" parent="TreeEucalyptusTrunkB" index="0" unique_id=1747366540]
+transform = Transform3D(1, 0, 0, 0, 1.275, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = ExtResource("3_nemk2")
+
+[node name="TreeEucalyptusTrunkC" parent="." unique_id=2055540308 instance=ExtResource("7_mvof7")]
+transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1, 5.9609165, 0, 4.798427)
+
+[node name="Cube_001" parent="TreeEucalyptusTrunkC" index="0" unique_id=2064504517]
+surface_material_override/0 = ExtResource("3_nemk2")
+
+[editable path="TreeEucalyptusTrunkB"]
+[editable path="TreeEucalyptusTrunkC"]

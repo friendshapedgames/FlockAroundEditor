@@ -1,0 +1,74 @@
+[gd_scene load_steps=13 format=3 uid="uid://ct28h4d8mtlrm"]
+
+[ext_resource type="PackedScene" uid="uid://dopqshuie2ihn" path="res://Art/Decorations/birdbath.glb" id="1_5l6oj"]
+[ext_resource type="Shader" uid="uid://dgppw4wte5aqo" path="res://Shaders/water2.gdshader" id="2_cmfwc"]
+[ext_resource type="PackedScene" uid="uid://1jmbgq0obehw" path="res://Scenes/PerchPoint.tscn" id="3_vmq2p"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_vmq2p"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_y4dr5"]
+noise_type = 2
+frequency = 0.005
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_4a677"]
+noise = SubResource("FastNoiseLite_y4dr5")
+seamless = true
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_4mriu"]
+frequency = 0.0007
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ohkr6"]
+noise = SubResource("FastNoiseLite_4mriu")
+seamless = true
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_205fv"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_a4fhb"]
+noise = SubResource("FastNoiseLite_205fv")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_trgr1"]
+render_priority = 0
+shader = ExtResource("2_cmfwc")
+shader_parameter/color = Color(0, 0.72055626, 1, 1)
+shader_parameter/deep_water = Color(0, 0.55906105, 1, 1)
+shader_parameter/roughness = 0.22800001083
+shader_parameter/metallic = 0.0
+shader_parameter/speed = 0.00300004764250005
+shader_parameter/beer_law_factor = 0.635
+shader_parameter/_distance = 50.0
+shader_parameter/edge_color = Color(0.81879044, 0.97755593, 1, 1)
+shader_parameter/edge_scale = 0.0
+shader_parameter/near = 0.1
+shader_parameter/far = 100.0
+shader_parameter/wave_direction = Vector2(2, 0)
+shader_parameter/wave_direction2 = Vector2(0, 1)
+shader_parameter/time_scale = 0.025
+shader_parameter/height_scale = 0.0
+shader_parameter/noise_scale = 10.0
+shader_parameter/noise1 = SubResource("NoiseTexture2D_4a677")
+shader_parameter/noise2 = SubResource("NoiseTexture2D_ohkr6")
+shader_parameter/wave = SubResource("NoiseTexture2D_a4fhb")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vmq2p"]
+points = PackedVector3Array(0, 0.9778496, -1.1070668, -0.5985273, 0.9778496, -0.9314596, 0, 0.9999999, -0.9673455, 0.59831285, 0.9778496, -0.9314596, 0, -1.0386206, -0.822528, -0.44471222, -1.0386206, -0.69193745, -1.0071992, 0.9778496, -0.46005958, -0.5230142, 0.9999999, -0.8138219, 0.52279973, 0.9999999, -0.8138219, 1.0069846, 0.9778496, -0.46005958, 0.4444977, -1.0386206, -0.69193745, -0.7480519, -1.0386206, -0.3417849, -0.81412584, -1.0386206, 0.116874576, -1.0957984, 0.9778496, 0.15743196, -0.9574292, 0.9999999, 0.1374718, -0.87998533, 0.9999999, -0.40187776, 0.8797709, 0.9999999, -0.40187776, 1.0957984, 0.9778496, 0.15743196, 0.8139113, -1.0386206, 0.116874576, 0.7478374, -1.0386206, -0.3417849, -0.83686554, 0.9778496, 0.72481084, -0.62148154, -1.0386206, 0.5383742, -0.7311043, 0.9999999, 0.63329124, 0.9572147, 0.9999999, 0.1374718, 0.8366511, 0.9778496, 0.72481084, 0.7308898, 0.9999999, 0.63329124, 0.6212671, -1.0386206, 0.5383742, -0.23168796, -1.0386206, 0.78893816, -0.31192064, 0.9778496, 1.0622228, -0.2726624, 0.9999999, 0.9278101, 0.3117062, 0.9778496, 1.0622228, 0.23147345, -1.0386206, 0.78893816, 0.27244794, 0.9999999, 0.9278101)
+
+[node name="Birdbath" type="Node3D"]
+
+[node name="birdbath" parent="." instance=ExtResource("1_5l6oj")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="water" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.3228645, 0, -0.6620631, 0, 0.01, 0, 0.6058502, 0, 1.4456046, 0, 1.9898872, 0)
+mesh = SubResource("SphereMesh_vmq2p")
+surface_material_override/0 = SubResource("ShaderMaterial_trgr1")
+
+[node name="PerchPoint" parent="." instance=ExtResource("3_vmq2p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7830505, 2.0367498, 0.18974042)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(0.8, 0, 0, 0, 1, 0, 0, 0, 0.8, 0, 1.03777, 0)
+shape = SubResource("ConvexPolygonShape3D_vmq2p")
+
+[editable path="birdbath"]

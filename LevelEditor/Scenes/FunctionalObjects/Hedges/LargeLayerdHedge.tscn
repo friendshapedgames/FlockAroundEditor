@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://dh0efjmpfv5q4"]
+
+[ext_resource type="Material" uid="uid://dnshkkvmabrod" path="res://Art/Materials/hedgeMaterial.tres" id="2_eqgvf"]
+[ext_resource type="PackedScene" uid="uid://c0pcv83kg8oxb" path="res://Art/Decorations/Foliage/SimpleBushC.glb" id="3_uop6i"]
+[ext_resource type="PackedScene" uid="uid://d2sv8l61vqkya" path="res://Art/Decorations/Foliage/SimpleBushE.glb" id="4_eqgvf"]
+[ext_resource type="Script" uid="uid://bdhm24ac3chjw" path="res://Scripts/Birds/PerchBranchOwner.cs" id="4_rwc2s"]
+[ext_resource type="Material" uid="uid://bo6l3ud5p0pp2" path="res://Art/Materials/GroundMaterial.tres" id="5_uop6i"]
+
+[sub_resource type="Curve3D" id="Curve3D_v2fqd"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.022274941, 0.06223142, 0.71512693),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[node name="LayeredHedge" type="Node3D"]
+
+[node name="simplebushC" parent="." instance=ExtResource("3_uop6i")]
+transform = Transform3D(0.805, 0, 0, 0, 0.61, 0, 0, 0, 1.17, 0.13222742, 0, 0.17879415)
+
+[node name="PerchPointPaths" type="Node3D" parent="."]
+script = ExtResource("4_rwc2s")
+_perchPointType = 1116200663
+
+[node name="Path3D" type="Path3D" parent="PerchPointPaths"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26542082, 3.2567887, -0.20727623)
+curve = SubResource("Curve3D_v2fqd")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="SimpleBushE" parent="." instance=ExtResource("4_eqgvf")]
+
+[node name="Cube" parent="SimpleBushE" index="0"]
+surface_material_override/0 = ExtResource("5_uop6i")
+
+[node name="SimpleBushE2" parent="." instance=ExtResource("4_eqgvf")]
+transform = Transform3D(1.05, 0, 0, 0, 1.05, 0, 0, 0, 1.05, 0, 0, 0)
+
+[node name="Cube" parent="SimpleBushE2" index="0"]
+surface_material_override/0 = ExtResource("2_eqgvf")
+
+[editable path="SimpleBushE"]
+[editable path="SimpleBushE2"]

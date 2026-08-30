@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dpvlliqwl2v5d"]
+
+[ext_resource type="PackedScene" uid="uid://c84v1ou4tj8ok" path="res://Art/EMU/Foliage/TreeCedarTrunkA.glb" id="1_plk3b"]
+[ext_resource type="Texture2D" uid="uid://dgvbascoi325g" path="res://Art/Textures/TreeLeaves1.png" id="2_l1ctg"]
+[ext_resource type="Texture2D" uid="uid://btlctd7o871ug" path="res://Art/Textures/TreeLeavesA.png" id="3_8wkv1"]
+[ext_resource type="Texture2D" uid="uid://cgltg67yotjtu" path="res://Art/Textures/TreeLeavesB.png" id="3_hm28o"]
+
+[node name="TreeRedCedarA" type="Node3D" unique_id=1696470682]
+
+[node name="TreeCedarTrunkA" parent="." unique_id=1795677845 instance=ExtResource("1_plk3b")]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=2052610868]
+transform = Transform3D(0.27, 0, 0, 0, 0.27, 0, 0, 0, 0.27, -1.7572474, 17.391516, 3.7249894)
+modulate = Color(0.77254903, 0.84705883, 0.12941177, 1)
+billboard = 1
+texture = ExtResource("2_l1ctg")
+
+[node name="Sprite3D3" type="Sprite3D" parent="." unique_id=972683562]
+transform = Transform3D(0.41, 0, 0, 0, 0.41, 0, 0, 0, 0.41, -2.8438654, 18.051424, 3.1129088)
+modulate = Color(0.77254903, 0.84705883, 0.12941177, 1)
+billboard = 1
+texture = ExtResource("3_hm28o")
+
+[node name="Sprite3D5" type="Sprite3D" parent="." unique_id=981252658]
+transform = Transform3D(0.41, 0, 0, 0, 0.41, 0, 0, 0, 0.41, 0.66948795, 18.669647, -2.8431497)
+modulate = Color(0.77254903, 0.84705883, 0.12941177, 1)
+billboard = 1
+texture = ExtResource("3_hm28o")
+
+[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=1570625409]
+transform = Transform3D(0.335, 0, 0, 0, 0.335, 0, 0, 0, 0.335, 5.183588, 13.076088, 2.4882717)
+modulate = Color(0.8784314, 0.9254902, 0.15294118, 1)
+billboard = 1
+texture = ExtResource("3_8wkv1")
+
+[node name="Sprite3D4" type="Sprite3D" parent="." unique_id=1108422926]
+transform = Transform3D(0.565, 0, 0, 0, 0.565, 0, 0, 0, 0.565, -0.106423855, 20.795267, -0.31663227)
+modulate = Color(0.8784314, 0.9254902, 0.15294118, 1)
+billboard = 1
+texture = ExtResource("3_8wkv1")

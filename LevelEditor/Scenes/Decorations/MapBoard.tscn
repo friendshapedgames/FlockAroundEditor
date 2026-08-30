@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3t6by0p8t8nf"]
+
+[ext_resource type="PackedScene" uid="uid://pegbio1sn8cs" path="res://Art/Decorations/Signs/TutorialBoard.glb" id="2_r8i67"]
+
+[node name="TutorialBoard" type="Node3D"]
+transform = Transform3D(0.93, 0, 0, 0, 0.93, 0, 0, 0, 0.93, 0, 0, 0)
+
+[node name="TutorialBoard" parent="." instance=ExtResource("2_r8i67")]
+transform = Transform3D(0.675, 0, 0, 0, 0.675, 0, 0, 0, 0.675, 0, 0, 0)

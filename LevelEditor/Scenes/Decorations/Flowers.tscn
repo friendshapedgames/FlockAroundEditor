@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://nsy3qmxtpslk"]
+
+[ext_resource type="Texture2D" uid="uid://wihpevex57ex" path="res://Art/Decorations/PinkFlowerA.png" id="1_5unw6"]
+
+[node name="PinkFlowers" type="Sprite3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+cast_shadow = 0
+billboard = 2
+texture_filter = 0
+texture = ExtResource("1_5unw6")

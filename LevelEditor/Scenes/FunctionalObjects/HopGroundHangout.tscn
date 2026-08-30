@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bn06cjthrkhsl"]
+
+[ext_resource type="Script" uid="uid://dgtg4prim77n8" path="res://Scripts/Birds/GroundHangoutPlaneArea.cs" id="1_lrvp8"]
+[ext_resource type="Material" uid="uid://crdh67atyyewd" path="res://Art/Materials/EditorGroundHangoutHopMaterial.tres" id="2_x886p"]
+[ext_resource type="Script" uid="uid://hwphupxsulxi" path="res://Scripts/Core/FreeOnReady.cs" id="3_tye0k"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_uncxc"]
+height = 0.049902342
+radius = 1.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_swfr2"]
+top_radius = 1.0
+bottom_radius = 1.0
+height = 0.05
+
+[node name="GroundHangout" type="Area3D" unique_id=588847250]
+script = ExtResource("1_lrvp8")
+_perchPointType = 1069283163
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=304608258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.02504883, 0)
+shape = SubResource("CylinderShape3D_uncxc")
+debug_color = Color(0.8900529, 0.22576487, 0.5901861, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1783141934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.025, 0)
+material_override = ExtResource("2_x886p")
+mesh = SubResource("CylinderMesh_swfr2")
+script = ExtResource("3_tye0k")

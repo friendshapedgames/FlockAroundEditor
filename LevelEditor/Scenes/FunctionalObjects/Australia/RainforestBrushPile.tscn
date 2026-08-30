@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ck8wqeqtcqjh7"]
+
+[ext_resource type="PackedScene" uid="uid://cuix870q7ohj4" path="res://Art/EMU/Rocks/RockMossB.glb" id="1_6gail"]
+[ext_resource type="Texture2D" uid="uid://c6vmyae1chftp" path="res://Art/EMU/Foliage/RainforestFloor.png" id="2_6gail"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_370x6"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("2_6gail")
+uv1_scale = Vector3(2.6, 2.6, 2.6)
+
+[node name="BrushPile" unique_id=141404903 instance=ExtResource("1_6gail")]
+
+[node name="Icosphere_001" parent="." index="0" unique_id=1125633903]
+transform = Transform3D(2.08, 0, 0, 0, 0.65, 0, 0, 0, 1.96, 0, 0, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_370x6")

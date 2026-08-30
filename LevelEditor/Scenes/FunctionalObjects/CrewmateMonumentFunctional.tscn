@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d7w8e0k53h2u"]
+
+[ext_resource type="Script" uid="uid://t6bo6qw6crp4" path="res://Scripts/Objects/PointOfInterest.cs" id="1_l5p1x"]
+[ext_resource type="PackedScene" uid="uid://dejyfpv6paip6" path="res://Art/Decorations/crewmate.glb" id="2_mm134"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_l5p1x"]
+height = 3.6757813
+radius = 1.3334961
+
+[node name="CrewmateStatueFunctional" type="StaticBody3D"]
+transform = Transform3D(0.7196479, 0, -0.21120352, 0, 0.75, 0, 0.21120352, 0, 0.7196479, 0, 0, 0)
+collision_layer = 7
+script = ExtResource("1_l5p1x")
+_config = 2421564705
+
+[node name="crewmate" parent="." instance=ExtResource("2_mm134")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7871094, 0)
+shape = SubResource("CylinderShape3D_l5p1x")
+debug_color = Color(0.8103517, 0.34235615, 0.5056136, 0.85882354)

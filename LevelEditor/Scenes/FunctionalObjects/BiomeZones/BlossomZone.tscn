@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://rvci7wgqsbpg"]
+
+[ext_resource type="Script" uid="uid://bl112wvru57kq" path="res://Scripts/Core/BiomeZone.cs" id="1_i8jqw"]
+[ext_resource type="Texture2D" uid="uid://72y4vhklo66v" path="res://Art/BiomeIcons/IconMeadow.png" id="2_i8jqw"]
+[ext_resource type="Script" uid="uid://hwphupxsulxi" path="res://Scripts/Core/FreeOnReady.cs" id="3_icybq"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5u5q0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k8fmg"]
+transparency = 1
+cull_mode = 2
+albedo_color = Color(0.9211828, 0.6238973, 0.8189364, 0.54901963)
+albedo_texture = ExtResource("2_i8jqw")
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hbltj"]
+
+[node name="BlossomBiomeZone" type="Area3D"]
+script = ExtResource("1_i8jqw")
+_biomeResource = 1190344053
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_5u5q0")
+surface_material_override/0 = SubResource("StandardMaterial3D_k8fmg")
+script = ExtResource("3_icybq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_hbltj")
+debug_color = Color(0.9891928, 0.53312343, 0.7208437, 0.41960785)

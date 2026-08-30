@@ -1,0 +1,94 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cvrxf7d86vhgl"
+path="res://.godot/imported/terrainNov5_2.glb-028405a4e1c7e1b0c2ff9cb83f00d27e.scn"
+
+[deps]
+
+source_file="res://Art/Terrain/terrainNov5_2.glb"
+dest_files=["res://.godot/imported/terrainNov5_2.glb-028405a4e1c7e1b0c2ff9cb83f00d27e.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"materials": {
+"@MATERIAL:16": {
+"use_external/enabled": true,
+"use_external/path": "uid://1svcc2b0tkxm"
+},
+"Fall": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Art/Materials/FallGroundMaterial.tres",
+"use_external/path": "uid://cvnkwh1cocvj0"
+},
+"Marsh": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Art/Materials/MarshGroundMaterial.tres",
+"use_external/path": "uid://cnkp15ew7i3al"
+},
+"Rocky": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Art/Materials/RockyGroundMaterial.tres",
+"use_external/path": "uid://dff4h3me6bq3i"
+},
+"Snow": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Art/Materials/SnowGroundMaterial.tres",
+"use_external/path": "uid://1svcc2b0tkxm"
+},
+"grass": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Art/Materials/GroundMaterial.tres",
+"use_external/path": "uid://bo6l3ud5p0pp2"
+},
+"gravel": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Art/Materials/GravelPathMaterial.tres",
+"use_external/path": "uid://bqjk6twqt4icj"
+},
+"pink": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Art/Materials/GroundBlossomMaterial.tres",
+"use_external/path": "uid://1oj2ja81568e"
+},
+"waterfall": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Art/Materials/SandPathMaterial.tres",
+"use_external/path": "uid://bj1f8dm8ywqjg"
+},
+"woodtempp": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Art/Materials/WoodObjectMaterial.tres",
+"use_external/path": "uid://bjl4cs67i1kb1"
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1

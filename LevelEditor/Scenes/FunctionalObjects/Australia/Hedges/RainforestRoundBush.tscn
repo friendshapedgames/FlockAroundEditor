@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dw304vqt1swd5"]
+
+[ext_resource type="Script" uid="uid://bghejiwsro4k6" path="res://Scripts/Core/HangoutZoneOwnerFunctionalAndSpawner.cs" id="1_ah8pi"]
+[ext_resource type="PackedScene" uid="uid://biofc1lvxlyja" path="res://Art/EMU/CollidersAndPerches/RoundBushCollidersAndPerches.tscn" id="3_m7lqm"]
+[ext_resource type="PackedScene" uid="uid://d3f6yqgdxa4ft" path="res://Art/EMU/Foliage/RoundBush.glb" id="4_b5ca5"]
+[ext_resource type="PackedScene" uid="uid://b16ljxse4ug3x" path="res://Scenes/FunctionalObjects/TreeRustleSound.tscn" id="4_m7lqm"]
+
+[node name="RainforestRoundBush" type="Node3D" unique_id=1816158388]
+script = ExtResource("1_ah8pi")
+_spawnType = 1
+
+[node name="TreeRustleSound" parent="." unique_id=2005976015 instance=ExtResource("4_m7lqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3920473, 0)
+_sounds = 3649593278
+
+[node name="RoundBushCollidersAndPerches" parent="." unique_id=115535391 instance=ExtResource("3_m7lqm")]
+
+[node name="RoundBush" parent="." unique_id=434543496 instance=ExtResource("4_b5ca5")]
+
+[node name="SpawnOffset" type="Node3D" parent="." unique_id=1781211357]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3652755, 0)

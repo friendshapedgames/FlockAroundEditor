@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://cuigsps7ivkgt"]
+
+[ext_resource type="Script" uid="uid://nxrs0fpa8t7x" path="res://Scripts/Editor/ExportFlow.cs" id="1_lb5hq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lb5hq"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.020350248, 0.10260958, 0.059133597, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="Main" type="Node" unique_id=865395246]
+script = ExtResource("1_lb5hq")
+
+[node name="Control" type="VBoxContainer" parent="." unique_id=219559561]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBox" type="HBoxContainer" parent="Control" unique_id=1309716496]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/HBox" unique_id=213199752]
+layout_mode = 2
+text = "Level Path"
+
+[node name="LevelPathLineEdit" type="LineEdit" parent="Control/HBox" unique_id=1165611587]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+placeholder_text = "res://Maps/GooseLake.tscn"
+
+[node name="HBox2" type="HBoxContainer" parent="Control" unique_id=431693195]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/HBox2" unique_id=1288611437]
+layout_mode = 2
+text = "Flock Around PCK"
+
+[node name="LevelPathLineEdit" type="LineEdit" parent="Control/HBox2" unique_id=1237382259]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+placeholder_text = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\FlockAround\\FlockAround.pck"
+
+[node name="PanelContainer" type="PanelContainer" parent="Control" unique_id=939053455]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_lb5hq")
+
+[node name="ConsoleOutput" type="RichTextLabel" parent="Control/PanelContainer" unique_id=379069248]
+layout_mode = 2
+size_flags_vertical = 3
+focus_mode = 2
+bbcode_enabled = true
+scroll_following = true
+threaded = true
+selection_enabled = true
+
+[node name="BottomButtons" type="HBoxContainer" parent="Control" unique_id=700464820]
+layout_mode = 2
+alignment = 2
+
+[node name="ClearButton" type="Button" parent="Control/BottomButtons" unique_id=1609503250]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Clear"
+
+[node name="Control" type="Control" parent="Control/BottomButtons" unique_id=1731471995]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OpenFilesButton" type="Button" parent="Control/BottomButtons" unique_id=1786411851]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Open Export Directory"
+
+[node name="ExportButton" type="Button" parent="Control/BottomButtons" unique_id=609620202]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Export Level and PCK"

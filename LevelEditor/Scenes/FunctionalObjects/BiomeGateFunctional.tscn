@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://byw558ips6hbj"]
+
+[ext_resource type="PackedScene" uid="uid://b23lhwfav2ara" path="res://Art/Decorations/fenceB.glb" id="1_6n4eh"]
+[ext_resource type="Script" uid="uid://dj5bp7rva5w4q" path="res://Scripts/Objects/BiomeGate.cs" id="1_g4d15"]
+[ext_resource type="PhysicsMaterial" uid="uid://s8h86nwx3unw" path="res://WoodPhysicsMaterial.tres" id="3_g4d15"]
+[ext_resource type="PackedScene" uid="uid://da6wb5ll12i33" path="res://Art/StarLock.glb" id="4_q1s16"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_brrxh"]
+size = Vector3(12.245758, 2.3041992, 2.4552002)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6n4eh"]
+size = Vector3(12.245758, 2.8981934, 0.5474243)
+
+[node name="BiomeGate" type="Node3D" unique_id=84187409]
+script = ExtResource("1_g4d15")
+
+[node name="Mesh" parent="." unique_id=1794163691 instance=ExtResource("1_6n4eh")]
+
+[node name="middle" parent="Mesh" index="0"]
+layers = 2
+
+[node name="right" parent="Mesh" index="1"]
+layers = 2
+
+[node name="left" parent="Mesh" index="2"]
+layers = 2
+
+[node name="InteractDistanceVolume" type="Area3D" parent="." unique_id=1745171358]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractDistanceVolume" unique_id=893561887]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11192322, 1.1015046, 0.7276001)
+shape = SubResource("BoxShape3D_brrxh")
+debug_color = Color(0.6110715, 0.53496253, 0.18549243, 0.41960785)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1597692738]
+physics_material_override = ExtResource("3_g4d15")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=1621751196]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11192322, 1.3985016, -0.22628784)
+shape = SubResource("BoxShape3D_6n4eh")
+
+[node name="StarLock" parent="." unique_id=1087022965 instance=ExtResource("4_q1s16")]
+transform = Transform3D(-2, 0, -3.019916e-07, 0, 2, 0, 3.019916e-07, 0, -2, 0, 1.5649978, 0.16191089)
+
+[node name="Cylinder" parent="StarLock" index="0"]
+layers = 2
+
+[node name="Lock" parent="StarLock" index="1"]
+layers = 2
+
+[editable path="Mesh"]
+[editable path="StarLock"]

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://t58lnq8s25a2"]
+
+[ext_resource type="Texture2D" uid="uid://b2rbwjkwnngrg" path="res://Art/Textures/HedgeLeavesC.png" id="1_7bkfw"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_7bkfw")
+uv1_scale = Vector3(10, 10, 10)

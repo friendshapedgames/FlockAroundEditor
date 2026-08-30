@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b55shj2rpvaq7"]
+
+[ext_resource type="Texture2D" uid="uid://ldunbelg34oj" path="res://Art/Textures/EditorStripes.png" id="1_opnid"]
+
+[resource]
+transparency = 1
+albedo_color = Color(0.84334177, 0.3943578, 0.47012424, 1)
+albedo_texture = ExtResource("1_opnid")
+uv1_scale = Vector3(10, 10, 10)

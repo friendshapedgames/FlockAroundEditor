@@ -1,0 +1,16 @@
+{
+  "ids_to_slug": [
+    {
+      "id": 4245228117,
+      "string": "bird.name.marsh_wren"
+    },
+    {
+      "id": 1731085550,
+      "string": "bird.description.marsh_wren"
+    }
+  ],
+  "config_info": {
+    "config_instance_id": 2878152943,
+    "config_type_id": "LocalizationIdTableExtension"
+  }
+}

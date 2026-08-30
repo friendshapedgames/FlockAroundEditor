@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cvjnp37cosn5h"]
+
+[ext_resource type="Texture2D" uid="uid://dorcvrvd40d73" path="res://Art/Player/EyeAWhite.png" id="1_3kyk5"]
+[ext_resource type="Script" uid="uid://bwcb4fv3fbu0k" path="res://Scripts/Core/BiomeWarpPoint.cs" id="1_56ep2"]
+[ext_resource type="Texture2D" uid="uid://cw1tvpr1hwh51" path="res://Art/UI/Tutorial/Tutorial_EmotePoint.png" id="2_3kyk5"]
+
+[node name="WarpPoint" type="Node3D" unique_id=743962998]
+script = ExtResource("1_56ep2")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1069911029]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+modulate = Color(0.7766315, 0.47779858, 0.7370305, 1)
+texture = ExtResource("1_3kyk5")
+
+[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=1283788511]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 0, 0.5522126, 0)
+flip_h = true
+modulate = Color(1.8289685e-06, 0.60905224, 0.75944847, 1)
+texture = ExtResource("2_3kyk5")

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c7ft8pdmklay3"]
+
+[ext_resource type="Texture2D" uid="uid://ch724xba7n7t" path="res://Art/Textures/berriesA.png" id="1_oc7qb"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_oc7qb")
+uv1_scale = Vector3(10.88, 10.88, 10.88)

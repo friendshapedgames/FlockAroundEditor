@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://laxoseofu132"]
+
+[ext_resource type="Shader" uid="uid://ceb54ymx0n8di" path="res://Shaders/wind_trail.gdshader" id="1_rxcvp"]
+
+[sub_resource type="Curve" id="Curve_rxcvp"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.49095964, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="TubeTrailMesh" id="TubeTrailMesh_4btx2"]
+radius = 0.1
+section_length = 1.0
+curve = SubResource("Curve_rxcvp")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pvy3m"]
+render_priority = 0
+shader = ExtResource("1_rxcvp")
+shader_parameter/color = Color(1, 1, 1, 0.2784314)
+shader_parameter/fade_time = 10.0
+shader_parameter/time_scale = 5.0
+shader_parameter/wave_amplitude = 0.1
+shader_parameter/wave_frequency = 1.0
+shader_parameter/wave_length = 2.0
+shader_parameter/wave_count = 1.0
+shader_parameter/twist_amplitude = 0.1
+shader_parameter/twist_frequency = 1.0
+shader_parameter/loop_radius = 0.1
+shader_parameter/loop_count = 0.5
+
+[node name="WindTrail" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+custom_aabb = AABB(0, 0, 0, 0, 20, 0)
+instance_shader_parameters/extra_offset_time = 5.0
+instance_shader_parameters/extra_wave_length = 1.0
+mesh = SubResource("TubeTrailMesh_4btx2")
+surface_material_override/0 = SubResource("ShaderMaterial_pvy3m")

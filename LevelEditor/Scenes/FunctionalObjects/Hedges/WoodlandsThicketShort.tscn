@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://u3af8qvdkoyo"]
+
+[ext_resource type="Script" uid="uid://bdhm24ac3chjw" path="res://Scripts/Birds/PerchBranchOwner.cs" id="1_x306y"]
+[ext_resource type="Texture2D" uid="uid://dyc5h2eaatbxc" path="res://Art/Decorations/Foliage/SticksC.png" id="3_x306y"]
+[ext_resource type="Texture2D" uid="uid://cyncnruvkpj2r" path="res://Art/Decorations/Foliage/SticksD.png" id="4_nm0js"]
+[ext_resource type="Texture2D" uid="uid://cxpplf2pasmx3" path="res://Art/Decorations/Foliage/WallofLeavesB.png" id="5_qf1iy"]
+[ext_resource type="Material" uid="uid://dnshkkvmabrod" path="res://Art/Materials/hedgeMaterial.tres" id="7_1ot5j"]
+[ext_resource type="PackedScene" uid="uid://dt5cc8sfp6kfp" path="res://Art/Decorations/Foliage/ThinBushA.glb" id="8_kcjkr"]
+
+[sub_resource type="Curve3D" id="Curve3D_ey2d3"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0.011799812, 0, 0, 0, 0, 0, 0, 0, 0.022274941, 0.026934385, 0.71512693),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nm0js"]
+points = PackedVector3Array(0.37, 1.8664839, 1, 0.37, 2, 0.8664839, -0.37, 1.8664839, 1, 0.37, 0.13332029, 1, -0.37, 2, 0.8664839, 0.37, 2, -0.8666797, -0.37, 0.13332029, 1, 0.37, 0, 0.8664839, -0.37, 2, -0.8666797, 0.37, 1.8664839, -1, -0.37, 0, 0.8664839, 0.37, 0, -0.8666797, -0.37, 1.8664839, -1, 0.37, 0.13332029, -1, -0.37, 0, -0.8666797, -0.37, 0.13332029, -1)
+
+[node name="WoodlandsThicketShort" type="Node3D" unique_id=748344153]
+
+[node name="PerchPointPaths" type="Node3D" parent="." unique_id=891364838]
+script = ExtResource("1_x306y")
+_perchPointType = 495710309
+
+[node name="Path3D" type="Path3D" parent="PerchPointPaths" unique_id=186776441]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26542082, 1.1731225, -0.20727623)
+curve = SubResource("Curve3D_ey2d3")
+
+[node name="sticksC" type="Sprite3D" parent="." unique_id=20133473]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, -0.6346067, 1.7893119, -0.029635832)
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("3_x306y")
+
+[node name="sticksD" type="Sprite3D" parent="." unique_id=1264367578]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, 0.19616717, 1.8651481, 0.018091064)
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("4_nm0js")
+
+[node name="LeafWall" type="Sprite3D" parent="." unique_id=1095420129]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, 0.5337665, 1.8651462, -0.018296156)
+modulate = Color(0.54901963, 0.74509805, 0.4392157, 1)
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("5_qf1iy")
+
+[node name="LeafWall2" type="Sprite3D" parent="." unique_id=466395461]
+transform = Transform3D(0.00059370603, 0, -0.62999964, 0, 0.63000005, 0, 0.62999964, 0, 0.00059370603, -0.2478222, 2.7854557, -0.20938025)
+flip_h = true
+modulate = Color(0.3254902, 0.5411765, 0.32156864, 1)
+alpha_cut = 2
+alpha_scissor_threshold = 0.3
+texture = ExtResource("5_qf1iy")
+
+[node name="ThinBushA" parent="." unique_id=36486878 instance=ExtResource("8_kcjkr")]
+transform = Transform3D(2.455, 0, 0, 0, 2.455, 0, 0, 0, 2.455, 0, 0, 0)
+
+[node name="Cube" parent="ThinBushA" index="0" unique_id=1188473950]
+transform = Transform3D(1, 0, 0, 0, 0.94, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = ExtResource("7_1ot5j")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ThinBushA/Cube" index="0" unique_id=2019154417]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ThinBushA/Cube/StaticBody3D" unique_id=805991953]
+shape = SubResource("ConvexPolygonShape3D_nm0js")
+
+[editable path="ThinBushA"]

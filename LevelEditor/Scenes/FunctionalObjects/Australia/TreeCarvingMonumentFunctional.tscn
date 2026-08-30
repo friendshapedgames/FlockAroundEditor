@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bo8pcflqjadfj"]
+
+[ext_resource type="Texture2D" uid="uid://bbqyun60pv8jl" path="res://Art/EMU/Decorations/TreeCarvingMonument.png" id="1_si0gp"]
+[ext_resource type="Script" uid="uid://t6bo6qw6crp4" path="res://Scripts/Objects/PointOfInterest.cs" id="2_el1ei"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6iqt0"]
+size = Vector3(2.8159485, 0.8713722, 0.54467773)
+
+[node name="TreeCarvingsMonumentFunctional" type="Node3D" unique_id=1943354352]
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=808547262]
+transform = Transform3D(0.415, 0, 0, 0, 0.415, 0, 0, 0, 0.415, 0, 0, 0)
+modulate = Color(0.3154018, 0.19208801, 0.13483801, 1)
+texture = ExtResource("1_si0gp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1926951695]
+collision_layer = 4
+script = ExtResource("2_el1ei")
+_config = 2241867142
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1479790495]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05019343, -0.013336182, 0.3106364)
+shape = SubResource("BoxShape3D_6iqt0")
+debug_color = Color(0, 0, 0, 1)
