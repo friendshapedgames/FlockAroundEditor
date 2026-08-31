@@ -29,7 +29,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="Control/HBox" unique_id=213199752]
 layout_mode = 2
-text = "Level Path"
+text = "Scene Path"
 
 [node name="LevelPathLineEdit" type="LineEdit" parent="Control/HBox" unique_id=1165611587]
 custom_minimum_size = Vector2(250, 0)
