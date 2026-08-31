@@ -103,7 +103,7 @@ data = PackedVector3Array(-0.25509998, 0.022, 0.63299996, -0.63299996, 0.022, 0.
 
 [node name="LayeredHedge" type="Node3D" unique_id=1141496912]
 script = ExtResource("1_0mw0o")
-_spawnType = 1
+_spawnType = 192821257
 
 [node name="simplebush2" type="Node3D" parent="." unique_id=1758482822]
 transform = Transform3D(1.195, 0, 0, 0, 1.195, 0, 0, 0, 1.195, 0.110536575, 0, 0.15701628)

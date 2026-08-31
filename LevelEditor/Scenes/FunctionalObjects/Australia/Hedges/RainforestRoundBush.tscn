@@ -7,7 +7,7 @@
 
 [node name="RainforestRoundBush" type="Node3D" unique_id=1816158388]
 script = ExtResource("1_ah8pi")
-_spawnType = 1
+_spawnType = 192821257
 
 [node name="TreeRustleSound" parent="." unique_id=2005976015 instance=ExtResource("4_m7lqm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3920473, 0)

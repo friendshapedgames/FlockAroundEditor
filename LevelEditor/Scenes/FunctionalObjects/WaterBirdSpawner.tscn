@@ -4,4 +4,4 @@
 
 [node name="WaterBirdSpawner" type="Node3D" unique_id=155897619]
 script = ExtResource("1_wtrsc")
-_spawnType = 2
+_spawnType = 3806188274

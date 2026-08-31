@@ -9,7 +9,7 @@
 
 [node name="DesertRoundBush" type="Node3D" unique_id=2027971467]
 script = ExtResource("1_qhp4q")
-_spawnType = 1
+_spawnType = 192821257
 
 [node name="TreeRustleSound" parent="." unique_id=161241790 instance=ExtResource("4_ajra2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3920473, 0)

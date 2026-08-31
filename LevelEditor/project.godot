@@ -19,6 +19,7 @@ run/main_scene="uid://cuigsps7ivkgt"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="FlockAroundEditor"
 config/features=PackedStringArray("4.6", "C#", "Forward Plus")
+config/icon="uid://cf53546lt4k3"
 
 [audio]
 

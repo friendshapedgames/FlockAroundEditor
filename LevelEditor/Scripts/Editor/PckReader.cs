@@ -10,7 +10,7 @@ public class PckReader : IDisposable
 {
     private readonly Dictionary<string, PckFile> _files = new();
     private readonly long _filesBase;
-    private readonly Version _godotVersion;
+    public Version GodotVersion { get; }
     private readonly int _packFlags;
     private readonly BinaryReader _reader;
     private readonly FileStream _stream;
@@ -43,7 +43,7 @@ public class PckReader : IDisposable
         var major = _reader.ReadInt32();
         var minor = _reader.ReadInt32();
         var revision = _reader.ReadInt32();
-        _godotVersion = new Version(major, minor, revision);
+        GodotVersion = new Version(major, minor, revision);
 
         _packFlags = _reader.ReadInt32();
         _filesBase = _reader.ReadInt64();

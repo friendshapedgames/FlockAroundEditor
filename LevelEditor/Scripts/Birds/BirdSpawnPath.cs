@@ -10,12 +10,5 @@ namespace BirdGame.Birds;
 public partial class BirdSpawnPath : Path3D
 {
     [Export]
-    private BirdSpawnType _birdSpawnType = BirdSpawnType.Sky;
-}
-
-public enum BirdSpawnType
-{
-    Sky,
-    Bush,
-    DistantWater
+    private uint _birdSpawnType = 1438849508;
 }

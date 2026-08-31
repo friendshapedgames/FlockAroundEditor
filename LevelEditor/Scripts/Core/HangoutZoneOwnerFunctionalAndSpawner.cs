@@ -12,5 +12,5 @@ public partial class HangoutZoneOwnerFunctionalAndSpawner : HangoutZoneOwnerFunc
     private bool _spawnGroundedBirds;
 
     [Export]
-    private BirdSpawnType _spawnType;
+    private uint _spawnType;
 }

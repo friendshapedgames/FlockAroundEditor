@@ -460,23 +460,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.956512, 0, -156.24553)
 
 [node name="DesertHedge" parent="." unique_id=1141496912 instance=ExtResource("98_34f73")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.99517, 0, -118.21572)
-_spawnType = 0
+_spawnType = 1438849508
 
 [node name="DesertRoundBush" parent="." unique_id=2027971467 instance=ExtResource("99_w3du6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.216244, 9.536743e-07, -122.987595)
-_spawnType = 0
+_spawnType = 1438849508
 
 [node name="LayeredHedge4" parent="." unique_id=862412490 instance=ExtResource("100_mu3iy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.170485, 0, -113.92811)
-_spawnType = 0
+_spawnType = 1438849508
 
 [node name="RainforestRoundBush" parent="." unique_id=1816158388 instance=ExtResource("101_031fj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.60205, 0, -123.5192)
-_spawnType = 0
+_spawnType = 1438849508
 
 [node name="RainforestRoundBush2" parent="." unique_id=905055031 instance=ExtResource("102_nml2k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.85318, -1.9073486e-06, -118.14629)
-_spawnType = 0
+_spawnType = 1438849508
 
 [node name="RockAFunctional" parent="." unique_id=812106194 instance=ExtResource("104_mu3iy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.0405, 1.9073486e-06, -92.72148)

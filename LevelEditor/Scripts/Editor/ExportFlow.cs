@@ -161,6 +161,16 @@ public partial class ExportFlow : Node
 
         GD.Print("Loading game PCK...");
         using var pckReader = new PckReader(_pckPath, false);
+
+        var engineVersionDictionary = Engine.GetVersionInfo();
+        var runningEngineVersion = new Version(engineVersionDictionary["major"].AsInt32(),
+            engineVersionDictionary["minor"].AsInt32(), engineVersionDictionary["patch"].AsInt32());
+        if (pckReader.GodotVersion != runningEngineVersion)
+        {
+            PrintWarning(
+                $"The game PCK was built with engine version {pckReader.GodotVersion}, you are running this tool out of version {runningEngineVersion}, something might not work.");
+        }
+
         var vanillaGameFiles = new HashSet<string>();
 
         if (!pckReader.FileExistsExactly("VERSION.json"))
@@ -213,12 +223,23 @@ public partial class ExportFlow : Node
 
         var fileToUid = new System.Collections.Generic.Dictionary<string, string>();
 
-        AddUid(fileToUid, _levelScenePath);
-
         var externalDirectory = "res://EXTERNAL/";
         foreach (var dependencyPath in GetDependenciesRecursive(_levelScenePath))
         {
-            if (dependencyPath.StartsWith(externalDirectory))
+            if (!dependencyPath.StartsWith(externalDirectory))
+            {
+                if (vanillaGameFiles.Contains(dependencyPath))
+                {
+                    // GD.Print($"[color=gray]Skipping dependency {dependencyPath} (game already has this)[/color]");
+                }
+                else
+                {
+                    PrintError(
+                        $"Dependency {dependencyPath} is not in {externalDirectory} and will NOT be exported, move it into {externalDirectory} if you want it included.");
+                    hasError = true;
+                }
+            }
+            else
             {
                 GD.Print($"Found dependency: {dependencyPath}");
                 AddUid(fileToUid, dependencyPath);
@@ -229,7 +250,7 @@ public partial class ExportFlow : Node
                 foreach (var item in resourceCache.Where(item => item.StartsWith(dependencyPath)))
                 {
                     AddPckFile(pck, item);
-                    
+
                     if (item.EndsWith(".import"))
                     {
                         var config = new ConfigFile();
@@ -266,19 +287,6 @@ public partial class ExportFlow : Node
                     return;
                 }
             }
-            else
-            {
-                if (vanillaGameFiles.Contains(dependencyPath))
-                {
-                    // GD.Print($"[color=gray]Skipping dependency {dependencyPath} (game already has this)[/color]");
-                }
-                else
-                {
-                    PrintError(
-                        $"Dependency {dependencyPath} is not in {externalDirectory} and will NOT be exported, move it into {externalDirectory} if you want it included.");
-                    hasError = true;
-                }
-            }
         }
 
         if (hasError)
@@ -292,9 +300,9 @@ public partial class ExportFlow : Node
         GD.Print($"Copying level scene: {levelName}.tscn");
         var levelBytes = File.ReadAllBytes(ProjectSettings.GlobalizePath(_levelScenePath));
         File.WriteAllBytes(Path.Join(modPath, $"{levelName}.tscn"), levelBytes);
-        
+
         GD.Print($"Writing uids file: {levelName}.uids");
-        File.WriteAllText(Path.Join(modPath, $"{levelName}.uids"), string.Join("\n",fileToUid.Select(a =>
+        File.WriteAllText(Path.Join(modPath, $"{levelName}.uids"), string.Join("\n", fileToUid.Select(a =>
             $"{a.Value} {a.Key}")));
 
         GD.Print($"[color=lime]Export to {pckPath} finished {DateTime.Now}[/color]");
@@ -310,7 +318,8 @@ public partial class ExportFlow : Node
         AddUidPath(fileToUid, path, ResourceUid.Singleton.IdToText(ResourceLoader.GetResourceUid(path)));
     }
 
-    private static void AddUidPath(System.Collections.Generic.Dictionary<string, string> fileToUid, string dependencyPath, string uid)
+    private static void AddUidPath(System.Collections.Generic.Dictionary<string, string> fileToUid,
+        string dependencyPath, string uid)
     {
         GD.Print($"[color=lightblue]+ Adding UID mapping: {uid} <=> {dependencyPath}[/color]");
         fileToUid[dependencyPath] = uid;

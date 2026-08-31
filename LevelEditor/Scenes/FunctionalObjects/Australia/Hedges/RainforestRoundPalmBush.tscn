@@ -60,7 +60,7 @@ data = PackedVector3Array(0.36679998, 1.5971999, -1, 1, 1.5971999, -0.3669, 0.36
 
 [node name="RainforestRoundBush" type="Node3D" unique_id=1816158388]
 script = ExtResource("1_d4x4s")
-_spawnType = 1
+_spawnType = 192821257
 
 [node name="Inside" type="MeshInstance3D" parent="." unique_id=1814679155]
 mesh = SubResource("ArrayMesh_xifvw")

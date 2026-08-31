@@ -826,54 +826,67 @@ mesh = SubResource("ArrayMesh_4dt4o")
 skeleton = NodePath("")
 
 [node name="RightWall" type="MeshInstance3D" parent="outhouse" unique_id=1296784258]
+layers = 3
 mesh = SubResource("ArrayMesh_qgseg")
 skeleton = NodePath("")
 
 [node name="LeftWall" type="MeshInstance3D" parent="outhouse" unique_id=1966263986]
+layers = 3
 mesh = SubResource("ArrayMesh_fu31e")
 skeleton = NodePath("")
 
 [node name="BackWall" type="MeshInstance3D" parent="outhouse" unique_id=1688380862]
+layers = 3
 mesh = SubResource("ArrayMesh_7w2y1")
 skeleton = NodePath("")
 
 [node name="Floor" type="MeshInstance3D" parent="outhouse" unique_id=1935630902]
+layers = 3
 mesh = SubResource("ArrayMesh_q3v3n")
 skeleton = NodePath("")
 
 [node name="Front" type="MeshInstance3D" parent="outhouse" unique_id=416991245]
+layers = 3
 mesh = SubResource("ArrayMesh_73xbf")
 skeleton = NodePath("")
 
 [node name="Roof" type="MeshInstance3D" parent="outhouse" unique_id=316013470]
+layers = 3
 mesh = SubResource("ArrayMesh_ho6yx")
 skeleton = NodePath("")
 
 [node name="Seat" type="MeshInstance3D" parent="outhouse" unique_id=182623564]
+layers = 3
 mesh = SubResource("ArrayMesh_i6lgs")
 skeleton = NodePath("")
 
 [node name="Cube_008" type="MeshInstance3D" parent="outhouse" unique_id=368409358]
+layers = 3
 mesh = SubResource("ArrayMesh_npnjq")
 skeleton = NodePath("")
 
 [node name="Cube_010" type="MeshInstance3D" parent="outhouse" unique_id=1790341434]
+layers = 3
 mesh = SubResource("ArrayMesh_e58va")
 skeleton = NodePath("")
 
 [node name="Cube_011" type="MeshInstance3D" parent="outhouse" unique_id=845644596]
+layers = 3
 mesh = SubResource("ArrayMesh_kol3e")
 skeleton = NodePath("")
 
 [node name="Cube_012" type="MeshInstance3D" parent="outhouse" unique_id=1432813211]
+layers = 3
 mesh = SubResource("ArrayMesh_jqxku")
 skeleton = NodePath("")
 
 [node name="Cube_013" type="MeshInstance3D" parent="outhouse" unique_id=1747744216]
+layers = 3
 mesh = SubResource("ArrayMesh_f46hm")
 skeleton = NodePath("")
 
 [node name="Cube_014" type="MeshInstance3D" parent="outhouse" unique_id=749514207]
+layers = 3
 mesh = SubResource("ArrayMesh_wudmu")
 skeleton = NodePath("")
 
@@ -883,6 +896,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3137634, 0, 0.9254844)
 [node name="map" type="MeshInstance3D" parent="DoorPivot" unique_id=884245930]
 transform = Transform3D(-3.623674e-08, 0, 0.045, 0, 0.41, 0, -0.829, 0, -1.9670126e-09, -0.098, 3.477, -0.903)
 visible = false
+layers = 2
 mesh = SubResource("ArrayMesh_3u328")
 skeleton = NodePath("")
 
@@ -900,21 +914,25 @@ metadata/_custom_type_script = "uid://b5n24ed6brf5h"
 
 [node name="Top hinge" type="MeshInstance3D" parent="DoorPivot" unique_id=1302358593]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3137634, 0, -0.9254844)
+layers = 2
 mesh = SubResource("ArrayMesh_cr5dq")
 skeleton = NodePath("")
 
 [node name="Bottom Hinge" type="MeshInstance3D" parent="DoorPivot" unique_id=1630517581]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3137634, 0, -0.9254844)
+layers = 2
 mesh = SubResource("ArrayMesh_cnxca")
 skeleton = NodePath("")
 
 [node name="Handle Base" type="MeshInstance3D" parent="DoorPivot" unique_id=479468378]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3137634, 0, -0.9254844)
+layers = 2
 mesh = SubResource("ArrayMesh_7ypjx")
 skeleton = NodePath("")
 
 [node name="Handle" type="MeshInstance3D" parent="DoorPivot" unique_id=1238256073]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3137634, 0, -0.9254844)
+layers = 2
 mesh = SubResource("ArrayMesh_5f7ay")
 skeleton = NodePath("")
 
