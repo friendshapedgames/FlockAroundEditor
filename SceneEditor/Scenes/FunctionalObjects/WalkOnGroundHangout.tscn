@@ -10,7 +10,7 @@ size = Vector3(1, 0.05, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_4dim5"]
 size = Vector3(1, 0.05, 1)
 
-[node name="GroundHangout" type="Area3D" unique_id=1749177852]
+[node name="WalkOnGroundHangout" type="Area3D" unique_id=1749177852]
 script = ExtResource("1_dqwb5")
 _perchPointType = 2192262794
 

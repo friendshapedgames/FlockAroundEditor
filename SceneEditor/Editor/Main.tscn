@@ -87,4 +87,4 @@ text = "Open Export Directory"
 [node name="ExportButton" type="Button" parent="Control/BottomButtons" unique_id=609620202]
 layout_mode = 2
 size_flags_vertical = 3
-text = "Export Level and PCK"
+text = "Export"

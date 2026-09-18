@@ -16,13 +16,13 @@ script = ExtResource("1_g4d15")
 
 [node name="Mesh" parent="." unique_id=1794163691 instance=ExtResource("1_6n4eh")]
 
-[node name="middle" parent="Mesh" index="0"]
+[node name="middle" parent="Mesh" index="0" unique_id=392224073]
 layers = 2
 
-[node name="right" parent="Mesh" index="1"]
+[node name="right" parent="Mesh" index="1" unique_id=700607579]
 layers = 2
 
-[node name="left" parent="Mesh" index="2"]
+[node name="left" parent="Mesh" index="2" unique_id=1600178087]
 layers = 2
 
 [node name="InteractDistanceVolume" type="Area3D" parent="." unique_id=1745171358]
@@ -42,10 +42,10 @@ shape = SubResource("BoxShape3D_6n4eh")
 [node name="StarLock" parent="." unique_id=1087022965 instance=ExtResource("4_q1s16")]
 transform = Transform3D(-2, 0, -3.019916e-07, 0, 2, 0, 3.019916e-07, 0, -2, 0, 1.5649978, 0.16191089)
 
-[node name="Cylinder" parent="StarLock" index="0"]
+[node name="Cylinder" parent="StarLock" index="0" unique_id=791488382]
 layers = 2
 
-[node name="Lock" parent="StarLock" index="1"]
+[node name="Lock" parent="StarLock" index="1" unique_id=671475746]
 layers = 2
 
 [editable path="Mesh"]

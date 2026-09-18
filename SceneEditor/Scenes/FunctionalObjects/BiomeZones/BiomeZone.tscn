@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://b57tou36ysayq"]
+
+[ext_resource type="Script" uid="uid://bl112wvru57kq" path="res://Scripts/Core/BiomeZone.cs" id="1_yi6qf"]
+[ext_resource type="Texture2D" uid="uid://cnpd22d8j14i5" path="res://Art/UI/Sparkle.png" id="2_yi6qf"]
+[ext_resource type="Script" uid="uid://hwphupxsulxi" path="res://Scripts/Core/FreeOnReady.cs" id="3_x5sdb"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5u5q0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k8fmg"]
+transparency = 1
+cull_mode = 2
+albedo_color = Color(1, 1, 1, 0.54901963)
+albedo_texture = ExtResource("2_yi6qf")
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hbltj"]
+
+[node name="BiomeZone" type="Area3D" unique_id=512388420]
+script = ExtResource("1_yi6qf")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=78692245]
+layers = 3
+mesh = SubResource("BoxMesh_5u5q0")
+surface_material_override/0 = SubResource("StandardMaterial3D_k8fmg")
+script = ExtResource("3_x5sdb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1703873222]
+shape = SubResource("BoxShape3D_hbltj")
+debug_color = Color(0.9891928, 0.53312343, 0.7208437, 0.41960785)

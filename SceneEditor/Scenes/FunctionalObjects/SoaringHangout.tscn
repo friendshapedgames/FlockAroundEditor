@@ -21,7 +21,7 @@ top_radius = 1.0
 bottom_radius = 1.0
 height = 0.05
 
-[node name="FlyingHangout" type="Area3D" unique_id=541968241]
+[node name="SoaringHangout" type="Area3D" unique_id=541968241]
 script = ExtResource("1_krsih")
 _perchPointType = 1164864526
 

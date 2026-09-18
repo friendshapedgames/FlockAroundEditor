@@ -1,0 +1,27 @@
+{
+  "title": {
+    "id": 2067461107
+  },
+  "description": {
+    "id": 2067461107
+  },
+  "name_and_description_supported_locales": [
+    632594830,
+    3178793665,
+    4228018646
+  ],
+  "workshop_item_id": 3799353614,
+  "content": "mods://MarshWren",
+  "tags": [
+    "Custom Bird",
+    "Realistic",
+    "Goose Lake"
+  ],
+  "preview_image": {
+    "path": "mods://MarshWren/MarshWrenMockup.png"
+  },
+  "config_info": {
+    "config_instance_id": 3014115565,
+    "config_type_id": "SteamWorkshopMod"
+  }
+}

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -22,11 +23,11 @@ public partial class ExportFlow : Node
     private CustomLogger _customLogger = new();
     private bool _isWorking;
     private string? _levelScenePath;
-    private string? _pckPath;
+    private string? _gamePckPath;
 
     public override void _Ready()
     {
-        _pckPath = ReadTextResourceFileLines("user://pckpath");
+        _gamePckPath = ReadTextResourceFileLines("user://pckpath");
         _levelScenePath = ReadTextResourceFileLines("user://scenepath");
         OS.AddLogger(_customLogger);
         _customLogger.Message += Print;
@@ -50,7 +51,7 @@ public partial class ExportFlow : Node
         levelPathLineEdit.TextChanged += OnLevelPathChanged;
         clearButton.Pressed += OnClearPressed;
 
-        pckLineEdit.Text = _pckPath;
+        pckLineEdit.Text = _gamePckPath;
         levelPathLineEdit.Text = _levelScenePath;
 
         _consoleOutput.Clear();
@@ -58,7 +59,7 @@ public partial class ExportFlow : Node
 
     private void OnPckPathChanged(string newText)
     {
-        _pckPath = newText;
+        _gamePckPath = newText.Trim().Trim('\"');
     }
 
     private void OnClearPressed()
@@ -129,7 +130,7 @@ public partial class ExportFlow : Node
 
         WriteTextResourceFileLines("user://scenepath", _levelScenePath);
 
-        if (string.IsNullOrWhiteSpace(_pckPath))
+        if (string.IsNullOrWhiteSpace(_gamePckPath))
         {
             PrintError(
                 "Please provide the PCK path to your FlockAround.pck, this will be located in your steam install directory");
@@ -142,11 +143,11 @@ public partial class ExportFlow : Node
             return;
         }
 
-        WriteTextResourceFileLines("user://pckpath", _pckPath);
+        WriteTextResourceFileLines("user://pckpath", _gamePckPath);
 
-        if (!File.Exists(_pckPath))
+        if (!File.Exists(_gamePckPath))
         {
-            PrintError($"File not found: {_pckPath}");
+            PrintError($"File not found: {_gamePckPath}");
             return;
         }
 
@@ -160,7 +161,7 @@ public partial class ExportFlow : Node
         }
 
         GD.Print("Loading game PCK...");
-        using var pckReader = new PckReader(_pckPath, false);
+        using var pckReader = new PckReader(_gamePckPath, false);
 
         var engineVersionDictionary = Engine.GetVersionInfo();
         var runningEngineVersion = new Version(engineVersionDictionary["major"].AsInt32(),
@@ -210,17 +211,12 @@ public partial class ExportFlow : Node
         var modPath = GlobalModPath();
         Directory.CreateDirectory(modPath);
 
-        var pck = new PckPacker();
 
         GD.Print($"Level scene path: {_levelScenePath}");
 
         // Convert res://Some/Directory/MyCoolLevel.tscn -> MyCoolLevel
         var levelName = string.Join(".", _levelScenePath.Split("/").Last().Split(".").SkipLast(1));
-
-        var pckPath = Path.Join(modPath, $"{levelName}_assets.pck");
-        GD.Print($"Writing to pck: {pckPath}");
-        pck.PckStart(pckPath);
-
+        var pckList = new List<string>();
         var fileToUid = new System.Collections.Generic.Dictionary<string, string>();
 
         var externalDirectory = "res://EXTERNAL/";
@@ -249,7 +245,7 @@ public partial class ExportFlow : Node
                 // we want to find both res://Path/To/File.png and res://Path/To/File.png.import
                 foreach (var item in resourceCache.Where(item => item.StartsWith(dependencyPath)))
                 {
-                    AddPckFile(pck, item);
+                    AddPckFile(pckList, item);
 
                     if (item.EndsWith(".import"))
                     {
@@ -271,7 +267,7 @@ public partial class ExportFlow : Node
 
                                 if (resourceCache.Contains(itemReferencedInImportFile))
                                 {
-                                    AddPckFile(pck, itemReferencedInImportFile);
+                                    AddPckFile(pckList, itemReferencedInImportFile);
                                 }
                             }
                         }
@@ -294,18 +290,41 @@ public partial class ExportFlow : Node
             PrintError("Export stopped due to errors.");
             return;
         }
+        
+        if (pckList.Count > 0)
+        {
+            var pckPath = Path.Join(modPath, $"{levelName}_assets.pck");
+            GD.Print($"Writing to pck: {pckPath}");
+            var pck = new PckPacker();
+            pck.PckStart(pckPath);
+            foreach (var resPath in pckList)
+            {
+                pck.AddFile(resPath, resPath);
+            }
+            pck.Flush(true);
+        }
+        else
+        {
+            GD.Print("Skipping pck file, nothing to copy.");
+        }
 
-        pck.Flush(true);
-
+        if (fileToUid.Count > 0)
+        {
+            GD.Print($"Writing uids file: {levelName}.uids");
+            File.WriteAllText(Path.Join(modPath, $"{levelName}.uids"), string.Join("\n", fileToUid.Select(a =>
+                $"{a.Value} {a.Key}")));
+        }
+        else
+        {
+            GD.Print("Skipping uids file, nothing to write.");
+        }
+        
+        
         GD.Print($"Copying level scene: {levelName}.tscn");
         var levelBytes = File.ReadAllBytes(ProjectSettings.GlobalizePath(_levelScenePath));
         File.WriteAllBytes(Path.Join(modPath, $"{levelName}.tscn"), levelBytes);
-
-        GD.Print($"Writing uids file: {levelName}.uids");
-        File.WriteAllText(Path.Join(modPath, $"{levelName}.uids"), string.Join("\n", fileToUid.Select(a =>
-            $"{a.Value} {a.Key}")));
-
-        GD.Print($"[color=lime]Export to {pckPath} finished {DateTime.Now}[/color]");
+        
+        GD.Print($"[color=lime]Export finished {DateTime.Now}[/color]");
 
         if (_customLogger.ConsumeErrorFlag())
         {
@@ -325,10 +344,10 @@ public partial class ExportFlow : Node
         fileToUid[dependencyPath] = uid;
     }
 
-    private void AddPckFile(PckPacker pck, string item)
+    private void AddPckFile(List<string> pckList, string item)
     {
         GD.Print($"[color=lightgreen]+ Adding dependency to PCK: {item}[/color]");
-        pck.AddFile(item, item);
+        pckList.Add(item);
     }
 
     private IEnumerable<string> ListFilesRecursive(string path)

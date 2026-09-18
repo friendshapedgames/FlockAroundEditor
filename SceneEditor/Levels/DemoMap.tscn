@@ -1,6 +1,5 @@
 [gd_scene format=4 uid="uid://bqfra3tlt2xs6"]
 
-[ext_resource type="Script" uid="uid://do1f64ydsfigq" path="res://Scripts/Objects/LevelFunctional.cs" id="1_8d0ap"]
 [ext_resource type="PackedScene" uid="uid://tecg33n68if2" path="res://Art/Terrain/demoTerrain.glb" id="1_v25no"]
 [ext_resource type="Shader" uid="uid://dgppw4wte5aqo" path="res://Shaders/water2.gdshader" id="2_w4psw"]
 [ext_resource type="PackedScene" uid="uid://bjhlckqa38k78" path="res://Scenes/FunctionalObjects/TreeAFunctional.tscn" id="3_rr2e6"]
@@ -1273,14 +1272,13 @@ _data = {
 point_count = 5
 
 [node name="DemoMap" type="Node3D" unique_id=138552684]
-script = ExtResource("1_8d0ap")
 
 [node name="demoTerrain" parent="." unique_id=783027572 instance=ExtResource("1_v25no")]
 
-[node name="collider mesh" parent="demoTerrain" index="26" unique_id=549837339]
+[node name="collider mesh" parent="demoTerrain" index="26" unique_id=1481415592]
 visible = false
 
-[node name="Cube_059" parent="demoTerrain" index="27" unique_id=1501488235]
+[node name="Cube_059" parent="demoTerrain" index="27" unique_id=50056151]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.092, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="demoTerrain/Cube_059" index="0" unique_id=362033316]
@@ -1289,19 +1287,19 @@ collision_layer = 3
 [node name="CollisionShape3D" type="CollisionShape3D" parent="demoTerrain/Cube_059/StaticBody3D" unique_id=536760317]
 shape = SubResource("ConcavePolygonShape3D_ptg75")
 
-[node name="colliderBottom" parent="demoTerrain" index="66" unique_id=1899032068]
+[node name="colliderBottom" parent="demoTerrain" index="66" unique_id=1227607885]
 visible = false
 
-[node name="colliderTop" parent="demoTerrain" index="67" unique_id=3510139]
+[node name="colliderTop" parent="demoTerrain" index="67" unique_id=252353637]
 visible = false
 
-[node name="WaterfallCliff_017" parent="demoTerrain" index="82" unique_id=661342169]
+[node name="WaterfallCliff_017" parent="demoTerrain" index="82" unique_id=884517140]
 surface_material_override/1 = ExtResource("43_chtg1")
 
-[node name="WaterfallCliff_019" parent="demoTerrain" index="84" unique_id=1490748180]
+[node name="WaterfallCliff_019" parent="demoTerrain" index="84" unique_id=1595206440]
 surface_material_override/1 = ExtResource("43_chtg1")
 
-[node name="collider mesh_001" parent="demoTerrain" index="86" unique_id=645128816]
+[node name="collider mesh_001" parent="demoTerrain" index="86" unique_id=2061632095]
 visible = false
 
 [node name="GroundHangout-Woodland" parent="demoTerrain" unique_id=2037983523 instance=ExtResource("3_v25no")]
@@ -5253,7 +5251,7 @@ transform = Transform3D(-1.0739627, 0, 3.134493, 0, 3, 0, -1.3817035, 0, -2.4363
 [node name="hillB" parent="Woodland/Terrain" unique_id=352627720 instance=ExtResource("39_e78mg")]
 transform = Transform3D(0.33214465, 0, 0.9432285, 0, 1, 0, -0.9432285, 0, 0.33214465, 86.65806, -1.0208442, 23.770905)
 
-[node name="Cube" parent="Woodland/Terrain/hillB" index="0" unique_id=593326444]
+[node name="Cube" parent="Woodland/Terrain/hillB" index="0" unique_id=2028223037]
 transform = Transform3D(0.97399575, 0, 0.2265663, 0, 1, 0, -0.2265663, 0, 0.97399575, 5.666868, -9.536743e-07, -2.0938263)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Woodland/Terrain/hillB/Cube" index="0" unique_id=139814085]
@@ -5790,7 +5788,7 @@ draw_pass_1 = SubResource("QuadMesh_bh5ku")
 [node name="statue_head2" parent="Blossom/Decoration" unique_id=1331073291 instance=ExtResource("47_cqcq0")]
 transform = Transform3D(-3.3841417, 0, 7.55685, 0, 8.28, 0, -7.55685, 0, -3.3841417, 106.33221, 32.584602, -42.688763)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Blossom/Decoration/statue_head2/statue_head" parent_id_path=PackedInt32Array(1331073291, 617719547) index="0" unique_id=979493757]
+[node name="StaticBody3D" type="StaticBody3D" parent="Blossom/Decoration/statue_head2/statue_head" parent_id_path=PackedInt32Array(1331073291, 458979169) index="0" unique_id=979493757]
 collision_layer = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Blossom/Decoration/statue_head2/statue_head/StaticBody3D" unique_id=1364497095]
@@ -6396,12 +6394,15 @@ metadata/_custom_type_script = "uid://b5n24ed6brf5h"
 
 [node name="Shop" parent="Tutorial" unique_id=591533399 instance=ExtResource("61_nncx0")]
 transform = Transform3D(-0.99643415, 0, 0.08437358, 0, 1, 0, -0.08437358, 0, -0.99643415, 90.97659, -2.3841858e-07, 8.142273)
+_biome = 1759474129
 
 [node name="Shop2" parent="Tutorial" unique_id=1942527233 instance=ExtResource("61_nncx0")]
 transform = Transform3D(-0.3902972, 0, 0.9206888, 0, 1, 0, -0.9206888, 0, -0.3902972, 27.819056, -4.7683716e-07, 20.724607)
+_biome = 1759474129
 
 [node name="Shop3" parent="Tutorial" unique_id=290790526 instance=ExtResource("61_nncx0")]
 transform = Transform3D(0.37546408, 0, 0.92683685, 0, 1, 0, -0.92683685, 0, 0.37546408, 38.28248, 15.51034, 36.060154)
+_biome = 3290584003
 
 [node name="DevelopOTron" parent="Tutorial" unique_id=675779393 instance=ExtResource("63_6bk3u")]
 transform = Transform3D(-0.94112295, 0, -0.33806446, 0, 1, 0, 0.33806446, 0, -0.94112295, 95.08229, 0, 8.319188)
@@ -6431,7 +6432,7 @@ _biomeResource = 1759474129
 [node name="statue_ring2" parent="." unique_id=1652273991 instance=ExtResource("65_1xgik")]
 transform = Transform3D(1.654752, 0, -1.8739785, 0, 2.5, 0, 1.8739785, 0, 1.654752, 73.21784, 0.04999881, -57.17159)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="statue_ring2/statue_ring" parent_id_path=PackedInt32Array(1652273991, 1208822049) index="0" unique_id=595020605]
+[node name="StaticBody3D" type="StaticBody3D" parent="statue_ring2/statue_ring" parent_id_path=PackedInt32Array(1652273991, 442013089) index="0" unique_id=595020605]
 collision_layer = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="statue_ring2/statue_ring/StaticBody3D" unique_id=409451903]
@@ -6454,7 +6455,7 @@ transform = Transform3D(-4.1195974, 0, -9.1120205, 0, 10, 0, 9.1120205, 0, -4.11
 [node name="stone_tallA2" parent="Rocks" unique_id=872625375 instance=ExtResource("69_4expl")]
 transform = Transform3D(1.0000004, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1.0000004, -17.775408, -0.21987247, 0.048103333)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallA2/stone_tallA" parent_id_path=PackedInt32Array(872625375, 1024024449) index="0" unique_id=1809923043]
+[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallA2/stone_tallA" parent_id_path=PackedInt32Array(872625375, 516881184) index="0" unique_id=1809923043]
 collision_layer = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rocks/stone_tallA2/stone_tallA/StaticBody3D" unique_id=1635362808]
@@ -6463,7 +6464,7 @@ shape = SubResource("ConcavePolygonShape3D_v25no")
 [node name="stone_tallA3" parent="Rocks" unique_id=41401786 instance=ExtResource("69_4expl")]
 transform = Transform3D(0.39303213, 0, 9.330002, 0, 4.2233653, 0, 2.5905473, 0, -1.4155283, -9.959415, -0.37377214, 1.9185908)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallA3/stone_tallA" parent_id_path=PackedInt32Array(41401786, 1024024449) index="0" unique_id=872248936]
+[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallA3/stone_tallA" parent_id_path=PackedInt32Array(41401786, 516881184) index="0" unique_id=872248936]
 collision_layer = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rocks/stone_tallA3/stone_tallA/StaticBody3D" unique_id=96347717]
@@ -6475,7 +6476,7 @@ transform = Transform3D(2.7361705, 5.537845e-08, -8.565801, 4.756411e-07, 4.223,
 [node name="stone_tallC2" parent="Rocks" unique_id=712346731 instance=ExtResource("70_k8xkt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.722342, -0.4508422, -1.221874)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallC2/stone_tallC" parent_id_path=PackedInt32Array(712346731, 299036396) index="0" unique_id=483978337]
+[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallC2/stone_tallC" parent_id_path=PackedInt32Array(712346731, 1391223753) index="0" unique_id=483978337]
 collision_layer = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rocks/stone_tallC2/stone_tallC/StaticBody3D" unique_id=22110126]
@@ -6484,7 +6485,7 @@ shape = SubResource("ConcavePolygonShape3D_anuon")
 [node name="stone_tallD2" parent="Rocks" unique_id=1472991609 instance=ExtResource("71_ootrq")]
 transform = Transform3D(1.6525704, 0, -1.1265042, 0, 2, 0, 1.1265042, 0, 1.6525704, -8.736837, -0.15829512, -3.1253548)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallD2/stone_tallD" parent_id_path=PackedInt32Array(1472991609, 778039730) index="0" unique_id=158790521]
+[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallD2/stone_tallD" parent_id_path=PackedInt32Array(1472991609, 1007549359) index="0" unique_id=158790521]
 collision_layer = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rocks/stone_tallD2/stone_tallD/StaticBody3D" unique_id=1358475264]
@@ -6493,7 +6494,7 @@ shape = SubResource("ConcavePolygonShape3D_m4nvi")
 [node name="stone_tallB2" parent="Rocks" unique_id=788853706 instance=ExtResource("72_7bnmi")]
 transform = Transform3D(1.5861927, 0, 4.7417293, 0, 4.9999995, 0, -4.7417293, 0, 1.5861927, -24.954216, 2.28897, 1.7533436)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallB2/stone_tallB" parent_id_path=PackedInt32Array(788853706, 1291226745) index="0" unique_id=156596174]
+[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallB2/stone_tallB" parent_id_path=PackedInt32Array(788853706, 796632559) index="0" unique_id=156596174]
 collision_layer = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rocks/stone_tallB2/stone_tallB/StaticBody3D" unique_id=1580871726]
@@ -6502,7 +6503,7 @@ shape = SubResource("ConcavePolygonShape3D_cbjfj")
 [node name="stone_tallB4" parent="Rocks" unique_id=102695551 instance=ExtResource("72_7bnmi")]
 transform = Transform3D(1.5861927, 0, 4.7417293, 0, 4.9999995, 0, -4.7417293, 0, 1.5861927, -6.224757, -0.855944, -5.4408045)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallB4/stone_tallB" parent_id_path=PackedInt32Array(102695551, 1291226745) index="0" unique_id=1979839516]
+[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallB4/stone_tallB" parent_id_path=PackedInt32Array(102695551, 796632559) index="0" unique_id=1979839516]
 collision_layer = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rocks/stone_tallB4/stone_tallB/StaticBody3D" unique_id=347695245]
@@ -6514,7 +6515,7 @@ transform = Transform3D(1.5861927, 0, 4.7417293, 0, 4.9999995, 0, -4.7417293, 0,
 [node name="cliff_large_stone2" parent="Rocks" unique_id=1301043928 instance=ExtResource("73_87spe")]
 transform = Transform3D(8.74975, 0, -4.8416843, 0, 2.9999998, 0, 4.8416843, 0, 8.74975, -23.648811, -0.16644803, -1.6720674)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/cliff_large_stone2/cliff_large_stone" parent_id_path=PackedInt32Array(1301043928, 1276496550) index="0" unique_id=1156830087]
+[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/cliff_large_stone2/cliff_large_stone" parent_id_path=PackedInt32Array(1301043928, 1622721274) index="0" unique_id=1156830087]
 collision_layer = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rocks/cliff_large_stone2/cliff_large_stone/StaticBody3D" unique_id=570401955]
@@ -6523,7 +6524,7 @@ shape = SubResource("ConcavePolygonShape3D_flotj")
 [node name="cliff_large_stone3" parent="Rocks" unique_id=1747551574 instance=ExtResource("73_87spe")]
 transform = Transform3D(-8.993826, 0, 4.3716307, 0, 2.9999998, 0, -4.3716307, 0, -8.993826, -9.0816145, -0.16644803, -10.491183)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/cliff_large_stone3/cliff_large_stone" parent_id_path=PackedInt32Array(1747551574, 1276496550) index="0" unique_id=1907462737]
+[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/cliff_large_stone3/cliff_large_stone" parent_id_path=PackedInt32Array(1747551574, 1622721274) index="0" unique_id=1907462737]
 collision_layer = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rocks/cliff_large_stone3/cliff_large_stone/StaticBody3D" unique_id=1629636937]
@@ -6532,7 +6533,7 @@ shape = SubResource("ConcavePolygonShape3D_lmycf")
 [node name="stone_tallI2" parent="Rocks" unique_id=123565548 instance=ExtResource("74_2niqu")]
 transform = Transform3D(5.000001, 0, -1.1920929e-07, 0, 5, 0, 1.1920929e-07, 0, 5.000001, -3.2117991, -0.58898616, 0.9185543)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallI2/stone_tallI" parent_id_path=PackedInt32Array(123565548, 1110468986) index="0" unique_id=1959957045]
+[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallI2/stone_tallI" parent_id_path=PackedInt32Array(123565548, 31473076) index="0" unique_id=1959957045]
 collision_layer = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rocks/stone_tallI2/stone_tallI/StaticBody3D" unique_id=1909339968]
@@ -6541,7 +6542,7 @@ shape = SubResource("ConcavePolygonShape3D_0af3n")
 [node name="stone_tallI3" parent="Rocks" unique_id=244660733 instance=ExtResource("74_2niqu")]
 transform = Transform3D(-0.56436837, 0, -4.9680476, 0, 5, 0, 4.9680476, 0, -0.56436837, -4.1609974, -0.58898664, -1.9504681)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallI3/stone_tallI" parent_id_path=PackedInt32Array(244660733, 1110468986) index="0" unique_id=983566052]
+[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallI3/stone_tallI" parent_id_path=PackedInt32Array(244660733, 31473076) index="0" unique_id=983566052]
 collision_layer = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rocks/stone_tallI3/stone_tallI/StaticBody3D" unique_id=336474662]
@@ -6550,7 +6551,7 @@ shape = SubResource("ConcavePolygonShape3D_ioem7")
 [node name="stone_tallI4" parent="Rocks" unique_id=2065597246 instance=ExtResource("74_2niqu")]
 transform = Transform3D(-0.5643685, 0, -4.968048, 0, 5, 0, 4.968048, 0, -0.5643685, -19.482166, 3.874302e-07, 1.6273851)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallI4/stone_tallI" parent_id_path=PackedInt32Array(2065597246, 1110468986) index="0" unique_id=1838724295]
+[node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_tallI4/stone_tallI" parent_id_path=PackedInt32Array(2065597246, 31473076) index="0" unique_id=1838724295]
 collision_layer = 3
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rocks/stone_tallI4/stone_tallI/StaticBody3D" unique_id=1240268080]
@@ -6559,7 +6560,7 @@ shape = SubResource("ConcavePolygonShape3D_5halb")
 [node name="stone_largeF2" parent="Rocks" unique_id=1711238523 instance=ExtResource("75_xneph")]
 transform = Transform3D(1.0000004, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1.0000004, -16.185034, -0.33568698, 2.761003)
 
-[node name="stone_largeF" parent="Rocks/stone_largeF2" index="0" unique_id=622225832]
+[node name="stone_largeF" parent="Rocks/stone_largeF2" index="0" unique_id=1332642081]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26123685, -0.17681062, -9.179245)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_largeF2/stone_largeF" index="0" unique_id=961871096]
@@ -6582,7 +6583,7 @@ shape = SubResource("ConcavePolygonShape3D_s2bxt")
 [node name="stone_largeF4" parent="Rocks" unique_id=178563094 instance=ExtResource("75_xneph")]
 transform = Transform3D(-1.9988117, 0, 0.06896162, 0, 2, 0, -0.06896162, 0, -1.9988117, -13.016622, 0.5989692, 11.457701)
 
-[node name="stone_largeF" parent="Rocks/stone_largeF4" index="0" unique_id=622225832]
+[node name="stone_largeF" parent="Rocks/stone_largeF4" index="0" unique_id=1332642081]
 transform = Transform3D(0.5000001, 0, -4.4703484e-08, 0, 0.5, 0, 4.4703484e-08, 0, 0.5000001, 0.22133374, -0.56500447, 7.7920933)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_largeF4/stone_largeF" index="0" unique_id=1601734726]
@@ -6627,7 +6628,7 @@ shape = SubResource("ConcavePolygonShape3D_t6o85")
 [node name="stone_largeF3" parent="Rocks" unique_id=1079935580 instance=ExtResource("75_xneph")]
 transform = Transform3D(0.2000001, 0, 0, 0, 0.2, 0, 0, 0, 0.2000001, -13.516686, 0.582022, 10.344915)
 
-[node name="stone_largeF" parent="Rocks/stone_largeF3" index="0" unique_id=622225832]
+[node name="stone_largeF" parent="Rocks/stone_largeF3" index="0" unique_id=1332642081]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.756721, -4.149583, -55.31327)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_largeF3/stone_largeF" index="0" unique_id=1857702584]
@@ -6639,7 +6640,7 @@ shape = SubResource("ConcavePolygonShape3D_0ms5g")
 [node name="stone_smallFlatC2" parent="Rocks" unique_id=1939675523 instance=ExtResource("76_vy5od")]
 transform = Transform3D(-0.21401943, 0, 0.9768299, 0, 1, 0, -0.9768299, 0, -0.21401943, -13.809749, 0.67528707, 9.953558)
 
-[node name="stone_smallFlatC" parent="Rocks/stone_smallFlatC2" index="0" unique_id=1225396269]
+[node name="stone_smallFlatC" parent="Rocks/stone_smallFlatC2" index="0" unique_id=1299581867]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.910445, -0.94334674, 6.172998)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_smallFlatC2/stone_smallFlatC" index="0" unique_id=1908694425]
@@ -6651,7 +6652,7 @@ shape = SubResource("ConcavePolygonShape3D_hurtq")
 [node name="stone_smallFlatB2" parent="Rocks" unique_id=366239427 instance=ExtResource("77_kip38")]
 transform = Transform3D(1.0000004, 0, -5.9604645e-08, 0, 1, 0, 5.9604645e-08, 0, 1.0000004, -14.052174, 0.69161, 10.3233795)
 
-[node name="stone_smallFlatB" parent="Rocks/stone_smallFlatB2" index="0" unique_id=1023750458]
+[node name="stone_smallFlatB" parent="Rocks/stone_smallFlatB2" index="0" unique_id=2091551462]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.915278, -0.9292965, -12.182989)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Rocks/stone_smallFlatB2/stone_smallFlatB" index="0" unique_id=1218146486]
