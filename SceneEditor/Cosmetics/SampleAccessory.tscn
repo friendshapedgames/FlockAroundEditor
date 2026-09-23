@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://drbqij3dtmlf8"]
+
+[ext_resource type="Script" uid="uid://cw0miucn6ksdu" path="res://Scripts/Cosmetic/ApparelController.cs" id="1_br6wv"]
+[ext_resource type="Texture2D" uid="uid://cuny3s15cq73u" path="res://Art/Player/FaceAccessories/FaceAccessory10.png" id="1_isci4"]
+
+[node name="Accessory" type="Node3D" unique_id=516963624]
+script = ExtResource("1_br6wv")
+
+[node name="Angry" type="Sprite3D" parent="." unique_id=675106599]
+transform = Transform3D(0.32335898, 3.1061613e-09, -0.72147095, -1.5143398e-09, 0.432, 7.492143e-09, 0.2864664, -1.2225179e-09, 0.8143856, 0.72197574, -0.05728818, 0.11344327)
+texture = ExtResource("1_isci4")

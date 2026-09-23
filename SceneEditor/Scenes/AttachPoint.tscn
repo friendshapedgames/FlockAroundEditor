@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c112sa574f4x0"]
+
+[ext_resource type="Script" uid="uid://f2tv0xlgxqmk" path="res://Scripts/Birds/AttachPointOwner.cs" id="1_m73s2"]
+[ext_resource type="Texture2D" uid="uid://bx4k4363mt13h" path="res://Art/Birds/Robin/RobinMockup.png" id="2_yofhb"]
+
+[node name="AttachPoint" type="Node3D" unique_id=287116518]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 8.881784e-16, 0, -8.881784e-16, 1, 0, 0, 0)
+script = ExtResource("1_m73s2")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=635942452]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0.15902711, 1.4124445e-16)
+texture = ExtResource("2_yofhb")

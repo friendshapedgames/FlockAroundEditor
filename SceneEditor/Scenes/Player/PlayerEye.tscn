@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://d2251fstfvtkd"]
+
+[ext_resource type="Texture2D" uid="uid://dorcvrvd40d73" path="res://Art/Player/EyeAWhite.png" id="1_d58ll"]
+[ext_resource type="Texture2D" uid="uid://nfnrjgjf64f2" path="res://Art/Player/EyeAPupil.png" id="6_kea7s"]
+
+[node name="Eye" type="Sprite3D" unique_id=375302120]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+cast_shadow = 0
+billboard = 1
+alpha_cut = 1
+texture = ExtResource("1_d58ll")
+
+[node name="PupilPivot" type="Node3D" parent="." unique_id=2140263646]
+
+[node name="Pupil" type="Sprite3D" parent="PupilPivot" unique_id=985393613]
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1.0000001, 0, -2.9802322e-08, 0, 1, 0, 0, -0.31660748)
+cast_shadow = 0
+billboard = 1
+alpha_cut = 2
+render_priority = 1
+texture = ExtResource("6_kea7s")

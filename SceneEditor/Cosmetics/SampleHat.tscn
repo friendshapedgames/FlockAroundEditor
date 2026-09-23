@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b6lu7kbto50wh"]
+
+[ext_resource type="Script" uid="uid://cw0miucn6ksdu" path="res://Scripts/Cosmetic/ApparelController.cs" id="1_jtdbx"]
+[ext_resource type="PackedScene" uid="uid://cm3m0atxqhu80" path="res://Art/Player/Hats/Cap/capMesh.glb" id="2_jtdbx"]
+[ext_resource type="PackedScene" uid="uid://c112sa574f4x0" path="res://Scenes/AttachPoint.tscn" id="3_24hea"]
+
+[node name="Hat" type="Node3D" unique_id=591459282]
+transform = Transform3D(1, 0, 0, 0, 0.9999998, 8.881784e-16, 0, -8.881784e-16, 1, 0, 0, 0)
+script = ExtResource("1_jtdbx")
+
+[node name="capMesh" parent="." unique_id=1411546672 instance=ExtResource("2_jtdbx")]
+transform = Transform3D(-1.09278474e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278474e-07, 0, 0, 0)
+
+[node name="AttachPoint" parent="." unique_id=1206328726 instance=ExtResource("3_24hea")]
+transform = Transform3D(1, 0, 0, 0, 0.9999998, 0, 0, 1.0587912e-22, 1, 0, 0.66596144, 5.248792e-16)
+_perchPointType = 4191031092

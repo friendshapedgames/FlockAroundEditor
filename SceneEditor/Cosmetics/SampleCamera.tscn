@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cjq055h47gtj2"]
+
+[ext_resource type="Script" uid="uid://cw0miucn6ksdu" path="res://Scripts/Cosmetic/ApparelController.cs" id="1_vvgkc"]
+[ext_resource type="PackedScene" uid="uid://ydup66lvm7o" path="res://Art/Player/Items/Cameras/camera.glb" id="2_365un"]
+
+[node name="NormalCamera" type="Node3D" unique_id=1860093797]
+transform = Transform3D(1, 0, 0, 0, 0.9999998, 8.881784e-16, 0, -8.881784e-16, 1, 0, 0, 0)
+script = ExtResource("1_vvgkc")
+
+[node name="camera" parent="." unique_id=493844588 instance=ExtResource("2_365un")]

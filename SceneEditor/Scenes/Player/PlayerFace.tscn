@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dlc1tdeyphtt"]
+
+[ext_resource type="PackedScene" path="res://Scenes/Player/PlayerEye.tscn" id="1_4r2na"]
+[ext_resource type="Texture2D" uid="uid://b3vpp0twanodb" path="res://Art/Player/CharacterMouths/MouthA.png" id="2_4r2na"]
+
+[node name="Face" type="Node3D" unique_id=314865458]
+
+[node name="LeftEye" parent="." unique_id=1882783943 instance=ExtResource("1_4r2na")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.19211863, 0, 0.048948765)
+script = null
+
+[node name="RightEye" parent="." unique_id=2061126545 instance=ExtResource("1_4r2na")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.192, 0, 0.04940796)
+script = null
+
+[node name="Mouth" type="Sprite3D" parent="." unique_id=541481239]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, -0.188, 0.022)
+texture = ExtResource("2_4r2na")

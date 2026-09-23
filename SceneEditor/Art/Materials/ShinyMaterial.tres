@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dhsllieddtmvh"]
+
+[ext_resource type="Shader" uid="uid://bnmlutmyekpj1" path="res://Shaders/HueShift.gdshader" id="1_3yab6"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_3yab6")
+shader_parameter/hue_shift_speed = 0.250000011875
+shader_parameter/hue_shift_offset = 0.0

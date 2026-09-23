@@ -3,8 +3,9 @@
 namespace BirdGame.Core;
 
 /// <summary>
-///     STUBBED CLASS - NOT ALL FUNCTIONALITY WILL BE VISIBLE HERE
-///     Plays one of a random sound
+///     STUB CLASS
+///     Plays a random sound from the collection of audio streams
+///     Something else must tell this sound player to "Play" for it to work
 /// </summary>
 public partial class RandomizedSound3D : AudioStreamPlayer3D
 {

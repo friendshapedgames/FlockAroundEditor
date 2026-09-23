@@ -13,17 +13,17 @@ To use the Level Editor, you will need some additional software:
 
 - Open Godot and open the `Flock Around Editor Tool` project.
 - Click the Build button in the top right corner. Assuming .NET installed correctly, this should build successfully.
-- Create a new Scene in the `res://Maps` folder (or duplicate an existing map already in that folder).
+- Create a new Scene in the `res://Levels` folder (or duplicate an existing map already in that folder).
 - Actually make your level.
-    - If you are introducing new resources they must be included in the `res://EXPORT` folder. Ideally under a folder with your name on it (eg: `res://EXPORT/JimmysCoolMod/...`).
+    - If you are introducing new resources they must be included in the `res://EXTERNAL` folder. Ideally under a folder with your name on it (eg: `res://EXTERNAL/JimmysCoolMod/...`).
 
 ### Exporting your Level
 - Press F5 in the editor tools to "run" the tool, you can also press the play button in the top right corner.
 - This will open a window for the export flow.
 - Provide the `res://` path of the level you want to export.
 - Provide the global path to your `FlockAround.pck`, you can find this by right clicking Flock Around in your steam library, clicking `Properties` > `Installed Files` > `Browse`. 
-- Click `Export Level and PCK`
+- Click `Export`
 - This will export your level (it might take a few minutes depending on how big your level is)
 - This will create a `.pck` `.uids` and copy your `.tscn` into your Flock Around mods folder.
 - You may want to move these resulting files into their own folder.
-- If you now run Flock Around with the `-- --modsenabled` launch option, your `.tscn` file should now be visible in the Config Editor.
+- If you now run Flock Around with the `-- --enablemods` launch option, your `.tscn` file should now be visible in the Config Editor.

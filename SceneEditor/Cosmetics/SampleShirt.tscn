@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://xesqdyh4rjjl"]
+
+[ext_resource type="PackedScene" uid="uid://ciy532m6kssjf" path="res://Art/Player/Shirts/shirt.glb" id="1_1ix8f"]
+[ext_resource type="Script" uid="uid://cw0miucn6ksdu" path="res://Scripts/Cosmetic/ApparelController.cs" id="1_b7ga7"]
+[ext_resource type="PackedScene" uid="uid://dyem52w6rhnoo" path="res://Scripts/Cosmetic/PinAttachPoint.tscn" id="3_nd7x8"]
+[ext_resource type="Texture2D" uid="uid://bkyj0mhj3nvai" path="res://Art/Player/Shirts/ShirtCargoGreen.png" id="3_tt3dj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vdaib"]
+albedo_texture = ExtResource("3_tt3dj")
+
+[node name="Shirt" type="Node3D" unique_id=1555698096]
+transform = Transform3D(1, 0, 0, 0, 0.9999998, 8.881784e-16, 0, -8.881784e-16, 1, 0, 0, 0)
+script = ExtResource("1_b7ga7")
+
+[node name="shirt" parent="." unique_id=1798183947 instance=ExtResource("1_1ix8f")]
+transform = Transform3D(1.01, 0, 0, 0, 1.01, 1.1729341e-08, 0, -1.1729341e-08, 1.01, 0, -1.1920929e-07, 1.7763568e-15)
+
+[node name="Cylinder_001" parent="shirt" index="0" unique_id=1486940172]
+surface_material_override/0 = SubResource("StandardMaterial3D_vdaib")
+
+[node name="PinRoot" parent="." unique_id=130069639 instance=ExtResource("3_nd7x8")]
+transform = Transform3D(-0.95946664, 0, -0.28182226, 0, 1, 0, 0.28182226, 0, -0.95946664, -0.17842159, 0.46822417, -0.5242244)
+
+[editable path="shirt"]

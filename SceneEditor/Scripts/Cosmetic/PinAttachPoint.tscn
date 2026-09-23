@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dyem52w6rhnoo"]
+
+[ext_resource type="Script" uid="uid://csyjlhfs6ocf2" path="res://Scripts/Cosmetic/PinAttachPoint.cs" id="1_qp2cj"]
+[ext_resource type="Texture2D" uid="uid://dgt8qkxdt5o36" path="res://Art/Player/Pins/GooseLakeShiny.png" id="2_nkwno"]
+
+[node name="PinRoot" type="Node3D" unique_id=130069639]
+script = ExtResource("1_qp2cj")
+
+[node name="PinSprite" type="Sprite3D" parent="." unique_id=531162199]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
+texture = ExtResource("2_nkwno")

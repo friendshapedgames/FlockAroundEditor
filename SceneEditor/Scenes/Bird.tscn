@@ -1,0 +1,136 @@
+[gd_scene format=3 uid="uid://cgqr5glme04b0"]
+
+[ext_resource type="Script" uid="uid://dhynh1wel3xev" path="res://Scripts/Birds/Bird.cs" id="1_806kn"]
+[ext_resource type="Script" uid="uid://fcxd6sho8ci1" path="res://Scripts/Birds/BillboardTransform.cs" id="3_6djdu"]
+[ext_resource type="AudioStream" uid="uid://dkxxlkjaxcjvv" path="res://Art/Sounds/Peck/peck_1.ogg" id="5_fn1gv"]
+[ext_resource type="AudioStream" uid="uid://b3gutxav62osk" path="res://Art/Sounds/bird-fly-start.ogg" id="5_gjpud"]
+[ext_resource type="PackedScene" uid="uid://nks77uquirb3" path="res://Art/Birds/Robin/RobinVisual.tscn" id="5_okd8w"]
+[ext_resource type="AudioStream" uid="uid://mhiiu5uv2ktt" path="res://Art/Sounds/bird-fly-continuous.ogg" id="5_qo1os"]
+[ext_resource type="AudioStream" uid="uid://bcmri8i0h3hrp" path="res://Art/Birds/Robin/Robin_1.ogg" id="5_tto85"]
+[ext_resource type="Texture2D" uid="uid://cnpd22d8j14i5" path="res://Art/UI/Sparkle.png" id="7_gjpud"]
+[ext_resource type="AudioStream" uid="uid://br78pch68a0uu" path="res://Art/Sounds/Vitor/sfx_bird_shiny_loop.ogg" id="9_2o0di"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_fn1gv"]
+resource_local_to_scene = true
+radius = 10.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_806kn"]
+radius = 2.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_2o0di"]
+resource_local_to_scene = true
+
+[sub_resource type="Gradient" id="Gradient_gjpud"]
+offsets = PackedFloat32Array(0, 0.57828283)
+colors = PackedColorArray(1, 1, 1, 1, 1, 0.6928333, 0.029999971, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_0qofi"]
+gradient = SubResource("Gradient_gjpud")
+
+[sub_resource type="Curve" id="Curve_fn1gv"]
+_data = [Vector2(0, 0.23990077), 0.0, 0.0, 0, 0, Vector2(0.49427482, 0.18922752), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_wehcy"]
+curve = SubResource("Curve_fn1gv")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_2o0di"]
+emission_shape = 1
+emission_sphere_radius = 0.2
+spread = 180.0
+initial_velocity_min = 0.099999994
+initial_velocity_max = 0.29999998
+gravity = Vector3(0, 0, 0)
+scale_min = 0.099999994
+scale_max = 0.19999999
+scale_curve = SubResource("CurveTexture_wehcy")
+color_ramp = SubResource("GradientTexture1D_0qofi")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lys2u"]
+transparency = 3
+alpha_hash_scale = 1.0
+alpha_antialiasing_mode = 0
+blend_mode = 1
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("7_gjpud")
+billboard_mode = 1
+billboard_keep_scale = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_cukj5"]
+material = SubResource("StandardMaterial3D_lys2u")
+
+[node name="Bird" type="Node3D" unique_id=343322699]
+script = ExtResource("1_806kn")
+
+[node name="DetectArea" type="Area3D" parent="." unique_id=1335823249]
+
+[node name="Shape" type="CollisionShape3D" parent="DetectArea" unique_id=1151411558]
+shape = SubResource("SphereShape3D_fn1gv")
+debug_color = Color(0.8300801, 0.58253235, 0.26738054, 0.78039217)
+
+[node name="Billboard" type="Node3D" parent="." unique_id=1390685293]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
+script = ExtResource("3_6djdu")
+
+[node name="BirdVisuals" parent="Billboard" unique_id=2059139629 instance=ExtResource("5_okd8w")]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
+
+[node name="SpookArea" type="Area3D" parent="." unique_id=2125985718]
+
+[node name="Shape" type="CollisionShape3D" parent="SpookArea" unique_id=900676757]
+shape = SubResource("SphereShape3D_806kn")
+debug_color = Color(0, 0.6, 0.69803923, 0.78039217)
+
+[node name="BashArea" type="Area3D" parent="." unique_id=1975473092]
+
+[node name="Shape" type="CollisionShape3D" parent="BashArea" unique_id=20392637]
+shape = SubResource("SphereShape3D_2o0di")
+debug_color = Color(0, 0.6, 0.69803923, 0.78039217)
+
+[node name="BirdCall" type="AudioStreamPlayer3D" parent="." unique_id=132143180]
+stream = ExtResource("5_tto85")
+unit_size = 5.0
+max_distance = 75.0
+bus = &"SoundEffectBirds"
+
+[node name="PeckSound" type="AudioStreamPlayer3D" parent="." unique_id=1020128779]
+stream = ExtResource("5_fn1gv")
+unit_size = 5.0
+max_distance = 75.0
+bus = &"SoundEffectBirds"
+
+[node name="FlyStart" type="AudioStreamPlayer3D" parent="." unique_id=1606033581]
+stream = ExtResource("5_gjpud")
+unit_size = 5.0
+max_distance = 75.0
+bus = &"SoundEffects"
+
+[node name="FlyContinuous" type="AudioStreamPlayer3D" parent="." unique_id=1704356405]
+stream = ExtResource("5_qo1os")
+unit_size = 5.0
+max_distance = 75.0
+bus = &"SoundEffects"
+parameters/looping = true
+
+[node name="ShinySparkles" type="GPUParticles3D" parent="." unique_id=1475820782]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1287249, 0)
+amount = 50
+lifetime = 0.5
+randomness = 0.5
+draw_order = 1
+transform_align = 3
+trail_lifetime = 4.8
+process_material = SubResource("ParticleProcessMaterial_2o0di")
+draw_pass_1 = SubResource("QuadMesh_cukj5")
+
+[node name="ShinyLoop" type="AudioStreamPlayer3D" parent="." unique_id=1996585482]
+stream = ExtResource("9_2o0di")
+volume_db = -1.0
+unit_size = 4.0
+max_db = 1.0
+max_distance = 50.0
+bus = &"SoundEffectShiny"
+parameters/looping = true
+
+[node name="RayCast3D" type="RayCast3D" parent="." unique_id=904799382]
+physics_interpolation_mode = 2
