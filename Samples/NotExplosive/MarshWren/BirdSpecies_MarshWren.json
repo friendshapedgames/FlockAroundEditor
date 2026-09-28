@@ -11,13 +11,13 @@
   },
   "scientific_name": "Cistothorus palustris",
   "mockup_texture": {
-    "path": "mods://MarshWren/MarshWrenMockup.png"
+    "path": "mods://NotExplosive/MarshWren/MarshWrenMockup.png"
   },
   "head_texture": {
-    "path": "mods://MarshWren/MarshWrenHead.png"
+    "path": "mods://NotExplosive/MarshWren/MarshWrenHead.png"
   },
   "body_texture": {
-    "path": "mods://MarshWren/MarshWrenBody.png"
+    "path": "mods://NotExplosive/MarshWren/MarshWrenBody.png"
   },
   "visuals_scene": {
     "path": "res://Art/Birds/MarshWren/MarshWrenVisual.tscn"
@@ -92,10 +92,10 @@
   "flap_animation_speed": 10.0,
   "tweet_sounds": [
     {
-      "path": "mods://MarshWren/MarshWrenCallA.ogg"
+      "path": "mods://NotExplosive/MarshWren/MarshWrenCallA.ogg"
     },
     {
-      "path": "mods://MarshWren/MarshWrenCallB.ogg"
+      "path": "mods://NotExplosive/MarshWren/MarshWrenCallB.ogg"
     }
   ],
   "flap_sound": {

@@ -1,16 +1,23 @@
 {
   "title": {
-    "id": 2067461107
+    "id": 4245228117
   },
   "description": {
-    "id": 2067461107
+    "id": 4245228117
   },
   "name_and_description_supported_locales": [
     632594830,
     3178793665,
-    4228018646
+    153734008,
+    3773531450,
+    1348086716,
+    4228018646,
+    2821021376,
+    2049019904,
+    2900432950
   ],
-  "workshop_item_id": 3799353614,
+  "workshop_item_id": 3807372151,
+  "required_items": [],
   "content": "mods://MarshWren",
   "tags": [
     "Custom Bird",
@@ -18,7 +25,7 @@
     "Goose Lake"
   ],
   "preview_image": {
-    "path": "mods://MarshWren/MarshWrenMockup.png"
+    "path": "mods://MarshWren/marsh_wren_thumb.png"
   },
   "config_info": {
     "config_instance_id": 3014115565,
