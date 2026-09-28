@@ -18,14 +18,14 @@
   ],
   "workshop_item_id": 3807372151,
   "required_items": [],
-  "content": "mods://MarshWren",
+  "content": "mods://NotExplosive/MarshWren",
   "tags": [
     "Custom Bird",
     "Realistic",
     "Goose Lake"
   ],
   "preview_image": {
-    "path": "mods://MarshWren/marsh_wren_thumb.png"
+    "path": "mods://NotExplosive/MarshWren/marsh_wren_thumb.png"
   },
   "config_info": {
     "config_instance_id": 3014115565,
