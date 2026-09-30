@@ -4,7 +4,7 @@
 
 To install mods you must run the game with `-- --enablemods` set in the advanced launch options of your game properties.
 
-[![Advanced Users Launch Options set to -- --enablemods](image.png)]
+![Advanced Users Launch Options set to -- --enablemods](image.png)
 
 ## Making Mods
 
