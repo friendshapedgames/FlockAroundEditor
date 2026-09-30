@@ -7,6 +7,10 @@
     {
       "id": 1731085550,
       "string": "bird.description.marsh_wren"
+    },
+    {
+      "id": 2462844225,
+      "string": "mod.description"
     }
   ],
   "config_info": {
